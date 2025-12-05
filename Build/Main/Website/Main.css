@@ -3,8 +3,10 @@ body{
 }
 
 footer{
+    position: sticky;
+    bottom: 0;
     background: transparent;
-    border-top: 1px solid #cdcdcd50;
+    border-top: 1px solid #cdcdcd50; 
 }
 
 header{
@@ -17,4 +19,10 @@ header{
     right: 0;
     background: transparent;
     display: inline-flex;
+}
+
+.HolderDiv{
+    top: 50px;
+    overflow-y: auto;
+    background: transparent;
 }
