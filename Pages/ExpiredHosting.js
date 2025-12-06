@@ -80,13 +80,13 @@ export const EXPIREDHOSTING=()=>{
 
     Admin.addEventListener("click",()=>{
 
-        location.href="https://eroinnovations.site/ContactUs.html";
+        location.href="";
 
     });
 
     CompanyName.addEventListener("click",()=>{
 
-        location.href="https://eroinnovations.site";
+        location.href="";
 
     });
 
