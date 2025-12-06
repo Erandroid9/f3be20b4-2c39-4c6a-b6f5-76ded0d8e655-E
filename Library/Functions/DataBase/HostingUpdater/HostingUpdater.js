@@ -6,7 +6,7 @@ export const HOSTINGUPDATER = () => {
 
         },()=>{
 
-            GETDATA(HOSTINGUPDATERLINK,"APPMANAGER",(data)=>{
+            GETDATA(HOSTINGUPDATERLINK,"Production",(data)=>{
 
                 REDUX(data,(element)=>{
 
