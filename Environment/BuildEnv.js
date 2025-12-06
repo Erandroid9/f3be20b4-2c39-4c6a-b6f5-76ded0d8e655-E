@@ -1,3 +1,4 @@
+import { APPMANAGERLINK } from "../Library/Constants/DataBase/AppManagerLink/AppManagerLink.js";
 import { GETDATALINK } from "../Library/Constants/DataBase/GetDataLink/GetDataLink.js";
 import { CONDITION } from "../Library/Functions/DataBase/Condition/Condition.js";
 import { FINDER } from "../Library/Functions/DataBase/Finder/Finder.js";
@@ -11,7 +12,7 @@ import { WEBENV } from "./WebEnv.js";
 export const BUILDENV=()=>{
 
     const DATA={
-        "spreadsheetUrl":"https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing",
+        "spreadsheetUrl":APPMANAGERLINK,
         "sheetName":"SubProduction"    
     };
                     
