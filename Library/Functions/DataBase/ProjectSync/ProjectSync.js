@@ -7,12 +7,11 @@ export const PROJECTSYNC = () => {
 
         CHECKER(navigator.onLine, () => {
 
-            const projectPath = localStorage.getItem("projectPath");
-
             fetch(BUILDLINK + projectPath)
             .then(res => res.text())
             .then(data => {
-
+                
+                    const projectPath = localStorage.getItem("projectPath");
                     const localProject = localStorage.getItem("PROJECT");
 
                     CONDITION(data.trim() === (localProject || "").trim(), () => {
