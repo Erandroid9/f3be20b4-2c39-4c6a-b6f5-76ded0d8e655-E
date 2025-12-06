@@ -8,7 +8,6 @@ import { COUNTRYLINK } from "../DataBase/CountryLink/CountryLink.js";
 import { CREATETABLELINK } from "../DataBase/CreateTableLink/CreateTableLink.js";
 import { CREATEDATABASELINK } from "../DataBase/CrerateDataBaseLink/CreateDataBaseLink.js";
 import { CURRENCIESLINK } from "../DataBase/CurrenciesLink/CurrenciesLink.js";
-import { ELITEWEBLINK } from "../DataBase/EliteWebLink/EliteWebLink.js";
 import { EMAILSENDERLINK } from "../DataBase/EmailSenderLink/EmailSenderLink.js";
 import { GETDATALINK } from "../DataBase/GetDataLink/GetDataLink.js";
 import { GETDRIVELINK } from "../DataBase/GetDriveLink/GetDriveLink.js";
@@ -21,8 +20,7 @@ import { POSTDRIVEFILELINK } from "../DataBase/PostDriveLink/PostDriveLink.js";
 import { UGANDANDISTRICITLINK } from "../DataBase/UgandanDistricitLink/UgandanDistricitLink.js";
 import { UPDATEDATALINK } from "../DataBase/UpdateDataLink/UpdateDataLink.js";
 export const CONSTANTS=()=>{
-const DATA=`const ELITEWEBLINK="${ELITEWEBLINK}";
-var GLOBALDATA="${GLOBALDATA}";
+const DATA=`var GLOBALDATA="${GLOBALDATA}";
 const BUILDLINK="${BUILDLINK}";
 const GETDATALINK="${GETDATALINK}";
 const GETDRIVELINK="${GETDRIVELINK}";
