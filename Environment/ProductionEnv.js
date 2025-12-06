@@ -1,3 +1,4 @@
+import { GETDATALINK } from "../Library/Constants/DataBase/GetDataLink/GetDataLink.js";
 import { CONDITION } from "../Library/Functions/DataBase/Condition/Condition.js";
 import { FINDER } from "../Library/Functions/DataBase/Finder/Finder.js";
 import { TIMECOMPARE } from "../Library/Functions/DataBase/TimeCompare/TimeCompare.js";
@@ -10,13 +11,11 @@ import { WEBENV } from "./WebEnv.js";
 export const PRODUCTIONENV=()=>{
 
     const DATA={
-        "spreadsheetUrl":"https://docs.google.com/spreadsheets/d/1Utfr1wkoZSRvM9TOKaTxOX6orYE8AuN2mu4dDtQmhFQ/edit?usp=sharing",
-        "sheetName":"APPMANAGER"    
+        "spreadsheetUrl":"https://docs.google.com/spreadsheets/d/1V_m4KRo--FQkD0fNKfRZ1EWDRCSqTvwGkM7lEFGWldA/edit?usp=sharing",
+        "sheetName":"Production"    
     };
-                
-    const APIS="https://script.google.com/macros/s/AKfycbyHFabMyQk2EoZXk8VV-L4dBKPAe6knmhyAm1W6sQ9_WRmq5clAozbfIznoCHY0l1ssSQ/exec";
-                
-    fetch(APIS,{
+                           
+    fetch(GETDATALINK,{
         method:"POST",
         mode:"cors",
         body:JSON.stringify(DATA)

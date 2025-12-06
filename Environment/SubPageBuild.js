@@ -1,3 +1,4 @@
+import { GETDATALINK } from "../Library/Constants/DataBase/GetDataLink/GetDataLink.js";
 import { CHECKER } from "../Library/Functions/DataBase/Checker/Checker.js";
 import { CONDITION } from "../Library/Functions/DataBase/Condition/Condition.js";
 import { REDUX } from "../Library/Functions/DataBase/Redux/Redux.js";
@@ -9,12 +10,10 @@ export const SUBPRODUCTIONENV=()=>{
 
     const DATA={
         "spreadsheetUrl":"https://docs.google.com/spreadsheets/d/1Utfr1wkoZSRvM9TOKaTxOX6orYE8AuN2mu4dDtQmhFQ/edit?usp=sharing",
-        "sheetName":"SUBBUILDPAGES"    
+        "sheetName":"MiniPages"    
     };
-                
-    const APIS="https://script.google.com/macros/s/AKfycbyHFabMyQk2EoZXk8VV-L4dBKPAe6knmhyAm1W6sQ9_WRmq5clAozbfIznoCHY0l1ssSQ/exec";
-                
-    fetch(APIS,{
+                      
+    fetch(GETDATALINK,{
         method:"POST",
         mode:"cors",
         body:JSON.stringify(DATA)
