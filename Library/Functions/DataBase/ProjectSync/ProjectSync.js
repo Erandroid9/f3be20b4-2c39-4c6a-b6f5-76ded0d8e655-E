@@ -13,29 +13,29 @@ export const PROJECTSYNC = () => {
             .then(res => res.text())
             .then(data => {
 
-                    const localProject = localStorage.getItem("PROJECT");
+                const localProject = localStorage.getItem("PROJECT");
 
-                    CONDITION(data.trim() === (localProject || "").trim(), () => {
+                CONDITION(data.trim() === (localProject || "").trim(), () => {
 
-                        SESSIONSTORE("ProjectSynced", new Date());
+                    SESSIONSTORE("ProjectSynced", new Date());
 
-                    }, () => {
+                }, () => {
 
-                        LOCALSTORE("PROJECT", data);
+                    LOCALSTORE("PROJECT", data);
 
-                        SESSIONSTORE("ProjectSynced", new Date());
+                    SESSIONSTORE("ProjectSynced", new Date());
 
-                        HIDER(1000, () => {
+                    HIDER(1000, () => {
 
-                            RELOAD();
+                        RELOAD();
                             
-                        });;
+                    });;
 
-                    });
-                })
-                .catch(error => {
-                    console.log("Project sync error:", error);
                 });
+            })
+            .catch(error => {
+                console.log("Project sync error:", error);
+            });
 
         });
     });
