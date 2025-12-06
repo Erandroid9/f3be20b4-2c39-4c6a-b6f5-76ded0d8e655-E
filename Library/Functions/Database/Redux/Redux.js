@@ -1,9 +1,9 @@
-export const REDUX=(Data,callback)=>{
+export const REDUX=(DATA,callback)=>{
 
-    Data.forEach(element => {
-        
+    DATA.forEach(element => {
+
         callback(element);
-
+        
     });
 
 };

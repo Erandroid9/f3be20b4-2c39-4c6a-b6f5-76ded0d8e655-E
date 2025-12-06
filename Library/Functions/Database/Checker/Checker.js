@@ -1,11 +1,11 @@
-export const CHECKER=(TERM,callback)=>{
+export const CHECKER = (CONDITIONER, callback) => {
 
-    if (TERM) {
+    if (CONDITIONER) {
 
         callback();
 
         return;
 
     };
-
+    
 };

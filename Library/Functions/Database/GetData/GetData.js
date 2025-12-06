@@ -1,20 +1,27 @@
-export const GETDATA=(LINK,callback)=>{
+export const GETDATA=(Url,Name,callback)=>{
 
-    fetch(LINK,{
-        method:"Get"
-    })
+    CHECKER(navigator.onLine,()=>{
 
-    .then(res=>res.json())
+        const DATA={
+            "spreadsheetUrl":Url,
+            "sheetName":Name    
+        };
+       
+        fetch(GETDATALINK,{
+            method:"POST",
+            mode:"cors",
+            body:JSON.stringify(DATA)
+        })
     
-    .then(data =>{
-
-        callback(data);
-
-    })
+        .then(res => res.json())
     
-    .catch(error =>{
-
-        console.log(error);
+        .then(data =>{
+    
+            callback(data);
+    
+        })
+        
+        .catch(Error => console.log(Error))
 
     });
 

@@ -1,5 +1,55 @@
 export const AUTORUN=()=>{
 
-   RUN();HOSTINGCHECKER();
+    CONDITION(localStorage.getItem("Environment") === "Development",()=>{
+
+        import('./Start/Start.js')
+
+        .then(module => {
+            
+            if (typeof module.START === 'function') {
+
+            module.START();
+
+            } else {
+
+                console.error('START is not defined in the module');
+
+            }
+        })
+        .catch(error => {
+
+            console.error('Error loading the module:', error);
+
+        });
+
+    },()=>{
+
+        CHECKER(navigator.onLine,()=>{
+
+            import(AUTORUNLINK)
     
+            .then(module => {
+    
+                if (typeof module.START === 'function') {
+    
+                module.START();
+    
+                } else {
+    
+                    console.error('START is not defined in the module');
+    
+                }
+    
+            })
+    
+            .catch(error => {
+    
+                console.error('Error loading the module:', error);
+    
+            });
+
+        });
+
+    });
+
 };

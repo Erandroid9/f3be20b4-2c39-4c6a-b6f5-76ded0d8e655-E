@@ -1,0 +1,1 @@
+export const AUTORUNLINK="https://eliterobustontology.github.io/Elite/Start/Start.js";

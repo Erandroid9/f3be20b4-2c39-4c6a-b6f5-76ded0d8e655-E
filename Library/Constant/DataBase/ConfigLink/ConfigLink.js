@@ -1,1 +1,0 @@
-export const CONFIGLINK="https://erandroid9.github.io/Eliton/DataBase/Config.json";

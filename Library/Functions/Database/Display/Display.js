@@ -1,13 +1,15 @@
 export const DISPLAY=(ELEMENT,DATA)=>{
 
-    CONDITION(ELEMENT,()=>{
+    const BODY=document.querySelector('body');
 
-        ELEMENT.innerHTML=DATA;
+    if (ELEMENT) {
 
-    },()=>{
+        ELEMENT.innerHTML= DATA;
+        
+    } else {
 
-        BODY.innerHTML=DATA;
-
-    });
+        BODY.innerHTML= DATA;
+        
+    };
 
 };

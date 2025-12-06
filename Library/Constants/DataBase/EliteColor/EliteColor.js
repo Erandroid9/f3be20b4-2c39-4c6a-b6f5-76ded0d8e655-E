@@ -1,0 +1,1 @@
+export const ELITECOLOR="#05143d";

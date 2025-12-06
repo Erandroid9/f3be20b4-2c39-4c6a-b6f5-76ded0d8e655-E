@@ -1,0 +1,16 @@
+ID
+UserName
+UserEmail
+UserPassword
+UserPhoto
+UserDeleted
+UserDetails
+UserDevice
+UserActivity
+UserNumbers
+UserLocation
+UserFullDetails
+UserSettings
+UserConnection
+UserSpecialCode
+UserCountry

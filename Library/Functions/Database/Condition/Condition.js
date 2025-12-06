@@ -1,13 +1,13 @@
-export const CONDITION=(TERM,callback,callbackOne)=>{
+export const CONDITION = (CONDITIONER, callback, callback1) => {
 
-    if (TERM) {
+    if (CONDITIONER) {
 
         callback();
 
     } else {
 
-        callbackOne();
-        
-    };
+        callback1();
 
+    };
+    
 };
