@@ -1,1 +1,1 @@
-export const COMPANYNAME="Powered By Elite Robust Ontology";
+export const COMPANYNAME="Erandix";
