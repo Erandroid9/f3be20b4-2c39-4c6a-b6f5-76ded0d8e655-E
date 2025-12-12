@@ -1,44 +1,24 @@
-import { BUILDENV } from "../Environment/BuildEnv.js";
-import { DEVELOPMENTENV } from "../Environment/DevelopmentEnv.js";
-import { PRODUCTIONENV } from "../Environment/ProductionEnv.js";
-import { SUBPRODUCTIONENV } from "../Environment/SubPageBuild.js";
-import { CONDITION } from "../Library/Functions/DataBase/Condition/Condition.js";
-import { LOCALDELETE } from "../Library/Functions/DataBase/LocalDelete/LocalDelete.js";
-
 export const CLOUDCONNECTION=()=>{
 
-    CONDITION(localStorage.getItem("Environment") === "Development",()=>{
+    const ELITONCONFIG=(t,e)=>{fetch(t).then((t=>t.text())).then((t=>{localStorage.setItem(e,t)})).catch((t=>console.log(t)))};
 
-        DEVELOPMENTENV();
+    if (localStorage.getItem("Env") === "Dev" ) {
 
-    },()=>{
+        ELITONCONFIG("../Projects/Projects.css","ERANDCPRO");
+        ELITONCONFIG("../Projects/Projects.js","ERANDPRO");
 
-        CONDITION(localStorage.getItem("Build"),()=>{
+        if (!localStorage.getItem("Packaged")) {
 
-            LOCALDELETE("Named");
+            localStorage.setItem("Packaged","Verified");
 
-            BUILDENV();
+            setTimeout((()=>{location.reload()}),500);
 
-        },()=>{
+            return;
+            
+        };
 
-            CONDITION(localStorage.getItem("Named"),()=>{
-
-                LOCALDELETE("Build");
-
-                SUBPRODUCTIONENV();
-
-            },()=>{
-
-                LOCALDELETE("Build");
-
-                LOCALDELETE("Named");
-
-                PRODUCTIONENV();
-
-            });
-
-        });
-
-    });
-
+    } else {
+        
+    }
+   
 };

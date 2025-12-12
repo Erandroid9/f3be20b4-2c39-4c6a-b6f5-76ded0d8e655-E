@@ -1,1 +1,0 @@
-export const AUTORUNLINK="https://erandroid9.github.io/Eliton/Start/Start.js";

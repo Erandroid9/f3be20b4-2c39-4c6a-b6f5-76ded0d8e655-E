@@ -1,1 +1,0 @@
-export const BUILDLINK="https://erandroid9.github.io/Eliton/Build/";

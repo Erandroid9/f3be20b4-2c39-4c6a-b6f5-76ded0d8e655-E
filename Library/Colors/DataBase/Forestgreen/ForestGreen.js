@@ -1,1 +1,0 @@
-export const FORESTGREEN="#228b22";
