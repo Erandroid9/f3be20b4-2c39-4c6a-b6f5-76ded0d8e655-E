@@ -4,7 +4,8 @@ const ERANDES=()=>{
 
         <header>
 
-            <p>Hello</p>
+            <p>ff;
+            </p>
 
             <img src="${WHITEHOMEICON}"/>
         
