@@ -23,8 +23,6 @@ const ERANDES=()=>{
 
     `);
 
-    CLICKED("#Test",()=>{
-        alert("dd")
-    })
+
 
 };
