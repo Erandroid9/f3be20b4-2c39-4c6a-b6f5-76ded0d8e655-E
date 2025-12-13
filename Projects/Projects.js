@@ -11,6 +11,17 @@ const ERANDES=()=>{
         
         </header>
 
+        <div></div>
+
+        <footer>
+
+            <p>ff;
+            </p>
+
+            <img src="${WHITEHOMEICON}"/>
+        
+        </footer>
+
     `);
    
 };
