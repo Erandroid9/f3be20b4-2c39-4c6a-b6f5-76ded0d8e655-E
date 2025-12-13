@@ -1,17 +1,16 @@
 const ERANDES=()=>{
 
-   DISPLAY("",`
+    DISPLAY("",`
 
         <header>
 
             <p>ff;
             </p>
 
-            <img src="${WHITEHOMEICON}"/>
+            <img  id="Test" src="${WHITEHOMEICON}"/>
         
         </header>
 
-        <div></div>
 
         <footer>
 
@@ -23,5 +22,9 @@ const ERANDES=()=>{
         </footer>
 
     `);
+
+    CLICK("#Test",()=>{
+        alert("")
+    })
    
 };
