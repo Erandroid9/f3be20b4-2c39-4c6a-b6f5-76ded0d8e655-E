@@ -24,6 +24,7 @@ export const CONNECTIONS=()=>{
         ELITONCONFIG("../Library/Services/ElitonIcons.js","ERANDIA");
         ELITONCONFIG("../Library/Services/ElitonPlugs.js","ERANDIN");
         ELITONCONFIG("../Library/Services/ElitonTemps.js","ERANDTEMP");
+        ELITONCONFIG("../Library/Services/Constants.js","ERANDCONSTANTS");
 
         ELITONCONFIG("../Library/Server/CloudSync.js","ERANDCONFIG");
 
@@ -39,6 +40,7 @@ export const CONNECTIONS=()=>{
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/Eliton.js","ERANDS");
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/ElitonPlugs.js","ERANDIN");
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/ElitonTemps.js","ERANDTEMP");
+        ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Services/Constants.js","ERANDCONSTANTS");
 
         ELITONCONFIG("https://erandroid9.github.io/Eliton/Library/Server/CloudSync.js","ERANDCONFIG");
 
