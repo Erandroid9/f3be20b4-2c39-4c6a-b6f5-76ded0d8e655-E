@@ -1,4 +1,4 @@
-const CONDITION=(I,N,O)=>{I?N():O()};const CHECKER=(C,E)=>{C&&E()};
+const CONDITION=(I,N,O)=>{I?N():O()};const CHECKER=(C,E)=>{C&&E()};const REDUX=(c,o)=>{c.forEach((c=>{o(c)}))};const NAMER=(e,c)=>{c(document.querySelector(e))};const ADD=(e,n,t,c)=>{const d=document.body,o=document.createElement(n);return t&&o.classList.add(t),e?e.append(o):d.append(o),"function"==typeof c&&c(o),o};
 const AUTORUN=()=>{CONDITION("Dev"===localStorage.getItem("Env"),(()=>{import("./Connection/Connection.js").then((o=>"function"==typeof o.CONNECTIONS&&o.CONNECTIONS())).catch(console.error)}),(()=>{import("https://erandroid9.github.io/Eliton/Connection/Connection.js").then((o=>"function"==typeof o.CONNECTIONS&&o.CONNECTIONS())).catch(console.error)}))};
 const DISPLAY=(n,e)=>{const o=document.querySelector("body");CONDITION(n,(()=>{n.innerHTML=e}),(()=>{o.innerHTML=e}))};
 const CLICKED=(e,c)=>{document.querySelector(e).addEventListener("click",(()=>{c()}))};

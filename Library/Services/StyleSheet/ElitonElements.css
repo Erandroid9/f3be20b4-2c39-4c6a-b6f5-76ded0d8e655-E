@@ -18,36 +18,57 @@ header{
 h1{
     position: relative;
     margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 h2{
     position: relative;
     margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 h3{
     position: relative;
     margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 h4{
     position: relative;
     margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 h5{
     position: relative;
     margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 h6{
     position: relative;
     margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 p{
     position: relative;
     margin: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 div{
