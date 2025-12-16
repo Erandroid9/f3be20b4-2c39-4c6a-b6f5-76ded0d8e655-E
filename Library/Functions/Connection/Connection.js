@@ -7,6 +7,7 @@ import { CREATEDATABASE } from "../DataBase/CreateDataBase/CreateDatabase.js";
 import { CREATETABLE } from "../DataBase/CreateTable/CreateTable.js";
 import { DISPLAY } from "../DataBase/Displayed/Display.js";
 import { ELEMENTED } from "../DataBase/Elemented/ELemented.js";
+import { GETDATA } from "../DataBase/GetData/GetData.js";
 import { INSERTDATA } from "../DataBase/InsertData/InsertData.js";
 import { ROUTE } from "../DataBase/Route/Route.js";
 import { STYLED } from "../DataBase/Styled/Styled.js";
@@ -27,6 +28,7 @@ const CREATEDATABASE=${CREATEDATABASE};
 const CREATETABLE=${CREATETABLE};
 const INSERTDATA=${INSERTDATA};
 const UPDATEDATA=${UPDATEDATA};
+const GETDATA=${GETDATA};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -34,5 +36,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const UPDATEDATA=${UPDATEDATA};
+const GETDATA=${GETDATA};
 `

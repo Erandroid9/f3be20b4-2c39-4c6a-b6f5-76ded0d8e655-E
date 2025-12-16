@@ -26,7 +26,7 @@ export const CONFIGENVIRONMENT=()=>{
             
         } else {
 
-            if (localStorage.getItem("Desktop") === "Android") {
+            if (localStorage.getItem("Env") === "Desktop") {
 
                 DISPLAYLOADER("50%");
 
@@ -37,7 +37,7 @@ export const CONFIGENVIRONMENT=()=>{
                 DISPLAYLOADER("50%");
 
                 WEBENVIRONMENT();
-                
+
             };
             
         };
