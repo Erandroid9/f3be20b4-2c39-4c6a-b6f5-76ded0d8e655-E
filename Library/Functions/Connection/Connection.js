@@ -3,10 +3,14 @@ import { AUTORUN } from "../DataBase/AutoRun/AutoRun.js";
 import { BODIED } from "../DataBase/Body/Body.js";
 import { CHECKER } from "../DataBase/Checker/Checker.js";
 import { CONDITION } from "../DataBase/Condition/Condition.js";
+import { CREATEDATABASE } from "../DataBase/CreateDataBase/CreateDatabase.js";
+import { CREATETABLE } from "../DataBase/CreateTable/CreateTable.js";
 import { DISPLAY } from "../DataBase/Displayed/Display.js";
 import { ELEMENTED } from "../DataBase/Elemented/ELemented.js";
+import { INSERTDATA } from "../DataBase/InsertData/InsertData.js";
 import { ROUTE } from "../DataBase/Route/Route.js";
 import { STYLED } from "../DataBase/Styled/Styled.js";
+import { UPDATEDATA } from "../DataBase/UpdateData/UpdateData.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -19,6 +23,10 @@ const BODIED=${BODIED};
 const STYLED=${STYLED};
 const ELEMENTED=${ELEMENTED};
 const ROUTE=${ROUTE};
+const CREATEDATABASE=${CREATEDATABASE};
+const CREATETABLE=${CREATETABLE};
+const INSERTDATA=${INSERTDATA};
+const UPDATEDATA=${UPDATEDATA};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -26,5 +34,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const ROUTE=${ROUTE};
+const UPDATEDATA=${UPDATEDATA};
 `
