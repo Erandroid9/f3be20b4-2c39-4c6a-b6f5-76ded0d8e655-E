@@ -67,9 +67,7 @@ export const DATALOADER=()=>{
                                         DISPLAYLOADER("90%");
 
                                         CONFIGENVIRONMENT();
-
-                                        RERUN();
-                                                
+                                                           
                                     };
                                     
                                 } else {
