@@ -8,6 +8,10 @@ const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
+        LEFTTEXTVIEW(ELEMENT,"Manager",(ELEMENTS)=>{
+
+        });
+
     },(ELEMENT)=>{
 
     });
