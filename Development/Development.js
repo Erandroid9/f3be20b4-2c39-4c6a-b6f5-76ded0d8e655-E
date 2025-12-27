@@ -48,7 +48,31 @@ const MOBILECREATEPROJECTVIEW=()=>{
 
     },(ELEMENT)=>{
 
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
+            MARGINTOP(ELEMENTS,"2%");
+            RADIUS(ELEMENTS,"10px");
+            BORDER(ELEMENTS,WHITE+"50");
+
+            IMAGE(ELEMENTS,"95%","200px",WHITEHOMEICON,"",(ELEMENTISE)=>{
+
+                MARGINTOP(ELEMENTISE,"2%");
+
+                FOOTER(ELEMENTS,(ELEMENTA)=>{
+
+                    ICONVIEW(ELEMENTA,WHITEADDICON,(ELEMENTIS)=>{
+
+                    });
+
+                    ICONVIEW(ELEMENTA,WHITEDELETEICON,(ELEMENTIS)=>{
+
+                    });
+
+                });
+
+            });
+
+        });
 
     });
 

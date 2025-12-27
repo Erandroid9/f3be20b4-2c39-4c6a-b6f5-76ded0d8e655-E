@@ -1,3 +1,4 @@
+import { DIVVIEW } from "../DataBase/Components/DivView/DivView.js";
 import { FOOTERVIEW } from "../DataBase/Components/FooterView/FooterView.js";
 import { HEADERVIEW } from "../DataBase/Components/HeaderView/HeaderView.js";
 import { ICONVIEW } from "../DataBase/Components/IconView/IconView.js";
@@ -14,6 +15,7 @@ const FOOTERVIEW=${FOOTERVIEW};
 const ICONVIEW=${ICONVIEW};
 const LEFTICONVIEW=${LEFTICONVIEW};
 const RIGHTICONVIEW=${RIGHTICONVIEW};
+const DIVVIEW=${DIVVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -21,5 +23,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const RIGHTICONVIEW=${RIGHTICONVIEW};
+const DIVVIEW=${DIVVIEW};
 `
