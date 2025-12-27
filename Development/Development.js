@@ -32,19 +32,25 @@ const MOBILECREATEPROJECTVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Manager",(ELEMENTS)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
 
         });
 
         RIGHTTEXTVIEW(ELEMENT,"Create",(ELEMENTS)=>{
 
-            
         });
 
     },(ELEMENT)=>{
 
-    });
 
+
+    });
 
 };
 
