@@ -8,8 +8,6 @@ export const EMAILSERVER=(EMAIL,SUBJECT,MESSAGE,callBack)=>{
 
     CLOUDPOST(EMAILLINK,DATA,(Data)=>{
 
-        callBack(Data);
-
         CHECKER(Data.status === "success",()=>{
 
             callBack(Data);
