@@ -1,9 +1,5 @@
 const ERANDES=()=>{
 
-    GETUGANDANDISTRICTSAPI((Daa)=>{
-        console.log(Daa)
-    })
-
     SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();})
 
 };
