@@ -1,1 +1,1 @@
-export const GETDATALINK="https://script.google.com/macros/s/AKfycbxi4dQQfm5u5Pd4Id3JCpmBbRhXv_y4XZZnwET4MHYoWfqKaXhqMXtc2T1gklUuocVy3A/exec";
+export const GETDATALINK="https://script.google.com/macros/s/AKfycbxgaFqwexOOBXA5tn1n2Mp0k9-KlwZ8ZP4QUvWM_CigDocfx-nVR0xz2RyuwDBYgwMp/exec";

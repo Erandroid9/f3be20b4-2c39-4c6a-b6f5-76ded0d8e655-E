@@ -1,1 +1,1 @@
-export const EMAILLINK="https://script.google.com/macros/s/AKfycbw420vI6YiA0V1IZ_R3AYR1OMyDdulcQxyc-zm_tibvaIFcZM47WjOFxSsWv4MXuLh3Tw/exec";
+export const EMAILLINK="https://script.google.com/macros/s/AKfycbzyfkM3s5iMsX6_Xib2szoe50TEn55lsNV71wXvS6WBbiFjde7DyAG5oE8NXEPFfCxe/exec";

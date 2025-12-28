@@ -1,1 +1,1 @@
-export const CREATETABLELINK="https://script.google.com/macros/s/AKfycbxurjKSdE49CqODwib_fNdnXlqITknBwGtL4fg6iYylz2MUMdbNvIEkeHz3YytUN-heHw/exec";
+export const CREATETABLELINK="https://script.google.com/macros/s/AKfycbzZhZWViWmnLY6b0Admgvtc1NFb51CggGARdmLqc33oMCMuZ8H4Itt-RKFRJyVHXRdL/exec";

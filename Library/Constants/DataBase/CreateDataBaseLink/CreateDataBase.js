@@ -1,1 +1,1 @@
-export const CREATEDATABASELINK="https://script.google.com/macros/s/AKfycby9J7VFeCCGLlQGSJ9UU2hTvpQidSGlk2-cW72Ze2JeJhu6vKLK--UPSN7NferexmIZCg/exec";
+export const CREATEDATABASELINK="https://script.google.com/macros/s/AKfycbxb0WsWUy_1XvGywrLi2PjkBLHpDTBmHu1TCkW9YF08E6Oq30GvJQWZsR3O_xfBUOA/exec";

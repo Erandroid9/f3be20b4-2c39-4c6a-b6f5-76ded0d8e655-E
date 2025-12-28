@@ -1,1 +1,1 @@
-export const CONNECTIONLINK="https://script.google.com/macros/s/AKfycbyJentJPp84534OjvsE80-H9WQM87F6ibh2SleHQjNtO6Cu1YIK4N-q3WTc6FuU9CowsA/exec";
+export const CONNECTIONLINK="https://script.google.com/macros/s/AKfycbwZEAGqW4mUEfbSxG2qvWjmXi2phy64VsOPCEWKWixnmR4WMYuYSY57hOsEZPsMBLAx/exec";

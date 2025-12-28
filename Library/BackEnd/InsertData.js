@@ -39,7 +39,6 @@ function doPost(e) {
       sheet.appendRow(headerRow); 
     }
   
-    // Add an ID to the data row
     if (data && Array.isArray(data) && data.length > 0) {
       uniqueId = generateUniqueId();
       var dataRow = [uniqueId].concat(data);
@@ -60,14 +59,13 @@ function doPost(e) {
     
     return ContentService.createTextOutput(JSON.stringify(response))
     .setMimeType(ContentService.MimeType.JSON);
-  }
+}
 
-  function generateUniqueId() {
+function generateUniqueId() {
     return Utilities.getUuid();
-  }
+}
   
-  function extractSpreadsheetId(url) {
+function extractSpreadsheetId(url) {
     var matches = url.match(/\/spreadsheets\/d\/([a-zA-Z0-9-_]+)\//);
     return matches ? matches[1] : null;
-  }
-  
+}
