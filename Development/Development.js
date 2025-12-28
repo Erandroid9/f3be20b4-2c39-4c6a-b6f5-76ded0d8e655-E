@@ -1,6 +1,8 @@
 const ERANDES=()=>{
 
-    SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();})
+    LOGINVIEW("");
+
+    //SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();})
 
 };
 

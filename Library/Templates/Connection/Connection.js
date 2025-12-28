@@ -6,6 +6,7 @@ import { LEFTICONVIEW } from "../DataBase/Components/LeftIconView/LeftIconView.j
 import { LEFTTEXTVIEW } from "../DataBase/Components/LeftTextView/LeftTextView.js";
 import { RIGHTICONVIEW } from "../DataBase/Components/RightIconView/RightIconView.js";
 import { RIGHTTEXTVIEW } from "../DataBase/Components/RightTextView/RighttextView.js";
+import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
 
 export const TEMPLATESCONNECTION=()=>{
 const DATA=`const HEADERVIEW=${HEADERVIEW};
@@ -16,6 +17,7 @@ const ICONVIEW=${ICONVIEW};
 const LEFTICONVIEW=${LEFTICONVIEW};
 const RIGHTICONVIEW=${RIGHTICONVIEW};
 const DIVVIEW=${DIVVIEW};
+const LOGINVIEW=${LOGINVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -23,5 +25,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const DIVVIEW=${DIVVIEW};
+const LOGINVIEW=${LOGINVIEW};
 `
