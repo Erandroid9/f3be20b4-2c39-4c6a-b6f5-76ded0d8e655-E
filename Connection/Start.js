@@ -9,6 +9,7 @@ ROUTEJS(localStorage.getItem("COLORS"));
 ROUTEJS(localStorage.getItem("COMPONENTS"));
 ROUTEJS(localStorage.getItem("SERVER"));
 ROUTEJS(localStorage.getItem("TEMPLATES"));
+ROUTEJS(localStorage.getItem("APIS"));
 ROUTEJS(localStorage.getItem("RUN"));
 ROUTEJS(localStorage.getItem("PROJECT"));
 `;

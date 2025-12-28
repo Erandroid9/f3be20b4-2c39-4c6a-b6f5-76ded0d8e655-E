@@ -1,5 +1,6 @@
 import { APPSTART } from "../../../../Connection/AutoRun.js";
 import { START } from "../../../../Connection/Start.js";
+import { APICONNECTION } from "../../../APIS/Connection/Connection.js";
 import { COLORSCONNECTION } from "../../../Colors/Connection/Connection.js";
 import { COMPONENTSCONNECTION } from "../../../Components/Connection/Connection.js";
 import { CONSTANTSCONNECTION } from "../../../Constants/Connections/Connections.js";
@@ -36,6 +37,8 @@ export const DATALOADER=()=>{
         SERVERCONNECTION();
 
         TEMPLATESCONNECTION();
+
+        APICONNECTION();
         
     } else {
 
@@ -56,89 +59,103 @@ export const DATALOADER=()=>{
                         if (localStorage.getItem("STYLES")) {
     
                             STYLESCONNECTIONS();
-    
-                            if (localStorage.getItem("PAGES")) {
-    
-                                PAGESCONNECTION();
-    
-                                if (localStorage.getItem("RUN")) {
-    
-                                    APPSTART();
 
-                                    if (localStorage.getItem("TEMPLATES")) {
+                            if (localStorage.getItem("APIS")) {
 
-                                        TEMPLATESCONNECTION();
+                                APICONNECTION();
 
-                                        if (localStorage.getItem("ERANDCONFIG")) {
+                                if (localStorage.getItem("PAGES")) {
         
-                                            START();
-    
-                                            if (localStorage.getItem("SERVER")) {
+                                    PAGESCONNECTION();
         
-                                                SERVERCONNECTION();
-                                                
-                                                if (localStorage.getItem("PROJECT")) {
+                                    if (localStorage.getItem("RUN")) {
+        
+                                        APPSTART();
+    
+                                        if (localStorage.getItem("TEMPLATES")) {
+    
+                                            TEMPLATESCONNECTION();
+    
+                                            if (localStorage.getItem("ERANDCONFIG")) {
             
-                                                    CONFIGENVIRONMENT();
+                                                START();
+        
+                                                if (localStorage.getItem("SERVER")) {
+            
+                                                    SERVERCONNECTION();
                                                     
+                                                    if (localStorage.getItem("PROJECT")) {
+                
+                                                        CONFIGENVIRONMENT();
+                                                        
+                                                    } else {
+                
+                                                        DISPLAYLOADER("90%");
+                
+                                                        CONFIGENVIRONMENT();
+                                                                           
+                                                    };
+        
                                                 } else {
             
-                                                    DISPLAYLOADER("90%");
+                                                    DISPLAYLOADER("85%");
             
-                                                    CONFIGENVIRONMENT();
+                                                    SERVERCONNECTION();
+        
+                                                    RERUN();
                                                                        
                                                 };
-    
+            
                                             } else {
-        
-                                                DISPLAYLOADER("85%");
-        
-                                                SERVERCONNECTION();
-    
+            
+                                                DISPLAYLOADER("80%");
+            
+                                                START();
+            
                                                 RERUN();
-                                                                   
+                                                        
                                             };
-        
+                                            
                                         } else {
-        
-                                            DISPLAYLOADER("80%");
-        
-                                            START();
-        
+    
+                                            DISPLAYLOADER("75%");
+            
+                                            TEMPLATESCONNECTION();
+            
                                             RERUN();
-                                                    
+                                            
                                         };
-                                        
-                                    } else {
-
-                                        DISPLAYLOADER("75%");
         
-                                        TEMPLATESCONNECTION();
+                                    } else {
+        
+                                        DISPLAYLOADER("70%");
+        
+                                        APPSTART();
         
                                         RERUN();
-                                        
+                                                
                                     };
-    
+                                
                                 } else {
-    
-                                    DISPLAYLOADER("70%");
-    
-                                    APPSTART();
-    
+        
+                                    DISPLAYLOADER("65%");
+        
+                                    PAGESCONNECTION();
+        
                                     RERUN();
-                                            
+                                        
                                 };
                             
                             } else {
-    
+
                                 DISPLAYLOADER("60%");
     
-                                PAGESCONNECTION();
+                                APICONNECTION();
     
                                 RERUN();
-                                    
+                                
                             };
-                        
+    
                         } else {
     
                             DISPLAYLOADER("50%");
