@@ -42,6 +42,7 @@ import { REDUX } from "../DataBase/Redux/Redux.js";
 import { SPACEDWORDS } from "../DataBase/SpacedWords/SpacedWords.js";
 import { INPUTTED } from "../DataBase/Inputted/Inputted.js";
 import { PATHREVERSE } from "../DataBase/PathReverse/PathReverse.js";
+import { DOWNLOADFILE } from "../DataBase/DownloadFile/DownloadFile.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -89,6 +90,7 @@ const REDUX=${REDUX};
 const SPACEDWORDS=${SPACEDWORDS};
 const INPUTTED=${INPUTTED};
 const PATHREVERSE=${PATHREVERSE};
+const DOWNLOADFILE=${DOWNLOADFILE};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -96,5 +98,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const PATHREVERSE=${PATHREVERSE};
+const DOWNLOADFILE=${DOWNLOADFILE};
 `
