@@ -16,11 +16,15 @@ const MOBILEVIEW=()=>{
 
             const HEADERS=["Name","Size","Location","Date"];
 
-            const INFO=[Data.name,Data.Size,"Ugandan",new Date()];
-
-            INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
-
-                TOASTVIEW("Data Posted To Server");
+            SPACEDWORDS(Data.name,(Name)=>{
+                
+                const INFO=[Name,Data.size,"DataBase/Ugandan",new Date()];
+                
+                INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
+                
+                    TOASTVIEW("Data Posted To Server");
+                
+                });
 
             });
 
@@ -38,11 +42,15 @@ const MOBILEVIEW=()=>{
 
             const HEADERS=["Name","Size","Location","Date"];
 
-            const INFO=[Data.name,Data.Size,"UgandanGospel",new Date()];
+            SPACEDWORDS(Data.name,(Name)=>{
 
-            INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
+                const INFO=[Name,Data.Size,"DataBase/UgandanGospel",new Date()];
 
-                TOASTVIEW("Data Posted To Server");
+                INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
+
+                    TOASTVIEW("Data Posted To Server");
+
+                });
 
             });
 
@@ -60,11 +68,15 @@ const MOBILEVIEW=()=>{
 
             const HEADERS=["Name","Size","Location","Date"];
 
-            const INFO=[Data.name,Data.Size,"InternationalGospel",new Date()];
+            SPACEDWORDS(Data.name,(Name)=>{
 
-            INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
+                const INFO=[Name,Data.Size,"DataBase/InternationalGospel",new Date()];
 
-                TOASTVIEW("Data Posted To Server");
+                INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
+
+                    TOASTVIEW("Data Posted To Server");
+
+                });
 
             });
 
@@ -82,11 +94,15 @@ const MOBILEVIEW=()=>{
 
             const HEADERS=["Name","Size","Location","Date"];
 
-            const INFO=[Data.name,Data.Size,"International",new Date()];
+            SPACEDWORDS(Data.name,(Name)=>{
 
-            INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
+                const INFO=[Name,Data.Size,"DataBase/International",new Date()];
 
-                TOASTVIEW("Data Posted To Server");
+                INSERTDATA(ERANDIXAPILINK,"Music",HEADERS,INFO,(DataS)=>{
+
+                    TOASTVIEW("Data Posted To Server");
+
+                });
 
             });
 
@@ -95,3 +111,6 @@ const MOBILEVIEW=()=>{
     });
 
 };
+
+
+

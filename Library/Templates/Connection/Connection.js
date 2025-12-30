@@ -6,6 +6,7 @@ import { LEFTICONVIEW } from "../DataBase/Components/LeftIconView/LeftIconView.j
 import { LEFTTEXTVIEW } from "../DataBase/Components/LeftTextView/LeftTextView.js";
 import { RIGHTICONVIEW } from "../DataBase/Components/RightIconView/RightIconView.js";
 import { RIGHTTEXTVIEW } from "../DataBase/Components/RightTextView/RighttextView.js";
+import { TABLEVIEW } from "../DataBase/Components/TableView/TableView.js";
 import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
@@ -24,6 +25,7 @@ const LOGINVIEW=${LOGINVIEW};
 const DOWNLOADSAVEINDEX=${DOWNLOADSAVEINDEX};
 const OFFLINECHECKER=${OFFLINECHECKER};
 const TOASTVIEW=${TOASTVIEW};
+const TABLEVIEW=${TABLEVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -31,5 +33,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const TOASTVIEW=${TOASTVIEW};
+const TABLEVIEW=${TABLEVIEW};
 `

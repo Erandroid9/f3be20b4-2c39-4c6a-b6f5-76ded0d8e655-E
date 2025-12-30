@@ -39,6 +39,7 @@ import { INSPECTION } from "../DataBase/Inspect/Inspect.js";
 import { GETINDEXDATA } from "../DataBase/GetIndexData/GetIndexData.js";
 import { FILEPICKER } from "../DataBase/FilePicker/FilePicker.js";
 import { REDUX } from "../DataBase/Redux/Redux.js";
+import { SPACEDWORDS } from "../DataBase/SpacedWords/SpacedWords.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -83,6 +84,7 @@ const INSPECTION=${INSPECTION};
 const GETINDEXDATA=${GETINDEXDATA};
 const FILEPICKER=${FILEPICKER};
 const REDUX=${REDUX};
+const SPACEDWORDS=${SPACEDWORDS};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -90,5 +92,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const REDUX=${REDUX};
+const SPACEDWORDS=${SPACEDWORDS};
 `

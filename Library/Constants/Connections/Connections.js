@@ -7,6 +7,7 @@ import { ERANDIXAPILINK } from "../DataBase/ErandixApiLink/ErandixApiLink.js";
 import { ERANDIXMANAGERLINK } from "../DataBase/ErandixManagerLink/ErandixManagerLink.js";
 import { GETDATALINK } from "../DataBase/GetDataLink/GetDataLink.js";
 import { INSERTDATALINK } from "../DataBase/InsertDataLink/InsertDataLink.js";
+import { MUSICSERVERLINK } from "../DataBase/MusicServerLink/MusicServerLink.js";
 import { UPDATEDATALINK } from "../DataBase/UpdateDataLink/UpdateDataLink.js";
 
 export const CONSTANTSCONNECTION=()=>{
@@ -21,6 +22,7 @@ const GETDATALINK="${GETDATALINK}";
 const EMAILLINK="${EMAILLINK}";
 const ERANDIXAPILINK="${ERANDIXAPILINK}";
 const ERANDIXMANAGERLINK="${ERANDIXMANAGERLINK}";
+const MUSICSERVERLINK="${MUSICSERVERLINK}";
 `;
 
 localStorage.setItem("CONSTANTS",DATA);
@@ -28,5 +30,5 @@ localStorage.setItem("CONSTANTS",DATA);
 };
 
 `
-const ERANDIXMANAGERLINK="${ERANDIXMANAGERLINK}";
+const MUSICSERVERLINK="${MUSICSERVERLINK}";
 `
