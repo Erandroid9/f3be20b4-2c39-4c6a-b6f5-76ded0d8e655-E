@@ -40,6 +40,8 @@ import { GETINDEXDATA } from "../DataBase/GetIndexData/GetIndexData.js";
 import { FILEPICKER } from "../DataBase/FilePicker/FilePicker.js";
 import { REDUX } from "../DataBase/Redux/Redux.js";
 import { SPACEDWORDS } from "../DataBase/SpacedWords/SpacedWords.js";
+import { INPUTTED } from "../DataBase/Inputted/Inputted.js";
+import { PATHREVERSE } from "../DataBase/PathReverse/PathReverse.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -85,6 +87,8 @@ const GETINDEXDATA=${GETINDEXDATA};
 const FILEPICKER=${FILEPICKER};
 const REDUX=${REDUX};
 const SPACEDWORDS=${SPACEDWORDS};
+const INPUTTED=${INPUTTED};
+const PATHREVERSE=${PATHREVERSE};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -92,5 +96,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const SPACEDWORDS=${SPACEDWORDS};
+const PATHREVERSE=${PATHREVERSE};
 `

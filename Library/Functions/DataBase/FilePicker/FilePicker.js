@@ -9,28 +9,30 @@ export const FILEPICKER = (HOLDER, callback) => {
     input.onchange = () => {
 
       const file = input.files[0];
-
       if (!file) return;
 
       const reader = new FileReader();
 
       reader.onload = () => {
 
+        const rawPath = input.value || file.name;
+
+        const path = rawPath.replace(/\\/g, "/");
+
         callback({
           name: file.name,
           type: file.type,
           size: file.size,
-          data: reader.result 
+          path: path,
+          data: reader.result
         });
 
       };
 
-      reader.readAsDataURL(file); 
-
+      reader.readAsDataURL(file);
     };
 
     input.click();
-    
   });
 
 };
