@@ -38,6 +38,7 @@ import { ZOOM } from "../DataBase/Zoom/Zoom.js";
 import { INSPECTION } from "../DataBase/Inspect/Inspect.js";
 import { GETINDEXDATA } from "../DataBase/GetIndexData/GetIndexData.js";
 import { FILEPICKER } from "../DataBase/FilePicker/FilePicker.js";
+import { REDUX } from "../DataBase/Redux/Redux.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -81,6 +82,7 @@ const ZOOM=${ZOOM};
 const INSPECTION=${INSPECTION};
 const GETINDEXDATA=${GETINDEXDATA};
 const FILEPICKER=${FILEPICKER};
+const REDUX=${REDUX};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -88,5 +90,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const FILEPICKER=${FILEPICKER};
+const REDUX=${REDUX};
 `

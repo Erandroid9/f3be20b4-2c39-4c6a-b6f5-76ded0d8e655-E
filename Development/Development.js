@@ -6,11 +6,11 @@ const ERANDES=()=>{
 
 const MOBILEVIEW=()=>{
 
-    BUTTON("","Select File",TEAL,"",(ELEMENT)=>{
+    GETMUSICAPI((Data)=>{
 
-        FILEPICKER(ELEMENT,(Data)=>{
+        REDUX(Data,(Elements)=>{
 
-            console.log(Data.data)
+            console.log(Elements);
 
         });
 
