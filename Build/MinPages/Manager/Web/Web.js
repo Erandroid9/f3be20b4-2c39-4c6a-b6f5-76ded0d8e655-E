@@ -145,7 +145,7 @@ const DESKTOPVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Delted Project",FORESTGREEN,"",(ELEMENTSS)=>{
+            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",(ELEMENTSS)=>{
 
                 WIDTH(ELEMENTSS,"95%");
                 MARGINTOP(ELEMENT,"2%");
