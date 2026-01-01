@@ -13,6 +13,7 @@ import { RIGHTTEXTVIEW } from "../DataBase/Components/RightTextView/RighttextVie
 import { ROUNDINPUTVIEW } from "../DataBase/Components/RoundInputView/RoundInputView.js";
 import { TABLEVIEW } from "../DataBase/Components/TableView/TableView.js";
 import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
+import { BASE64CONVERTOR } from "../DataBase/Functions/Base64Convertor/Base64Convertor.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
 import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
@@ -36,6 +37,7 @@ const ROUNDINPUTVIEW=${ROUNDINPUTVIEW};
 const LEFTDIVVIEW=${LEFTDIVVIEW};
 const RIGHTDIVVIEW=${RIGHTDIVVIEW};
 const CENTREDIVVIEW=${CENTREDIVVIEW};
+const BASE64CONVERTOR=${BASE64CONVERTOR};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -43,5 +45,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const CENTREDIVVIEW=${CENTREDIVVIEW};
+const BASE64CONVERTOR=${BASE64CONVERTOR};
 `
