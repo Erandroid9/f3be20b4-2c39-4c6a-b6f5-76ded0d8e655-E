@@ -154,21 +154,19 @@ const DESKTOPVIEW=()=>{
 
         });
 
-        CENTREDIVVIEW(ELEMENT,"40%","30%","30%",(ELEMENTS)=>{
+        CENTREDIVVIEW(ELEMENT,"70%","30%","",(ELEMENTS)=>{
 
             GETDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
 
                 REDUX(Data,(Element)=>{
 
-                    console.log(Element)
+                    TABLEVIEW(ELEMENTS,"40%","300px",RED,"2%",()=>{
+
+                    });
 
                 });
 
             });
-
-        });
-
-        RIGHTDIVVIEW(ELEMENT,"30%",(ELEMENT)=>{
 
         });
 

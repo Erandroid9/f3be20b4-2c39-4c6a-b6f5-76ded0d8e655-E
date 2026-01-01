@@ -145,7 +145,7 @@ const DESKTOPVIEW=()=>{
 
             BREAK(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",(ELEMENTSS)=>{
+            BUTTON(ELEMENTS,"Deleted Projects",FORESTGREEN,"",(ELEMENTSS)=>{
 
                 WIDTH(ELEMENTSS,"95%");
                 MARGINTOP(ELEMENT,"2%");
@@ -154,11 +154,19 @@ const DESKTOPVIEW=()=>{
 
         });
 
-        CENTREDIVVIEW(ELEMENT,"40%","30%","30%",(ELEMENTS)=>{
+        CENTREDIVVIEW(ELEMENT,"70%","30%","",(ELEMENTS)=>{
 
-        });
+            GETDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
 
-        RIGHTDIVVIEW(ELEMENT,"30%",(ELEMENT)=>{
+                REDUX(Data,(Element)=>{
+
+                    TABLEVIEW(ELEMENTS,"40%","300px",RED,"2%",()=>{
+
+                    });
+
+                });
+
+            });
 
         });
 
