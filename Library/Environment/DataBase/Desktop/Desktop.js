@@ -35,16 +35,30 @@ export const DESKTOPENVIRONMENT=()=>{
                             
                 DISPLAYLOADER("100%");
                             
-                localStorage.setItem("PROJECT",data);
-
                 if (!localStorage.getItem("Packaged")) {
+
+                    localStorage.setItem("PROJECT",data);
 
                     localStorage.setItem("Packaged",new Date())
             
                     location.reload();
-
-                    return;
                     
+                }else{
+
+                    if (data === localStorage.getItem("PROJECT") ) {
+
+                        localStorage.setItem("PROJECT",data);
+                        
+                    }else{
+
+                        localStorage.setItem("PROJECT",data);
+
+                        localStorage.setItem("Packaged",new Date())
+            
+                        location.reload();
+
+                    };
+
                 };
             
             })
