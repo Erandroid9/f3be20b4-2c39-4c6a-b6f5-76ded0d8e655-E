@@ -43,6 +43,7 @@ import { SPACEDWORDS } from "../DataBase/SpacedWords/SpacedWords.js";
 import { INPUTTED } from "../DataBase/Inputted/Inputted.js";
 import { PATHREVERSE } from "../DataBase/PathReverse/PathReverse.js";
 import { DOWNLOADFILE } from "../DataBase/DownloadFile/DownloadFile.js";
+import { COPY } from "../DataBase/Copy/Copy.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -91,6 +92,7 @@ const SPACEDWORDS=${SPACEDWORDS};
 const INPUTTED=${INPUTTED};
 const PATHREVERSE=${PATHREVERSE};
 const DOWNLOADFILE=${DOWNLOADFILE};
+const COPY=${COPY};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -98,5 +100,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const DOWNLOADFILE=${DOWNLOADFILE};
+const COPY=${COPY};
 `
