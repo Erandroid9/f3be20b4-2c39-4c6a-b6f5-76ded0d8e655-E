@@ -2,6 +2,7 @@ import { DISPLAYLOADER } from "../../Pages/DataBase/DisplayLoader/DisplayLoader.
 import { ANDROIDENVIRONMENT } from "../DataBase/Android/Android.js";
 import { DESKTOPENVIRONMENT } from "../DataBase/Desktop/Desktop.js";
 import { DEVELOPMENTENVIRONMENT } from "../DataBase/Development/Development.js";
+import { OFFENVIRONMENT } from "../DataBase/Off/Off.js";
 import { WEBENVIRONMENT } from "../DataBase/Web/Web.js";
 
 export const CONFIGENVIRONMENT=()=>{
@@ -36,9 +37,19 @@ export const CONFIGENVIRONMENT=()=>{
                 
             } else {
 
-                DISPLAYLOADER("50%");
+                if (localStorage.getItem("Env") === "OFF") {
 
-                WEBENVIRONMENT();
+                    DISPLAYLOADER("50%");
+
+                    WEBENVIRONMENT();
+                    
+                } else {
+
+                    DISPLAYLOADER("50%");
+
+                    OFFENVIRONMENT();
+                    
+                };
 
             };
             
