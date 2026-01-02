@@ -14,6 +14,20 @@ export const VIDEO=(HOLDER,SRC,callBack)=>{
 
         callBack(ELEMENT);
 
+        ELEMENT.addEventListener("play", () => {
+
+            document.querySelectorAll("video").forEach(video => {
+
+                CHECKER(video !== ELEMENT,()=>{
+
+                    video.pause();
+
+                });
+            
+            });
+
+        });
+
     });
 
 };

@@ -4,8 +4,6 @@ export const CHECKER=(TERM,callback)=>{
 
         callback();
 
-        return;
-        
     };
 
 };
