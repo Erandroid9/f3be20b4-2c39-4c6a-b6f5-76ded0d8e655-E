@@ -30,7 +30,7 @@ export const OFFENVIRONMENT=()=>{
 
             const ERANDES=()=>{
 
-                DISPLAY(BODY,`
+                DISPLAY("",`
 
                     <h1>ELITON</h1>
 
