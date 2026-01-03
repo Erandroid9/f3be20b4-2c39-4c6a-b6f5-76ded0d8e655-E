@@ -5,12 +5,10 @@ import { DISPLAYLOADER } from "../Library/Pages/DataBase/DisplayLoader/DisplayLo
 
 export const CONNECTIONS=()=>{
 
-    //ASSETSCONNECTION();
+    ASSETSCONNECTION();
 
-    //DISPLAYLOADER("5%");
+    DISPLAYLOADER("5%");
 
-    //DATALOADER();
-
-    OFFENVIRONMENT()
+    DATALOADER();
 
 };
