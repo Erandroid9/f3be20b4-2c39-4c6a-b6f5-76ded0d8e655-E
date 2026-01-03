@@ -28,39 +28,15 @@ export const OFFENVIRONMENT=()=>{
             
         } else {
 
-            const INSTRUCTIONS=`
+            const ERANDES=()=>{
 
-            <h1>ELITON</h1>
+                DISPLAY(BODY,`
+                    
+                `);
 
-            <p>Thank You For Downloading And Installing Eliton Into Your Project.</p>
+            };
 
-            <h2>Instructions Of Usage</h2>
-
-            <p>Create a Folder Titled SetUp at the Root of the Project Where Your Index.html File Is Located.</p>
-
-            <p>Inside That SetUp Folder,Create a File Titled Project.js</p>
-
-            <h1>Note</h1>
-
-            <p>Please Look at the Names and Spellings ,if they Don't Match Then You Wont be able to Use ELiton to Build Your Apps.</p>
-            
-            <h2>Getting Started</h2>
-
-            <p>Instead the Project.js File copy the code snippet and Paste it so as the Eliton can run Successfully</p>
-
-            <h3>Code Snippet</h3>
-
-            <p>
-
-                const ERANDES=()=>{
-                
-                };
-            
-            </p>
-
-            `;
-
-            localStorage.setItem("PROJECT",INSTRUCTIONS);
+            localStorage.setItem("PROJECT",`const ERANDES=${ERANDES};`);
 
             location.reload();
 
