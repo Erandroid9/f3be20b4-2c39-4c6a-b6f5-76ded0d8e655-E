@@ -2,6 +2,14 @@ import { DISPLAYLOADER } from "../../../Pages/DataBase/DisplayLoader/DisplayLoad
 
 export const OFFENVIRONMENT=()=>{
 
+    const style = document.createElement('style');
+
+    style.textContent = `
+
+    `;
+
+    document.head.appendChild(style);
+
     DISPLAYLOADER("75%");
 
     fetch("./SetUp/Project.js")
