@@ -11,6 +11,7 @@ import { GETDATALINK } from "../DataBase/GetDataLink/GetDataLink.js";
 import { INSERTDATALINK } from "../DataBase/InsertDataLink/InsertDataLink.js";
 import { IPNIZATIONLINK } from "../DataBase/IpnizationLink/IpnizationLink.js";
 import { MUSICSERVERLINK } from "../DataBase/MusicServerLink/MusicServerLink.js";
+import { SUBMIZATIONLINK } from "../DataBase/SubmizationLink/SubmizationLink.js";
 import { TOKENIZATIONLINK } from "../DataBase/TokenizationLink/TokenizationLink.js";
 import { UPDATEDATALINK } from "../DataBase/UpdateDataLink/UpdateDataLink.js";
 
@@ -31,6 +32,7 @@ const COMPANYNAME="${COMPANYNAME}";
 const COMPANYLINK="${COMPANYLINK}";
 const TOKENIZATIONLINK="${TOKENIZATIONLINK}";
 const IPNIZATIONLINK="${IPNIZATIONLINK}";
+const SUBMIZATIONLINK="${SUBMIZATIONLINK}";
 `;
 
 localStorage.setItem("CONSTANTS",DATA);
@@ -38,5 +40,5 @@ localStorage.setItem("CONSTANTS",DATA);
 };
 
 `
-const IPNIZATIONLINK="${IPNIZATIONLINK}";
+const SUBMIZATIONLINK="${SUBMIZATIONLINK}";
 `
