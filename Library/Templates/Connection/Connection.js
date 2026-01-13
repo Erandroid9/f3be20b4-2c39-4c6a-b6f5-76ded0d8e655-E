@@ -17,6 +17,7 @@ import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
 import { BASE64CONVERTOR } from "../DataBase/Functions/Base64Convertor/Base64Convertor.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
+import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
 import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
 
 export const TEMPLATESCONNECTION=()=>{
@@ -40,6 +41,7 @@ const RIGHTDIVVIEW=${RIGHTDIVVIEW};
 const CENTREDIVVIEW=${CENTREDIVVIEW};
 const BASE64CONVERTOR=${BASE64CONVERTOR};
 const INLINEVIEW=${INLINEVIEW};
+const QELPAY=${QELPAY};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -47,5 +49,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const INLINEVIEW=${INLINEVIEW};
+const QELPAY=${QELPAY};
 `
