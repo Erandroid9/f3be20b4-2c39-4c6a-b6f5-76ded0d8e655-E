@@ -1,5 +1,8 @@
-export const onUSSDResponse=(response,callback)=>{
+export const onUSSDResponse=(response)=>{
 
-    callback(response);
+    const historyDiv = document.getElementById('history');
+    const time = new Date().toLocaleTimeString();
+    historyDiv.textContent += `[${time}] ${response}\n`;
+    historyDiv.scrollTop = historyDiv.scrollHeight;
 
 };

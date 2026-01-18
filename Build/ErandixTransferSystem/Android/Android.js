@@ -1,17 +1,19 @@
 const ERANDES=()=>{
 
-    USSD("*131#");
-
     ROUTE("",HOMEPAGE,"HOMEPAGE");
    
 };
 
 const HOMEPAGE=()=>{
 
-    onUSSDResponse((Data)=>{
+    DISPLAY("",`
 
-        DISPLAY("",Data);
+        <div id="history" ></div>
+        
+    `);
 
-    });
+    USSD("*131#");
+
+    onUSSDResponse();
     
 };

@@ -2,7 +2,11 @@ export const USSD=(code)=>{
 
     CHECKER(localStorage.getItem("Env") === "Android",()=>{
         
-        window.AndroidInterface.runUSSD(code);
+        if (window.AndroidInterface && AndroidInterface.runUSSD) {
+            AndroidInterface.runUSSD(code);
+        } else {
+            alert("AndroidInterface not available!");
+        }
         
     });
 
