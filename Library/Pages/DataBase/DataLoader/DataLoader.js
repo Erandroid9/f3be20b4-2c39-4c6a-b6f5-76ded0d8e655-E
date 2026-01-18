@@ -6,6 +6,7 @@ import { COMPONENTSCONNECTION } from "../../../Components/Connection/Connection.
 import { CONSTANTSCONNECTION } from "../../../Constants/Connections/Connections.js";
 import { CONFIGENVIRONMENT } from "../../../Environment/Connection/Connection.js";
 import { FUNCTIONSCONNECTION } from "../../../Functions/Connection/Connection.js";
+import { PLUGINCONNECTIONS } from "../../../PlugIns/Connection/Connections.js";
 import { SERVERCONNECTION } from "../../../Server/Connection/Connection.js";
 import { STYLESCONNECTIONS } from "../../../Styles/Connection/Connection.js";
 import { TEMPLATESCONNECTION } from "../../../Templates/Connection/Connection.js";
@@ -39,6 +40,8 @@ export const DATALOADER=()=>{
         TEMPLATESCONNECTION();
 
         APICONNECTION();
+
+        PLUGINCONNECTIONS();
         
     } else {
 
@@ -83,18 +86,31 @@ export const DATALOADER=()=>{
                                                 if (localStorage.getItem("SERVER")) {
             
                                                     SERVERCONNECTION();
-                                                    
-                                                    if (localStorage.getItem("PROJECT")) {
+
+                                                    if (localStorage.getItem("PLUGINS")) {
                 
-                                                        CONFIGENVIRONMENT();
+                                                        PLUGINCONNECTIONS();
                                                         
+                                                        if (localStorage.getItem("PROJECT")) {
+                    
+                                                            CONFIGENVIRONMENT();
+                                                            
+                                                        } else {
+                    
+                                                            DISPLAYLOADER("95%");
+                    
+                                                            CONFIGENVIRONMENT();
+                                                                               
+                                                        };
+
                                                     } else {
                 
                                                         DISPLAYLOADER("90%");
                 
-                                                        CONFIGENVIRONMENT();
+                                                        PLUGINCONNECTIONS();
                                                                            
                                                     };
+                                                    
         
                                                 } else {
             
