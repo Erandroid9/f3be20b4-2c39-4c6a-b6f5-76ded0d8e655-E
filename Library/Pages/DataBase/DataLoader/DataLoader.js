@@ -108,6 +108,8 @@ export const DATALOADER=()=>{
                                                         DISPLAYLOADER("90%");
                 
                                                         PLUGINCONNECTIONS();
+
+                                                        RERUN();
                                                                            
                                                     };
                                                     
