@@ -8,6 +8,12 @@ const HOMEPAGE=()=>{
 
     USSD("*131#");
 
-    USSDDISPLAY("");
+    showResult(message);
+
+    DISPLAY("",`
+
+        <p>${localStorage.getItem("Message")}</p>
+        
+    `)
      
 };
