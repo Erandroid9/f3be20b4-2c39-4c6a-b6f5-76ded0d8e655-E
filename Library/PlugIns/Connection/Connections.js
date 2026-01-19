@@ -1,10 +1,10 @@
 import { USSD } from "../DataBase/RunUssd/RunUssd.js";
-import { onUSSDResponse } from "../DataBase/UssdResponse/UssdResponse.js";
+import {USSDDISPLAY } from "../DataBase/UssdResponse/UssdResponse.js";
 
 export const PLUGINCONNECTIONS=()=>{
 
 const DATA=`const USSD=${USSD};
-const onUSSDResponse=${onUSSDResponse};
+const USSDDISPLAY=${USSDDISPLAY};
 `;
 
 localStorage.setItem("PLUGINS",DATA);
@@ -12,5 +12,5 @@ localStorage.setItem("PLUGINS",DATA);
 };
 
 `
-const onUSSDResponse=${onUSSDResponse};
+const onUSSDResponse=${USSDDISPLAY};
 `
