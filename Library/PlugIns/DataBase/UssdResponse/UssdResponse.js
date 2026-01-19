@@ -1,11 +1,5 @@
-export const USSDDISPLAY=(ELEMENT)=>{
+export   function showResult(message) {
 
-    function onUSSDResponse(response) {
+    localStorage.setItem("Message",message);
 
-        DISPLAY(ELEMENT,response);
-
-    };
-
-    onUSSDResponse();
-
-};
+}
