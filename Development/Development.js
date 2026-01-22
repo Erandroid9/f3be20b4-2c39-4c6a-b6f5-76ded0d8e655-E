@@ -53,6 +53,8 @@ const HOMEPAGE=()=>{
                                             });
 
                                             FOOTER(ELEMENTA,(ELES)=>{
+
+                                                BACKGROUND(ELES,BLACK);
     
                                                 LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
                         
