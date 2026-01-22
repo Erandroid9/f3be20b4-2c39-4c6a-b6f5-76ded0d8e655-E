@@ -36,13 +36,14 @@ const HOMEPAGE=()=>{
                                 BOTTOM(ELEMENTA,"");
                                 TOP(ELEMENTA,"50px");
                                 LEFT(ELEMENTA,"");
+                                OVERFLOWHIDDEN(ELEMENTA);
                                 OVERFLOWX(ELEMENTA);
     
                                 REDUX(Datata,(Datate)=>{
     
                                     CHECKER(Data.ID === Datate.ProductCatergory && Datate.Approved,()=>{
     
-                                        INLINEVIEW(ELEMENTA,"150px","90%",TRANSPARENT,"2%",(ELEMENTA)=>{
+                                        INLINEVIEW(ELEMENTA,"150px","100%",TRANSPARENT,"2%",(ELEMENTA)=>{
 
                                             FLEXSHRINK(ELEMENTA);
 
@@ -57,6 +58,8 @@ const HOMEPAGE=()=>{
                                                 BACKGROUND(ELES,BLACK);
     
                                                 LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
+
+                                                    FONTSIZE(ELEMENTSA,"15px");
                         
                                                 });
                         
