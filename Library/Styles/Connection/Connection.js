@@ -40,6 +40,7 @@ import { TOP } from "../DataBase/Top/Top.js";
 import { WIDTH } from "../DataBase/Width/Width.js";
 import { LEFTTEXTALIGN } from "../DataBase/LeftTextAlign/LeftTextAlign.js";
 import { RIGHTTEXTALIGN } from "../DataBase/RightTextAlign/RightTextAlign.js";
+import { FLEXSHRINK } from "../DataBase/FlexShrink/FlexShrink.js";
 
 export const STYLESCONNECTIONS=()=>{
 const DATA=`const POSITIONFIXED=${POSITIONFIXED};
@@ -84,6 +85,7 @@ const OVERFLOWX=${OVERFLOWX};
 const OVERFLOW=${OVERFLOW};
 const LEFTTEXTALIGN=${LEFTTEXTALIGN};
 const RIGHTTEXTALIGN=${RIGHTTEXTALIGN};
+const FLEXSHRINK=${FLEXSHRINK};
 `;
 
 localStorage.setItem("STYLES",DATA);
@@ -91,5 +93,5 @@ localStorage.setItem("STYLES",DATA);
 };
 
 `
-const RIGHTTEXTALIGN=${RIGHTTEXTALIGN};
+const FLEXSHRINK=${FLEXSHRINK};
 `
