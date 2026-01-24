@@ -1,6 +1,10 @@
 const ERANDES=()=>{
 
-    ROUTE("",HOMEPAGE,"HOMEPAGE");
+    DOWNLOADSAVEINDEX(QELDATABASELINK,"Catergory",(Data)=>{
+
+    });
+
+   ROUTE("",HOMEPAGE,"HOMEPAGE");
    
 };
 
