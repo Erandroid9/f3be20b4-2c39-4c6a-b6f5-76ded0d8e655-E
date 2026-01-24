@@ -1,4 +1,4 @@
-export const DOWNLOADSAVEINDEX=(URL,NAME,CALLBACK)=>{
+export const DOWNLOADSAVEINDEX=(URL,NAME,CALLBACK,CALLBACKONE)=>{
 
     GETDATA(URL,NAME,(Data)=>{
 
@@ -19,7 +19,7 @@ export const DOWNLOADSAVEINDEX=(URL,NAME,CALLBACK)=>{
 
             },()=>{
 
-                CALLBACK();
+                CALLBACKONE();
 
             });
 

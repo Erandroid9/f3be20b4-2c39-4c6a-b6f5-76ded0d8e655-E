@@ -1,11 +1,27 @@
 const ERANDES=()=>{
 
+      ROUTE("",HOMEPAGE,"HOMEPAGE");
+
     DOWNLOADSAVEINDEX(QELDATABASELINK,"Catergory",(Data)=>{
+
+        DOWNLOADSAVEINDEX(QELDATABASELINK,"Products",(Data)=>{
+
+        },()=>{
+
+        });
+
+    },()=>{
+
+        DOWNLOADSAVEINDEX(QELDATABASELINK,"Products",(Data)=>{
+
+        },()=>{
+
+            ROUTE("",HOMEPAGE,"HOMEPAGE");
+            
+        });
 
     });
 
-   ROUTE("",HOMEPAGE,"HOMEPAGE");
-   
 };
 
 const HOMEPAGE=()=>{
