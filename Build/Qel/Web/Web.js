@@ -32,6 +32,30 @@ const PAGESMANAGERS=()=>{
 };
 
 const DESKTOPVIEW=()=>{
+    
+    HEADERFOOTERVIEW((ELEMENT)=>{
+
+        LEFTTEXTVIEW(ELEMENT,"Qel Medistore",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+    },(ELEMENT)=>{
+
+        TEXTVIEW(ELEMENT,"Contact Us",()=>{
+            
+        });
+
+        TEXTVIEW(ELEMENT,"App",()=>{
+            
+        });
+
+        TEXTVIEW(ELEMENT,"Policies",()=>{
+            
+        });
+
+    });
 
 };
 
