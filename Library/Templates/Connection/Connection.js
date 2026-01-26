@@ -13,11 +13,13 @@ import { RIGHTICONVIEW } from "../DataBase/Components/RightIconView/RightIconVie
 import { RIGHTTEXTVIEW } from "../DataBase/Components/RightTextView/RighttextView.js";
 import { ROUNDINPUTVIEW } from "../DataBase/Components/RoundInputView/RoundInputView.js";
 import { TABLEVIEW } from "../DataBase/Components/TableView/TableView.js";
+import { TEXTVIEW } from "../DataBase/Components/TextView/TextView.js";
 import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
 import { QELDATABASELINK } from "../DataBase/Constants/QelDataBaseLink/QelDataBaseLink.js";
 import { BASE64CONVERTOR } from "../DataBase/Functions/Base64Convertor/Base64Convertor.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
 import { GETSAVEDINDEX } from "../DataBase/Functions/GetSavedIndex/GetSavedIndex.js";
+import { LOGINCHECKER } from "../DataBase/Functions/LoginChecker/LoginChecker.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
 import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
 import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
@@ -46,6 +48,8 @@ const INLINEVIEW=${INLINEVIEW};
 const QELPAY=${QELPAY};
 const QELDATABASELINK="${QELDATABASELINK}";
 const GETSAVEDINDEX=${GETSAVEDINDEX};
+const LOGINCHECKER=${LOGINCHECKER};
+const TEXTVIEW=${TEXTVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -53,5 +57,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const GETSAVEDINDEX=${GETSAVEDINDEX};
+const TEXTVIEW=${TEXTVIEW};
 `

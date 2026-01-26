@@ -42,7 +42,6 @@ const HOMEPAGE=()=>{
 
                         LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
 
-
                         });
 
                     });
@@ -102,6 +101,8 @@ const HOMEPAGE=()=>{
 
                                         JSONIFICATION (Datate,(Dares)=>{
 
+                                            DATASTORE("","Pages","HOMEPAGE");
+
                                             DATASTORE("","Items",Dares);
 
                                             ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
@@ -140,7 +141,11 @@ const HOMEPAGE=()=>{
 
             CLICK(ELEMENTS,()=>{
 
-                ROUTE(" ",SHOPPINGACCOUNTPAGE,"HOMEPAGE");
+                LOGINCHECKER(()=>{
+
+                    ROUTE(" ",SHOPPINGACCOUNTPAGE,"HOMEPAGE");
+
+                });
 
             });
 
@@ -170,7 +175,15 @@ const DETAILSPAGE=()=>{
 
                 CLICK(ELEMENTS,()=>{
 
-                    ROUTE("",HOMEPAGE,"HOMEPAGE");
+                    CONDITION(sessionStorage.getItem("Pages") === "HOMEPAGE",()=>{
+
+                        ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+                    },()=>{
+
+                        ROUTE("",PRODUCTPAGE,"PRODUCTPAGE");
+
+                    });
 
                 });
 
@@ -182,7 +195,36 @@ const DETAILSPAGE=()=>{
 
         },(ELEMENT)=>{
 
-            FOOTER(ELEMENT,(ELEMENTS)=>{
+            DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+
+                BREAK(ELEMENTS0);
+                OVERFLOWHIDDEN(ELEMENTS0);
+
+                IMAGE(ELEMENTS0,"","",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                    COVEROBJECTFIT(ELEMENTSS);
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENT,"90%","50px",TRANSPARENT,"",(ELEMENTA)=>{
+
+                LEFTTEXTVIEW(ELEMENTA,"Price",()=>{
+
+                });
+
+                RIGHTTEXTVIEW(ELEMENTA,"UGX:"+Data.ProductPrice,()=>{
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENT,"90%","50px",TRANSPARENT,"",(ELEMENTS)=>{
 
                 BUTTON(ELEMENTS,"Cart",TEAL,WHITE,(ELEMENTSS)=>{
 
@@ -196,9 +238,103 @@ const DETAILSPAGE=()=>{
                     WIDTH(ELEMENTSS,"40%");
                     HEIGHT(ELEMENTSS,"40px");
 
+                    CLICK(ELEMENTSS,()=>{
+
+                        LOGINCHECKER(()=>{
+
+                            QELPAY(Data.ProductPrice,Data.ProductName,"");
+
+                        });
+
+                    });
+
                 });
 
             });
+
+            BREAK(ELEMENT);BREAK(ELEMENT);
+
+            LEFTTEXTVIEW(ELEMENT,"Product Details",()=>{
+
+            });
+
+            BREAK(ELEMENT);
+
+            TEXTVIEW(ELEMENT,Data.ProductDetails,()=>{
+
+            });
+
+            BREAK(ELEMENT);
+
+            CHECKER(Data.ProductImage,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+
+            });
+
+            CHECKER(Data.ProductImageOne,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageOne,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+                
+            });
+            
+            CHECKER(Data.ProductImageTwo,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageTwo,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+                
+            });
+
+            CHECKER(Data.ProductImageThree,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageThree,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+                
+            });
+
+            BREAK(ELEMENT);BREAK(ELEMENT);
 
         });
 
@@ -217,6 +353,10 @@ const USERACCOUNTPAGE=()=>{
                 ROUTE("",HOMEPAGE,"HOMEPAGE");
 
             });
+
+        });
+
+        TEXTVIEW(ELEMENT,"Kampala",(ELEMENTS)=>{
 
         });
 
@@ -302,6 +442,114 @@ const CARTERGORYPAGE=()=>{
         });
 
     },(ELEMENT)=>{
+
+        GETSAVEDINDEX("Catergory",(Data)=>{
+
+            CHECKER(Data.Approved,()=>{
+
+                TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+
+                    IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                        COVEROBJECTFIT(ELEMENTSS);
+
+                    });
+
+                    FOOTER(ELES,(ELES)=>{
+
+                        BACKGROUND(ELES,BLACK);
+
+                        LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
+
+                            FONTSIZE(ELEMENTSA,"15px");
+
+                        });
+                
+                    });
+
+                    CLICK(ELES,()=>{
+
+                        DATASTORE("","Sector",Data.ID);
+
+                        DATASTORE("","SectorName",Data.ProductName);
+
+                        ROUTE(" ",PRODUCTPAGE,"CARTERGORYPAGE");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+    });
+
+};
+
+const PRODUCTPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",CARTERGORYPAGE,"CARTERGORYPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,sessionStorage.getItem("SectorName"),(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        GETSAVEDINDEX("Products",(Data)=>{
+
+            CHECKER(sessionStorage.getItem("Sector")=== Data.ProductCatergory||Data.Approved,()=>{
+
+                TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+
+                    IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                        COVEROBJECTFIT(ELEMENTSS);
+
+                    });
+
+                    FOOTER(ELES,(ELESI)=>{
+
+                        BACKGROUND(ELESI,BLACK);
+
+                        LEFTTEXTVIEW(ELESI,Data.ProductName,(ELEMENTSA)=>{
+
+                            FONTSIZE(ELEMENTSA,"15px");
+
+                        });
+                
+                    });
+
+                    CLICK(ELES,()=>{
+
+                        JSONIFICATION (Data,(Dares)=>{
+
+                            DATASTORE("","Pages","PRODUCTPAGE");
+
+                            DATASTORE("","Items",Dares);
+
+                            ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
+
+                        });
+
+                    });
+
+                });
+
+            });
+
+        });
 
     });
 
