@@ -1,6 +1,6 @@
 const ERANDES=()=>{
 
-    PAGESMANAGERS();
+    ROUTE("",HOMEPAGE,"HOMEPAGE");
 
     DOWNLOADSAVEINDEX(QELDATABASELINK,"Catergory",(Data)=>{
 
@@ -16,7 +16,7 @@ const ERANDES=()=>{
 
         },()=>{
 
-            PAGESMANAGERS();
+            ROUTE("",HOMEPAGE,"HOMEPAGE");
             
         });
 
@@ -24,26 +24,9 @@ const ERANDES=()=>{
 
 };
 
-
-const PAGESMANAGERS=()=>{
-
-    SWITCHER("800px",()=>{HOMEPAGE()},()=>{HOMEPAGE();})
-
-};
-
 const HOMEPAGE=()=>{
 
-    HEADERFOOTERVIEW((ELEMENT)=>{
-
-        LEFTTEXTVIEW(ELEMENT,"Qel Medistore",()=>{
-
-        });
-
-        RIGHTICONVIEW(ELEMENT,WHITEUSERICON,()=>{
-
-        });
-
-    },(ELEMENT)=>{
+    FOOTERVIEW((ELEMENT)=>{
 
         GETSAVEDINDEX("Catergory",(Data)=>{
 
@@ -118,7 +101,11 @@ const HOMEPAGE=()=>{
 
                                         JSONIFICATION (Datate,(Dares)=>{
 
+                                            DATASTORE("","Pages","HOMEPAGE");
+
                                             DATASTORE("","Items",Dares);
+
+                                            ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
 
                                         });
 
@@ -140,24 +127,573 @@ const HOMEPAGE=()=>{
 
     },(ELEMENT)=>{
 
-        TEXTVIEW(ELEMENT,"Contact Us",()=>{
-            
-        });
-
-        TEXTVIEW(ELEMENT,"App",(ELEMENTS)=>{
+        ICONVIEW(ELEMENT,WHITEGRIDICON,(ELEMENTS)=>{
 
             CLICK(ELEMENTS,()=>{
 
-                WEBSITE("https://erandroid9.github.io/Eliton/Library/Assets/DataBase/Raw/Apps/Android/qel.apk");
+                ROUTE(" ",CARTERGORYPAGE,"HOMEPAGE");
 
-            });
-            
+            }); 
+
         });
 
-        TEXTVIEW(ELEMENT,"Policies",()=>{
+        ICONVIEW(ELEMENT,WHITESHOPPINGCART,(ELEMENTS)=>{
 
-            WEBSITE("https://qelmedistore.site/PrivacyPolicy.html");
-  
+            CLICK(ELEMENTS,()=>{
+
+                LOGINCHECKER(()=>{
+
+                    ROUTE(" ",SHOPPINGACCOUNTPAGE,"HOMEPAGE");
+
+                });
+
+            });
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEUSERPROFILEICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                CONDITION(localStorage.getItem("User"),()=>{
+
+                    ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
+
+                },()=>{
+
+                    ROUTE(" ",LOGINPAGE,"HOMEPAGE");
+
+                });
+
+            });
+
+        });
+
+    });
+
+};
+
+const LOGINPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Activation",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"Log In",(ELEMENTS)=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Email",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+            WIDTH(ELEMENTSS,"90%");
+            HEIGHT(ELEMENTSS,"40px");
+            RADIUS(ELEMENTSS,"10px");
+
+            CLICK(ELEMENTSS,()=>{
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"p","New To App,Create One?",ORANGE,(ELIS)=>{
+
+            CLICK(ELIS,()=>{
+
+                CREATEACCOUNTPAGE(ELEMENT);
+                
+            });
+
+        });
+
+    });
+
+};
+
+const CREATEACCOUNTPAGE=(ELEMENT)=>{
+
+    CLEAR(ELEMENT);
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Create Account",(ELEMENTS)=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Name",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Email",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"tel","Enter Your Phone Number",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Location",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    BUTTON(ELEMENT,"Sign Up",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+        WIDTH(ELEMENTSS,"90%");
+        HEIGHT(ELEMENTSS,"40px");
+        RADIUS(ELEMENTSS,"10px");
+
+        CLICK(ELEMENTSS,()=>{
+
+        });
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXT(ELEMENT,"p","One Of Us,Log In?",ORANGE,(ELIS)=>{
+
+        CLICK(ELIS,()=>{
+
+            LOGINPAGE();
+
+        });
+
+    });
+
+};
+
+const DETAILSPAGE=()=>{
+
+    DEJSONDATA("","Items",(Data)=>{
+
+        HEADERVIEW((ELEMENT)=>{
+
+            LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+                CLICK(ELEMENTS,()=>{
+
+                    CONDITION(sessionStorage.getItem("Pages") === "HOMEPAGE",()=>{
+
+                        ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+                    },()=>{
+
+                        ROUTE("",PRODUCTPAGE,"PRODUCTPAGE");
+
+                    });
+
+                });
+
+            });
+
+            RIGHTTEXTVIEW(ELEMENT,Data.ProductName,(ELEMENTS)=>{
+
+            });
+
+        },(ELEMENT)=>{
+
+            DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+
+                BREAK(ELEMENTS0);
+                OVERFLOWHIDDEN(ELEMENTS0);
+
+                IMAGE(ELEMENTS0,"","",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                    COVEROBJECTFIT(ELEMENTSS);
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENT,"90%","50px",TRANSPARENT,"",(ELEMENTA)=>{
+
+                LEFTTEXTVIEW(ELEMENTA,"Price",()=>{
+
+                });
+
+                RIGHTTEXTVIEW(ELEMENTA,"UGX:"+Data.ProductPrice,()=>{
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENT,"90%","50px",TRANSPARENT,"",(ELEMENTS)=>{
+
+                BUTTON(ELEMENTS,"Cart",TEAL,WHITE,(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"40%");
+                    HEIGHT(ELEMENTSS,"40px");
+
+                });
+
+                BUTTON(ELEMENTS,"Buy",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"40%");
+                    HEIGHT(ELEMENTSS,"40px");
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        LOGINCHECKER(()=>{
+
+                            QELPAY(Data.ProductPrice,Data.ProductName,"");
+
+                        });
+
+                    });
+
+                });
+
+            });
+
+            BREAK(ELEMENT);BREAK(ELEMENT);
+
+            LEFTTEXTVIEW(ELEMENT,"Product Details",()=>{
+
+            });
+
+            BREAK(ELEMENT);
+
+            TEXTVIEW(ELEMENT,Data.ProductDetails,()=>{
+
+            });
+
+            BREAK(ELEMENT);
+
+            CHECKER(Data.ProductImage,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+
+            });
+
+            CHECKER(Data.ProductImageOne,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageOne,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+                
+            });
+            
+            CHECKER(Data.ProductImageTwo,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageTwo,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+                
+            });
+
+            CHECKER(Data.ProductImageThree,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageThree,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+                
+            });
+
+            BREAK(ELEMENT);BREAK(ELEMENT);
+
+        });
+
+    });
+
+};
+
+const USERACCOUNTPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        TEXTVIEW(ELEMENT,"Kampala",(ELEMENTS)=>{
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Profile",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS)=>{
+
+            MARGIN(ELEMENTS,"2%");
+            RADIUS(ELEMENTS,"10px");
+            OVERFLOW(ELEMENTS);
+
+        });
+
+        BUTTON(ELEMENT,"Settings",FORESTGREEN,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+            MARGIN(ELEMENTS,"2%");
+
+        });
+
+        BUTTON(ELEMENT,"Policies",FORESTGREEN,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+            MARGIN(ELEMENTS,"2%");
+
+        });
+
+        BUTTON(ELEMENT,"Updates",FORESTGREEN,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+            MARGIN(ELEMENTS,"2%");
+
+        });
+
+    });
+
+};
+
+const SHOPPINGACCOUNTPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"My Cart",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+    });
+
+};
+
+const CARTERGORYPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Catergroy",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        GETSAVEDINDEX("Catergory",(Data)=>{
+
+            CHECKER(Data.Approved,()=>{
+
+                TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+
+                    IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                        COVEROBJECTFIT(ELEMENTSS);
+
+                    });
+
+                    FOOTER(ELES,(ELES)=>{
+
+                        BACKGROUND(ELES,BLACK);
+
+                        LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
+
+                            FONTSIZE(ELEMENTSA,"15px");
+
+                        });
+                
+                    });
+
+                    CLICK(ELES,()=>{
+
+                        DATASTORE("","Sector",Data.ID);
+
+                        DATASTORE("","SectorName",Data.ProductName);
+
+                        ROUTE(" ",PRODUCTPAGE,"CARTERGORYPAGE");
+
+                    });
+
+                });
+
+            });
+
+        });
+
+    });
+
+};
+
+const PRODUCTPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",CARTERGORYPAGE,"CARTERGORYPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,sessionStorage.getItem("SectorName"),(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        GETSAVEDINDEX("Products",(Data)=>{
+
+            
+            CHECKER(Data.ProductCatergory === sessionStorage.getItem("Sector") && Data.Approved,()=>{
+
+                TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+
+                    IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                        COVEROBJECTFIT(ELEMENTSS);
+
+                    });
+
+                    FOOTER(ELES,(ELESI)=>{
+
+                        BACKGROUND(ELESI,BLACK);
+
+                        LEFTTEXTVIEW(ELESI,Data.ProductName,(ELEMENTSA)=>{
+
+                            FONTSIZE(ELEMENTSA,"15px");
+
+                        });
+                
+                    });
+
+                    CLICK(ELES,()=>{
+
+                        JSONIFICATION (Data,(Dares)=>{
+
+                            DATASTORE("","Pages","PRODUCTPAGE");
+
+                            DATASTORE("","Items",Dares);
+
+                            ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
+
+                        });
+
+                    });
+
+                });
+
+            });
+
         });
 
     });

@@ -24,7 +24,6 @@ const ERANDES=()=>{
 
 };
 
-
 const PAGESMANAGERS=()=>{
 
     SWITCHER("800px",()=>{HOMEPAGE()},()=>{HOMEPAGE();})

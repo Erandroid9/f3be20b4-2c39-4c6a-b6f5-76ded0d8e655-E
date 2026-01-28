@@ -155,9 +155,153 @@ const HOMEPAGE=()=>{
 
             CLICK(ELEMENTS,()=>{
 
-                ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
+                CONDITION(localStorage.getItem("User"),()=>{
+
+                    ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
+
+                },()=>{
+
+                    ROUTE(" ",LOGINPAGE,"HOMEPAGE");
+
+                });
 
             });
+
+        });
+
+    });
+
+};
+
+const LOGINPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Activation",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"Log In",(ELEMENTS)=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Email",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+            WIDTH(ELEMENTSS,"90%");
+            HEIGHT(ELEMENTSS,"40px");
+            RADIUS(ELEMENTSS,"10px");
+
+            CLICK(ELEMENTSS,()=>{
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"p","New To App,Create One?",ORANGE,(ELIS)=>{
+
+            CLICK(ELIS,()=>{
+
+                CREATEACCOUNTPAGE(ELEMENT);
+                
+            });
+
+        });
+
+    });
+
+};
+
+const CREATEACCOUNTPAGE=(ELEMENT)=>{
+
+    CLEAR(ELEMENT);
+
+    BREAK(ELEMENT);
+
+    TEXTVIEW(ELEMENT,"Create Account",(ELEMENTS)=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Name",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Email",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"tel","Enter Your Phone Number",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Location",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    BUTTON(ELEMENT,"Sign Up",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+        WIDTH(ELEMENTSS,"90%");
+        HEIGHT(ELEMENTSS,"40px");
+        RADIUS(ELEMENTSS,"10px");
+
+        CLICK(ELEMENTSS,()=>{
+
+        });
+
+    });
+
+    BREAK(ELEMENT);
+
+    TEXT(ELEMENT,"p","One Of Us,Log In?",ORANGE,(ELIS)=>{
+
+        CLICK(ELIS,()=>{
+
+            LOGINPAGE();
 
         });
 
@@ -509,7 +653,8 @@ const PRODUCTPAGE=()=>{
 
         GETSAVEDINDEX("Products",(Data)=>{
 
-            CHECKER(sessionStorage.getItem("Sector")=== Data.ProductCatergory||Data.Approved,()=>{
+            
+            CHECKER(Data.ProductCatergory === sessionStorage.getItem("Sector") && Data.Approved,()=>{
 
                 TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
 
