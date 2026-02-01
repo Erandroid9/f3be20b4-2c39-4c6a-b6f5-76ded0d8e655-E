@@ -34,6 +34,22 @@ const MOBILEVIEW=()=>{
 
     },(ELEMENT)=>{
 
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"Family",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Business",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Health",()=>{
+
+            });
+
+        });
+
     });
 
 };
