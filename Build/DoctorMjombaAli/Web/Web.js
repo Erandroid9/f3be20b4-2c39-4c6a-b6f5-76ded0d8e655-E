@@ -576,7 +576,74 @@ const HEADERPAGES=()=>{
 
             REDUX(Data,(element)=>{
 
-                console.log(element);
+                DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+                    IMAGE(ELEMENTS,"","",element.Image,TRANSPARENT,(ELEMENTS)=>{
+
+                        POSITIONABSOLUTE(ELEMENTS);
+                        LEFT(ELEMENTS);
+
+                    });
+
+                    BREAK(ELEMENTS);
+
+                    TEXTVIEW(ELEMENTS,element.Name,(ELEMENTSIS)=>{
+
+                        COLOR(ELEMENTSIS,BLACK);
+                        BACKGROUND(ELEMENTSIS,WHITE);
+                        PADDING(ELEMENTSIS,"2%");
+                        WIDTH(ELEMENTSIS,"90%");
+
+                    });
+
+                    BREAK(ELEMENTS);
+
+                    TEXTVIEW(ELEMENTS,element.Story,(ELEMENTSIS)=>{
+
+                        COLOR(ELEMENTSIS,WHITE);
+                        BACKGROUND(ELEMENTSIS,BLACK);
+                        PADDING(ELEMENTSIS,"2%");
+                        WIDTH(ELEMENTSIS,"90%");
+
+                    });
+
+                    FOOTER(ELEMENTS,(ELEMENTSS)=>{
+
+                        BACKGROUND(ELEMENTSS,BLACK);
+
+                        ICONVIEW(ELEMENTSS,WHITEPHONEICON,(ELEMENTSS)=>{
+
+                            CLICK(ELEMENTSS,()=>{
+
+                                CALL("+254794094414");
+
+                            });
+
+                        });
+
+                        ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
+
+                            CLICK(ELEMENTSS,()=>{
+
+                                SMS("+254794094414");
+
+                            });
+
+                        });
+
+                        ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
+
+                            CLICK(ELEMENTSS,()=>{
+
+                                WHATSAPP("+254748352113");
+
+                            });
+
+                        });
+
+                    });
+
+                });
 
             });
 
