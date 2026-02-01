@@ -18,6 +18,10 @@ const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
+        LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
+            
+        });
+
     },(ELEMENT)=>{
 
     });
