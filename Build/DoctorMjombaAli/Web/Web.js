@@ -96,7 +96,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
@@ -171,7 +171,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
@@ -246,7 +246,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
@@ -321,7 +321,7 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
 
-            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
 
                 IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
 
@@ -521,6 +521,16 @@ const MOBILEVIEW=()=>{
             });
 
             TEXTVIEW(ELEMENTS,"App",()=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    SERVERCOMPONENTS("Apps/Android/DoctorMjombaAli.apk",(Data)=>{
+                        
+                        WEBSITE(Data);
+
+                    })
+
+                });
 
             });
 

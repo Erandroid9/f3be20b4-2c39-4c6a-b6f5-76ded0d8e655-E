@@ -524,7 +524,7 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTSS,()=>{
 
-                    SERVERCOMPONENTS("",(Data)=>{
+                    SERVERCOMPONENTS("Apps/Android/DoctorMjombaAli.apk",(Data)=>{
                         
                         WEBSITE(Data);
 
