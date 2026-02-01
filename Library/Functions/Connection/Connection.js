@@ -68,6 +68,7 @@ import { SMS } from "../DataBase/Sms/Sms.js";
 import { WEBSITE } from "../DataBase/WebSite/WebSite.js";
 import { ERANDIXPAY } from "../DataBase/ErandixPay/ErandixPay.js";
 import { WHATSAPP } from "../DataBase/WhatsApp/WhatsApp.js";
+import { SERVERCOMPONENTS } from "../DataBase/ServerComponents/ServerComponents.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -141,6 +142,7 @@ const SMS=${SMS};
 const WEBSITE=${WEBSITE};
 const ERANDIXPAY=${ERANDIXPAY};
 const WHATSAPP=${WHATSAPP};
+const SERVERCOMPONENTS=${SERVERCOMPONENTS};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -148,5 +150,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const WHATSAPP=${WHATSAPP};
+const SERVERCOMPONENTS=${SERVERCOMPONENTS};
 `

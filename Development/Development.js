@@ -56,6 +56,18 @@ const MOBILEVIEW=()=>{
 
         DIVVIEW(ELEMENT,"95%","300px",RED,(ELEMENTS)=>{
 
+            FOOTER(ELEMENTS,()=>{
+
+            });
+
+            SERVERCOMPONENTS("DoctorMjombaAli/FamilyProbelms.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                });
+                
+            });
+
         });
 
     });
