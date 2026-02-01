@@ -24,6 +24,12 @@ const MOBILEVIEW=()=>{
 
         RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
 
+            CLICK(ELEMENT,()=>{
+
+                WHATSAPP("+245748352113");
+
+            })
+
         });
 
     },(ELEMENT)=>{

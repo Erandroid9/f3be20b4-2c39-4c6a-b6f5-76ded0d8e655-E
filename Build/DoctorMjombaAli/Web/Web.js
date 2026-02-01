@@ -19,7 +19,17 @@ const MOBILEVIEW=()=>{
     HEADERVIEW((ELEMENT)=>{
 
         LEFTTEXTVIEW(ELEMENT,"Doctor Mjomba Ali",()=>{
-            
+
+        });
+
+        RIGHTICONVIEW(ELEMENT,WHITEWHATSAPPICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                WHATSAPP("+245748352113");
+
+            })
+
         });
 
     },(ELEMENT)=>{
