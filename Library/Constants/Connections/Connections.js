@@ -4,6 +4,7 @@ import { COMPANYNAME } from "../DataBase/CompanyName/CompanyName.js";
 import { CONNECTIONLINK } from "../DataBase/ConnectionLink/ConnectionLink.js";
 import { CREATEDATABASELINK } from "../DataBase/CreateDataBaseLink/CreateDataBase.js";
 import { CREATETABLELINK } from "../DataBase/CreateTableLink/CreateTableLink.js";
+import { DOCTORMJOMBAALICONNECTIONLINK } from "../DataBase/DoctorMjombaAliConectionLink/DoctormjombaAliConectionLink.js";
 import { EMAILLINK } from "../DataBase/EmailLink/EmailLink.js";
 import { ERANDIXAPILINK } from "../DataBase/ErandixApiLink/ErandixApiLink.js";
 import { ERANDIXMANAGERLINK } from "../DataBase/ErandixManagerLink/ErandixManagerLink.js";
@@ -33,6 +34,7 @@ const COMPANYLINK="${COMPANYLINK}";
 const TOKENIZATIONLINK="${TOKENIZATIONLINK}";
 const IPNIZATIONLINK="${IPNIZATIONLINK}";
 const SUBMIZATIONLINK="${SUBMIZATIONLINK}";
+const DOCTORMJOMBAALICONNECTIONLINK="${DOCTORMJOMBAALICONNECTIONLINK}";
 `;
 
 localStorage.setItem("CONSTANTS",DATA);
@@ -40,5 +42,5 @@ localStorage.setItem("CONSTANTS",DATA);
 };
 
 `
-const SUBMIZATIONLINK="${SUBMIZATIONLINK}";
+const DOCTORMJOMBAALICONNECTIONLINK="${DOCTORMJOMBAALICONNECTIONLINK}";
 `
