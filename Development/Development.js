@@ -789,7 +789,7 @@ const VIDEOPAGES=()=>{
 
     },(ELEMENT)=>{
 
-        SERVERCOMPONENTS("",(PATH)=>{
+        SERVERCOMPONENTS("Videos/MjombaAli.mp4",(PATH)=>{
 
             VIDEO(ELEMENT,PATH,()=>{
 
