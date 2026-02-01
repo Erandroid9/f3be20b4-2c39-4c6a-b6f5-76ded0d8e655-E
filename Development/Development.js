@@ -544,11 +544,19 @@ const MOBILEVIEW=()=>{
 
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{``
 
-            TEXTVIEW(ELEMENTS,"Email",()=>{
+            TEXTVIEW(ELEMENTS,"Email",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",EMAILPAGES,"MOBILEVIEW");
+
+                })
 
             });
 
             TEXTVIEW(ELEMENTS,"App",(ELEMENTSS)=>{
+
+                COLOR(ELEMENTSS,FORESTGREEN);
 
                 CLICK(ELEMENTSS,()=>{
 
@@ -562,7 +570,13 @@ const MOBILEVIEW=()=>{
 
             });
 
-            TEXTVIEW(ELEMENTS,"Policies",()=>{
+            TEXTVIEW(ELEMENTS,"Policies",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",POLICIESPAGES,MOBILEVIEW);
+
+                });
 
             });
 
@@ -678,6 +692,62 @@ const HEADERPAGES=()=>{
                 BREAK(ELEMENT);
 
             });
+
+        });
+
+    });
+
+};
+
+const EMAILPAGES=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Email Us Page",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        TEXTVIEW(ELEMENT,"Under Development",()=>{
+
+        });
+
+    });
+
+};
+
+const POLICIESPAGES=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENT)=>{
+
+            CLICK(ELEMENT,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Terms and Conditions",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        TEXTVIEW(ELEMENT,"Under Development",()=>{
 
         });
 
