@@ -330,6 +330,22 @@ const MOBILEVIEW=()=>{
         
         BREAK(ELEMENT);
 
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"Email",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"App",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Policies",()=>{
+
+            });
+
+        });
+
     });
 
 };
