@@ -510,6 +510,20 @@ const MOBILEVIEW=()=>{
 
             });
 
+            TEXTVIEW(ELEMENTS,"Relationship",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    DATASTORE("","Sector","Relationship Problems");
+
+                    DATASTORE("","SectorID","Relationship");
+
+                    ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
+
+                });
+
+            });
+
             TEXTVIEW(ELEMENTS,"Health",(ELEMENTSS)=>{
 
                 CLICK(ELEMENTSS,()=>{
