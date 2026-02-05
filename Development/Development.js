@@ -12,7 +12,7 @@ const MOBILEVIEW=()=>{
 
     },()=>{
 
-        LOGINVIEW("Erandix Users");
+        LOGINVIEW("","Erandix Users");
 
     });
 

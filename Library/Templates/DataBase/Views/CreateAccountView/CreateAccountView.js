@@ -1,6 +1,8 @@
-export const LOGINVIEW=(ELEMENTS,WORD)=>{
+export const CREATEACCOUNTVIEW=(ELEMENTS,WORD)=>{
 
     CLEAR(ELEMENTS);
+
+    DELETEDATASTORE("","UserName");
 
     DELETEDATASTORE("","UserEmail");
 
@@ -22,6 +24,12 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
             BREAK(ELEMENT);
 
+            INPUT(ELEMENT,"email","Enter Your Name","UserName",()=>{
+
+            });
+
+            BREAK(ELEMENT);
+
             INPUT(ELEMENT,"email","Enter Your Email","UserEmail",()=>{
 
             });
@@ -34,7 +42,7 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
             BREAK(ELEMENT);
 
-            BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
+            BUTTON(ELEMENT,"Sign Up",FORESTGREEN,WHITE,(ELEMENT)=>{
 
                 CLICK(ELEMENT,()=>{
 
@@ -64,7 +72,7 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
             });
 
-            BUTTON(ELEMENT,"Create Account",FORESTGREEN,WHITE,(ELEMENT)=>{
+            BUTTON(ELEMENT,"Log In",FORESTGREEN,WHITE,(ELEMENT)=>{
 
                 WIDTH(ELEMENT,"95%");
 
@@ -72,7 +80,7 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
                 CLICK(ELEMENT,()=>{
 
-                    CREATEACCOUNTVIEW(ELEMENTS,WORD);
+                    LOGINVIEW(ELEMENTS,WORD);
 
                 });
 
@@ -86,9 +94,15 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
         BREAK(ELEMENTS);
 
-        TEXT(ELEMENTS,"h1",WORD,"",(ELEMENT)=>{
+        TEXT("","h1",WORD,"",(ELEMENT)=>{
 
             FONTSIZE(ELEMENT,"30px");
+
+        });
+
+        BREAK(ELEMENTS);
+
+        INPUT(ELEMENTS,"email","Enter Your Name","UserName",()=>{
 
         });
 
@@ -106,7 +120,7 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
         BREAK(ELEMENTS);
 
-        BUTTON(ELEMENTS,"Sign In",FORESTGREEN,WHITE,(ELEMENT)=>{
+        BUTTON(ELEMENTS,"Sign Up",FORESTGREEN,WHITE,(ELEMENT)=>{
 
             CLICK(ELEMENT,()=>{
 
@@ -138,7 +152,7 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
         BREAK(ELEMENTS);
 
-        BUTTON(ELEMENTS,"Create Account",TEAL,WHITE,(ELEMENT)=>{
+        BUTTON(ELEMENTS,"Log In",TEAL,WHITE,(ELEMENT)=>{
 
             WIDTH(ELEMENT,"95%");
 
@@ -146,7 +160,7 @@ export const LOGINVIEW=(ELEMENTS,WORD)=>{
 
             CLICK(ELEMENT,()=>{
 
-                CREATEACCOUNTVIEW(ELEMENTS,WORD);
+                LOGINVIEW(ELEMENTS,WORD);
 
             });
 

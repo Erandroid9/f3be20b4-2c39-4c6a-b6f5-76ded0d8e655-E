@@ -24,6 +24,7 @@ import { LOGINCHECKER } from "../DataBase/Functions/LoginChecker/LoginChecker.js
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
 import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
+import { CREATEACCOUNTVIEW } from "../DataBase/Views/CreateAccountView/CreateAccountView.js";
 import { LOGINVIEW } from "../DataBase/Views/LoginView/LoginView.js";
 
 export const TEMPLATESCONNECTION=()=>{
@@ -54,6 +55,7 @@ const LOGINCHECKER=${LOGINCHECKER};
 const TEXTVIEW=${TEXTVIEW};
 const VISITORS=${VISITORS};
 const ACCOUNTEMAILCHECKER=${ACCOUNTEMAILCHECKER};
+const CREATEACCOUNTVIEW=${CREATEACCOUNTVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -61,5 +63,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const ACCOUNTEMAILCHECKER=${ACCOUNTEMAILCHECKER};
+const CREATEACCOUNTVIEW=${CREATEACCOUNTVIEW};
 `
