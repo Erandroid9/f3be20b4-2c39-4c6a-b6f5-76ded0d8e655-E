@@ -1,5 +1,6 @@
 import { CREATEACCOUNTSERVER } from "../DataBase/CreateAccountServer/CreateAccountServer.js";
 import { EMAILSERVER } from "../DataBase/EmailServer/EmailServer.js";
+import { EMAILVERIFICATIONSERVER } from "../DataBase/EmailVerificationServer/EmailVerificationServer.js";
 import { FORGOTPASSWORDSERVER } from "../DataBase/ForgotPasswordServer/ForgotPasswordServer.js";
 import { LOGINSERVER } from "../DataBase/LoginServer/LoginServer.js";
 import { OFFLINESERVER } from "../DataBase/OffLineServer/OffLineServer.js";
@@ -12,6 +13,7 @@ const LOGINSERVER=${LOGINSERVER};
 const OFFLINESERVER=${OFFLINESERVER};
 const EMAILSERVER=${EMAILSERVER};
 const ERANDIXNEWPROJECT=${ERANDIXNEWPROJECT};
+const EMAILVERIFICATIONSERVER=${EMAILVERIFICATIONSERVER};
 `;
     
 localStorage.setItem("SERVER",DATA);
@@ -19,5 +21,5 @@ localStorage.setItem("SERVER",DATA);
 };
 
 `
-const CREATEACCOUNTSERVER=${CREATEACCOUNTSERVER};
+const EMAILVERIFICATIONSERVER=${EMAILVERIFICATIONSERVER};
 `
