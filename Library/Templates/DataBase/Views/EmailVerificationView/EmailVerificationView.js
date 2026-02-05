@@ -58,7 +58,7 @@ export const EMAILVERIFICATIONVIEW=(ELEMENTS,WORD,LINK)=>{
 
             });
 
-            BREAK(ELEMENTS);
+            BREAK(ELEMENT);
 
             BUTTON(ELEMENT,"Cancel",BROWN,WHITE,(ELEMENT)=>{
 
