@@ -4,3 +4,12 @@ const ERANDES=()=>{
 
 };
 
+const MOBILEVIEW=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+    },(ELEMENT)=>{
+
+    });
+
+};
