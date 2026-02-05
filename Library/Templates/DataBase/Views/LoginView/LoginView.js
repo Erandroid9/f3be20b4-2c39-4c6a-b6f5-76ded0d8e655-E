@@ -82,7 +82,9 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
             });
 
-            BUTTON(ELEMENT,"Create Account",FORESTGREEN,WHITE,(ELEMENT)=>{
+            BREAK(ELEMENT);
+
+            BUTTON(ELEMENT,"Create Account",TEAL,WHITE,(ELEMENT)=>{
 
                 WIDTH(ELEMENT,"95%");
 

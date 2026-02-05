@@ -88,7 +88,9 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
             });
 
-            BUTTON(ELEMENT,"Log In",FORESTGREEN,WHITE,(ELEMENT)=>{
+            BREAK(ELEMENT);
+
+            BUTTON(ELEMENT,"Log In",TEAL,WHITE,(ELEMENT)=>{
 
                 WIDTH(ELEMENT,"95%");
 

@@ -23,3 +23,13 @@ const MOBILEHOMEPAGE=()=>{
     });
 
 };
+
+const DESKTOPVIEW=()=>{
+
+    ACCOUNTEMAILCHECKER("","Erandix Users",ERANDIXMANAGERLINK,()=>{
+
+        MOBILEHOMEPAGE();
+
+    });
+
+};

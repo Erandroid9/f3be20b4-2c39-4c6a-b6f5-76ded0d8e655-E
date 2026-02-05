@@ -50,6 +50,8 @@ export const FORGOTPASSWORDVIEW=(ELEMENTS,WORD,LINK)=>{
 
             });
 
+            BREAK(ELEMENT);
+
             BUTTON(ELEMENT,"Cancel",BROWN,WHITE,(ELEMENT)=>{
 
                 WIDTH(ELEMENT,"95%");
