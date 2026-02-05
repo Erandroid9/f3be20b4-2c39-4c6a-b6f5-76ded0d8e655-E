@@ -12,7 +12,7 @@ export const CREATEACCOUNTSERVER=(LINK)=>{
              
             },()=>{
 
-                const MESSAGE=`Dear ${sessionStorage.getItem("UserName")};\n Please Complete Your Account Creation With The Code Below\n ===>${localStorage.getItem("UserCode")}.\n If Your The One Who Created The Account Please Open Respective Point and Add That Code,\n\n If your Not the one Who Requested for Account to be Opened,Please Ignore This Mail.\n Thank You.`
+                const MESSAGE=`Dear ${sessionStorage.getItem("UserName")};\n Please Complete Your Account Creation With The Code Below\n ===>${localStorage.getItem("UserCodes")}.\n If Your The One Who Created The Account Please Open Respective Point and Add That Code,\n\n If your Not the one Who Requested for Account to be Opened,Please Ignore This Mail.\n Thank You.`
     
                 EMAILSERVER(sessionStorage.getItem("UserEmail"),"Account Creation",MESSAGE,()=>{
 
