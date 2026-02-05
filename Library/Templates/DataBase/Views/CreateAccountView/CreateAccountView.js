@@ -46,21 +46,29 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD)=>{
 
                 CLICK(ELEMENT,()=>{
 
-                    CONDITION(sessionStorage.getItem("UserEmail"),()=>{
+                    CONDITION(sessionStorage.getItem("UserName"),()=>{
 
-                        CONDITION(sessionStorage.getItem("UserPassword"),()=>{
-
-                            TOASTVIEW("Please Wait...");
-
+                        CONDITION(sessionStorage.getItem("UserEmail"),()=>{
+    
+                            CONDITION(sessionStorage.getItem("UserPassword"),()=>{
+    
+                                TOASTVIEW("Please Wait...");
+    
+                            },()=>{
+    
+                                TOASTVIEW("Enter Your Password");
+    
+                            });
+    
                         },()=>{
-
-                            TOASTVIEW("Enter Your Password");
-
+    
+                            TOASTVIEW("Enter Your Email");
+    
                         });
 
                     },()=>{
 
-                        TOASTVIEW("Enter Your Email");
+                        TOASTVIEW("Enter Your User Name");
 
                     });
 
@@ -124,21 +132,29 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD)=>{
 
             CLICK(ELEMENT,()=>{
 
-                CONDITION(sessionStorage.getItem("UserEmail"),()=>{
+                CONDITION(sessionStorage.getItem("UserName"),()=>{
 
-                    CONDITION(sessionStorage.getItem("UserPassword"),()=>{
-
-                        TOASTVIEW("Please Wait...");
-
+                    CONDITION(sessionStorage.getItem("UserEmail"),()=>{
+    
+                        CONDITION(sessionStorage.getItem("UserPassword"),()=>{
+    
+                            TOASTVIEW("Please Wait...");
+    
+                        },()=>{
+    
+                            TOASTVIEW("Enter Your Password");
+    
+                        });
+    
                     },()=>{
-
-                        TOASTVIEW("Enter Your Password");
-
+    
+                        TOASTVIEW("Enter Your Email");
+    
                     });
 
                 },()=>{
 
-                    TOASTVIEW("Enter Your Email");
+                    TOASTVIEW("Enter Your User Name");
 
                 });
 
