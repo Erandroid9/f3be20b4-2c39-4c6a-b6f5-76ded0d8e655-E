@@ -110,6 +110,8 @@ export const CREATEACCOUNTVIEW=(ELEMENTS,WORD,LINK)=>{
 
         BREAK(ELEMENTS);
 
+        BREAK(ELEMENTS);
+
         TEXT("","h1",WORD,"",(ELEMENT)=>{
 
             FONTSIZE(ELEMENT,"30px");

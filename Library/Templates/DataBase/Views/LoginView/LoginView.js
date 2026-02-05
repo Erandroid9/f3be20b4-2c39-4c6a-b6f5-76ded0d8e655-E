@@ -104,6 +104,8 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
         BREAK(ELEMENTS);
 
+        BREAK(ELEMENTS);
+
         TEXT(ELEMENTS,"h1",WORD,"",(ELEMENT)=>{
 
             FONTSIZE(ELEMENT,"30px");
