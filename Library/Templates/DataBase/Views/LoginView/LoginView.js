@@ -32,8 +32,6 @@ export const LOGINVIEW=(ELEMENTS,WORD,LINK)=>{
 
             });
 
-            BREAK(ELEMENT);
-
             INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTSAS)=>{
 
                 RIGHTTEXTVIEW(ELEMENTSAS,"Forgot Password?",(ELEMENTSS)=>{
