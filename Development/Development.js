@@ -32,7 +32,13 @@ const DESKTOPVIEW=()=>{
 
         });
 
-        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+        ICONVIEW(ELEMENT,WHITEHOMEICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                RELOAD();
+
+            });
 
         });
 
@@ -55,6 +61,8 @@ const DESKTOPVIEW=()=>{
         RIGHTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"60%");
+
+
 
         });
 
