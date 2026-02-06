@@ -4,12 +4,6 @@ const ERANDES=()=>{
 
 };
 
-const VIEWCONTROLLER=()=>{
-
-    SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();});
-
-};
-
 const MOBILEVIEW=()=>{
 
     ACCOUNTEMAILCHECKER("","Erandix Manager",ERANDIXMANAGERLINK,()=>{

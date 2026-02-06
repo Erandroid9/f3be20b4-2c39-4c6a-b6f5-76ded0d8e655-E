@@ -23,6 +23,7 @@ import { GETSAVEDINDEX } from "../DataBase/Functions/GetSavedIndex/GetSavedIndex
 import { LOGINCHECKER } from "../DataBase/Functions/LoginChecker/LoginChecker.js";
 import { OFFLINECHECKER } from "../DataBase/Functions/OffLineChecker/OfflineChecker.js";
 import { QELPAY } from "../DataBase/Functions/QelPay/QelPay.js";
+import { VIEWCONTROLLER } from "../DataBase/Functions/ViewController/ViewController.js";
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
 import { CREATEACCOUNTVIEW } from "../DataBase/Views/CreateAccountView/CreateAccountView.js";
 import { EMAILVERIFICATIONVIEW } from "../DataBase/Views/EmailVerificationView/EmailVerificationView.js";
@@ -60,6 +61,7 @@ const ACCOUNTEMAILCHECKER=${ACCOUNTEMAILCHECKER};
 const CREATEACCOUNTVIEW=${CREATEACCOUNTVIEW};
 const EMAILVERIFICATIONVIEW=${EMAILVERIFICATIONVIEW};
 const FORGOTPASSWORDVIEW=${FORGOTPASSWORDVIEW};
+const VIEWCONTROLLER=${VIEWCONTROLLER};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -67,5 +69,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const FORGOTPASSWORDVIEW=${FORGOTPASSWORDVIEW};
+const VIEWCONTROLLER=${VIEWCONTROLLER};
 `
