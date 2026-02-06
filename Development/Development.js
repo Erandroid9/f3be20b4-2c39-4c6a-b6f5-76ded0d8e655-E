@@ -46,6 +46,18 @@ const DESKTOPVIEW=()=>{
 
     },(ELEMENT)=>{
 
+        LEFTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"40%");
+
+        });
+
+        RIGHTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"60%");
+
+        });
+
     });
 
 };
