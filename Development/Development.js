@@ -1,12 +1,18 @@
 const ERANDES=()=>{
 
+    VIEWCONTROLLER();
+
+};
+
+const VIEWCONTROLLER=()=>{
+
     SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();});
 
 };
 
 const MOBILEVIEW=()=>{
 
-    ACCOUNTEMAILCHECKER("","Erandix Users",ERANDIXMANAGERLINK,()=>{
+    ACCOUNTEMAILCHECKER("","Erandix Manager",ERANDIXMANAGERLINK,()=>{
 
         MOBILEHOMEPAGE();
 
@@ -26,9 +32,19 @@ const MOBILEHOMEPAGE=()=>{
 
 const DESKTOPVIEW=()=>{
 
-    ACCOUNTEMAILCHECKER("","Erandix Users",ERANDIXMANAGERLINK,()=>{
+    ACCOUNTEMAILCHECKER("","Erandix Manager",ERANDIXMANAGERLINK,()=>{
 
-        MOBILEHOMEPAGE();
+        DESKTOPHOMEPAGE();
+
+    });
+
+};
+
+const DESKTOPHOMEPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+    },(ELEMENT)=>{
 
     });
 
