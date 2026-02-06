@@ -62,7 +62,15 @@ const DESKTOPVIEW=()=>{
 
             WIDTH(ELEMENTS,"60%");
 
+            REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
 
+                INLINEVIEW(ELEMENTS,"45%","300px",RED,"1%",(ELEMENTSS)=>{
+
+                });
+
+                console.log(Data);
+
+            });
 
         });
 
