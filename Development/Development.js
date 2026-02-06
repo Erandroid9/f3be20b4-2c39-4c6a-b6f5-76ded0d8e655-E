@@ -1,20 +1,14 @@
 const ERANDES=()=>{
 
-    VIEWCONTROLLER();
-
-};
-
-const MOBILEVIEW=()=>{
-
     ACCOUNTEMAILCHECKER("","Erandix Manager",ERANDIXMANAGERLINK,()=>{
 
-        MOBILEHOMEPAGE();
+        VIEWCONTROLLER();
 
     });
 
 };
 
-const MOBILEHOMEPAGE=()=>{
+const MOBILEVIEW=()=>{
 
     HEADERVIEW(()=>{
 
@@ -22,19 +16,10 @@ const MOBILEHOMEPAGE=()=>{
 
     });
 
+
 };
 
 const DESKTOPVIEW=()=>{
-
-    ACCOUNTEMAILCHECKER("","Erandix Manager",ERANDIXMANAGERLINK,()=>{
-
-        DESKTOPHOMEPAGE();
-
-    });
-
-};
-
-const DESKTOPHOMEPAGE=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
