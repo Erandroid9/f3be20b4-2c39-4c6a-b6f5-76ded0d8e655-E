@@ -1,11 +1,11 @@
 import { SERVERASSETS } from "../../../../../Functions/DataBase/ServerAssets/ServerAssets.js";
 import { DEVSTAGEONE } from "../StageOne/Loader.js";
 
-export const  DEVSTAGE=(AMOUNT,DisplayImage)=>{
+export const  MJOMBAALIDEVSTAGE=(AMOUNT,DisplayImage)=>{
 
     if (AMOUNT === "5%" ) {
 
-        SERVERASSETS("Images/WebDevelopment.webp",(Data)=>{
+        SERVERASSETS("Images/DoctorMjombaAli/Business.webp",(Data)=>{
 
             DisplayImage.src=Data
 
