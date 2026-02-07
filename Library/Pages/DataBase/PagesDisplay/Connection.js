@@ -18,7 +18,7 @@ export const SPLASHSCREENCONFIG=(AMOUNT,DisplayImage)=>{
         default:DEVSTAGE(AMOUNT, DisplayImage);
 
             break;
-    }
 
+    };
 
 };
