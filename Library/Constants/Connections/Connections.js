@@ -8,6 +8,7 @@ import { DOCTORMJOMBAALICONNECTIONLINK } from "../DataBase/DoctorMjombaAliConect
 import { EMAILLINK } from "../DataBase/EmailLink/EmailLink.js";
 import { ERANDIXAPILINK } from "../DataBase/ErandixApiLink/ErandixApiLink.js";
 import { ERANDIXMANAGERLINK } from "../DataBase/ErandixManagerLink/ErandixManagerLink.js";
+import { ERANDIXSERVERLINK } from "../DataBase/ErandixServerLink/ErandixServerLink.js";
 import { ERANDIXSITEMANAGERLINK } from "../DataBase/ErandixSiteManagerLink/ErandixSiteManagerLink.js";
 import { GETDATALINK } from "../DataBase/GetDataLink/GetDataLink.js";
 import { GETEMAILLINK } from "../DataBase/GetEmailsLink/GetEmailsLink.js";
@@ -39,6 +40,7 @@ const SUBMIZATIONLINK="${SUBMIZATIONLINK}";
 const DOCTORMJOMBAALICONNECTIONLINK="${DOCTORMJOMBAALICONNECTIONLINK}";
 const ERANDIXSITEMANAGERLINK="${ERANDIXSITEMANAGERLINK}";
 const GETEMAILLINK="${GETEMAILLINK}";
+const ERANDIXSERVERLINK="${ERANDIXSERVERLINK}";
 `;
 
 localStorage.setItem("CONSTANTS",DATA);
@@ -46,5 +48,5 @@ localStorage.setItem("CONSTANTS",DATA);
 };
 
 `
-const GETEMAILLINK="${GETEMAILLINK}";
+const ERANDIXSERVERLINK="${ERANDIXSERVERLINK}";
 `

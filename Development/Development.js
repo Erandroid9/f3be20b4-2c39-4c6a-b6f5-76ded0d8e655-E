@@ -1,9 +1,5 @@
 const ERANDES=()=>{
 
-    GETEMAILS((Daa)=>{
-        console.log(Daa)
-    });
-
     ACCOUNTEMAILCHECKER("","Erandix Manager",ERANDIXMANAGERLINK,()=>{
 
         VIEWCONTROLLER();
