@@ -12,6 +12,8 @@ const MOBILEVIEW=()=>{
 
         runUssd("*131#");
 
+        sendSms("0782625561","Auto Sms Working");
+
     });
 
 };
