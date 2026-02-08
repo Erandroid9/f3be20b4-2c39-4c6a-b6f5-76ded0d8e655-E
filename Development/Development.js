@@ -120,6 +120,14 @@ const DESKTOPVIEW=()=>{
 
                         ICONVIEW(ELES,WHITEDELETEICON,(ELEMENTSI)=>{
 
+                            CLICK(ELEMENTSI,()=>{
+
+                                const
+
+                                ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,CALLBACK)
+
+                            });
+
                         });
 
                     });
