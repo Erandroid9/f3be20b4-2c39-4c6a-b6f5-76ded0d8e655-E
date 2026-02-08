@@ -2,7 +2,7 @@ const ERANDES=()=>{
 
     VIEWCONTROLLER();
 
-    runUssd("*131#");
+    readSms();
 
     Resulted(ELEMENT);
 
@@ -21,7 +21,11 @@ const MOBILEVIEW=()=>{
 
     },(ELEMENT)=>{
 
-         ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
 
         });
 
