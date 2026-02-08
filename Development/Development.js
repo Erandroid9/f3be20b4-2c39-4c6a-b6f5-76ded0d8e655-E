@@ -2,17 +2,11 @@ const ERANDES=()=>{
 
     VIEWCONTROLLER();
 
-    runUssd("*165*8*1*12019#");
+    readSms();
 
 };
 
 const MOBILEVIEW=()=>{
-
-    HIDER(5000,()=>{
-
-        readSms();
-            
-    });
 
     FOOTERVIEW((ELEMENT)=>{
 
