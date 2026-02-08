@@ -102,7 +102,27 @@ const DESKTOPVIEW=()=>{
 
             REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
 
-                INLINEVIEW(ELEMENTS,"45%","300px",RED,"1%",(ELEMENTSS)=>{
+                INLINEVIEW(ELEMENTS,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
+                    
+                    IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
+
+                    });
+
+                    FOOTER(ELEMENTSS,(ELES)=>{
+
+                        ICONVIEW(ELES,WHITEADDICON,()=>{
+
+                        });
+
+                        ICONVIEW(ELES,WHITEINFOICON,()=>{
+
+                        });
+
+                        ICONVIEW(ELES,WHITEDELETEICON,(ELEMENTSI)=>{
+
+                        });
+
+                    });
 
                 });
 
