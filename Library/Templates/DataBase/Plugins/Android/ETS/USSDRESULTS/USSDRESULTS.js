@@ -1,9 +1,14 @@
-export const showResult=(message)=>{
+export const Resulted=(ELEMENT)=>{
 
-    Resulted(message);
+    const showResult=(message)=>{
 
-};
+        Resulted(message);
 
-const Resulted=(ELEMENT,Message)=>{
+        DISPLAY(ELEMENT,message);
+
+    };
+
+
+    showResult();
 
 };
