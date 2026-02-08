@@ -1,3 +1,5 @@
-export const ETSUSSD=()=>{
-    
-}
+export const runUssd=(code)=>{
+
+    AndroidUSSD.runUssd(code);
+
+};

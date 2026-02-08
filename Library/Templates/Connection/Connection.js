@@ -30,6 +30,7 @@ import { REDUXEDDATA } from "../DataBase/Functions/ReduxedData/ReduxedData.js";
 import { TOASTCONDITION } from "../DataBase/Functions/ToastCondition/ToastCondition.js";
 import { VIEWCONTROLLER } from "../DataBase/Functions/ViewController/ViewController.js";
 import { VISITORS } from "../DataBase/Functions/Visitors/Visitors.js";
+import { runUssd } from "../DataBase/Plugins/Android/ETS/USSD/USSD.js";
 import { CREATEACCOUNTVIEW } from "../DataBase/Views/CreateAccountView/CreateAccountView.js";
 import { EMAILVERIFICATIONVIEW } from "../DataBase/Views/EmailVerificationView/EmailVerificationView.js";
 import { FORGOTPASSWORDVIEW } from "../DataBase/Views/ForgotPasswordView/ForgotPasswordView.js";
@@ -72,6 +73,7 @@ const TOASTCONDITION=${TOASTCONDITION};
 const COMPONENTVALUE=${COMPONENTVALUE};
 const HEADERVIEWER=${HEADERVIEWER};
 const FILEPICKED=${FILEPICKED};
+const runUssd=${runUssd};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -79,5 +81,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const FILEPICKED=${FILEPICKED};
+const runUssd=${runUssd};
 `
