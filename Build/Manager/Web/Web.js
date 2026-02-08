@@ -42,7 +42,13 @@ const DESKTOPVIEW=()=>{
 
         });
 
-        ICONVIEW(ELEMENT,WHITEADDICON,()=>{
+        ICONVIEW(ELEMENT,WHITEADDICON,(ELSIIS)=>{
+
+            CLICK(ELSIIS,()=>{
+
+                ROUTE(" ",DESKTOPNEWPROJECT,"DESKTOPVIEW");
+
+            });
 
         });
 
@@ -513,6 +519,89 @@ const DESKTOPDELETEDPROJECTS=()=>{
                 });
 
             });
+
+        });
+
+    });
+
+};
+
+const DESKTOPNEWPROJECT=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+
+        });
+
+        TEXTVIEW(ELEMENT,"Back",(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                DESKTOPVIEW();
+
+            });
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEHOMEICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                RELOAD();
+
+            });
+
+        });
+
+    },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Name","ProjectName",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Android Path","ProjectAndroid",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Desktop Path","ProjectDesktop",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Web Path","ProjectWeb",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Domain Link","ProjectDomain",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Create Project",FORESTGREEN,"",(ELES)=>{
+
+            WIDTH(ELES,"50%");
+
 
         });
 
