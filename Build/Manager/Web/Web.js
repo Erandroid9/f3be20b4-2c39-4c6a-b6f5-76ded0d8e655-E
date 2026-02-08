@@ -208,12 +208,6 @@ const DESKTOPPRODUCTINFO=(ELEMENT,Data)=>{
 
         });
 
-        BUTTON(ELEMENTSS,"Email Admin",TEAL,"",(ELES)=>{
-
-            WIDTH(ELES,"30%");
-
-        });
-
         BUTTON(ELEMENTSS,"Site",ORANGE,"",(ELES)=>{
 
             WIDTH(ELES,"30%");
@@ -222,9 +216,43 @@ const DESKTOPPRODUCTINFO=(ELEMENT,Data)=>{
 
                 TOASTCONDITION(Data.Domain,"No Site Link Added",()=>{
 
-                    WEBSITE(Data.Domain);
+                    HEADERVIEWER(ELEMENT,(ELSSS)=>{
+
+                        LEFTTEXTVIEW(ELSSS,"Back",(EKS)=>{
+
+                            CLICK(EKS,()=>{
+
+                                DESKTOPPRODUCTINFO(ELEMENT,Data);
+
+                            });
+
+                        });
+
+                        RIGHTTEXTVIEW(ELSSS,Data.Name,()=>{
+
+                        });
+
+                    },(ELSSS)=>{
+
+                        IFRAME(ELSSS,Data.Domain,(ELSI)=>{
+
+                        });
+
+                    });
 
                 });
+
+            });
+
+        });
+
+        BUTTON(ELEMENTSS,"Back",TEAL,"",(ELES)=>{
+
+            WIDTH(ELES,"30%");
+
+            CLICK(ELES,()=>{
+
+                DESKTOPVIEW();
 
             });
 
