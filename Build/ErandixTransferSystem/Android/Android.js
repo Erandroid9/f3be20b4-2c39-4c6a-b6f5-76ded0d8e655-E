@@ -1,41 +1,45 @@
-const ERANDES=()=>{
+export const LOADERVIEW = (ELEMENT, CALLBACK) => {
 
-    VIEWCONTROLLER();
+    ICONVIEW(ELEMENT,WHITERETRYICON,(ELS) => {
 
-    readSms();
+        WIDTH(ELS, "30px");
+        
+        HEIGHT(ELS, "30px");
 
-};
+        let rotation = 0;
 
-const MOBILEVIEW=()=>{
+        let spinning = true;
 
-    FOOTERVIEW((ELEMENT)=>{
+        const spin = () => {
 
-        HIDER(5000,()=>{
+            if (!spinning) return;
 
-            DISPLAY(ELEMENT,sessionStorage.getItem("AndroidSms"))
+            rotation += 100;
 
-        });
+            ELS.style.transform = `rotate(${rotation}deg)`;
 
-    },(ELEMENT)=>{
+            requestAnimationFrame(spin);
 
-        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+        };
 
-        });
+        spin();
 
-        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+        ELS.stopSpin = () => spinning = false;
 
-        });
+        ELS.startSpin = () => {
 
-        ICONVIEW(ELEMENT,WHITEHOMEICON,()=>{
+            if (!spinning) {
 
-        });
+                spinning = true;
+
+                spin();
+
+            }
+
+        };
+
+        CALLBACK(ELS);
 
     });
-
-};
-
-const DESKTOPVIEW=()=>{
-
-
 
 };
