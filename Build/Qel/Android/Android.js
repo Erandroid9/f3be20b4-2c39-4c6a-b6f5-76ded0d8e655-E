@@ -28,101 +28,107 @@ const HOMEPAGE=()=>{
 
     FOOTERVIEW((ELEMENT)=>{
 
-        GETSAVEDINDEX("Catergory",(Data)=>{
+        LOADERVIEW(ELEMENT,(EKS)=>{
+            
+            GETSAVEDINDEX("Catergory",(Data)=>{
 
-            CHECKER(Data.Approved,()=>{
-                
-                DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS0)=>{
-
-                    MARGIN(ELEMENTS0,"2%");
-
-                    OVERFLOW(ELEMENTS0);
-
-                    HEADER(ELEMENTS0,(ELES)=>{
-
-                        LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
-
-                        });
-
-                    });
-
-                    INLINEVIEW(ELEMENTS0,"","auto",TRANSPARENT,"",(ELEMENTA)=>{
-
-                        POSITIONABSOLUTE(ELEMENTA);
-                        BOTTOM(ELEMENTA,"");
-                        TOP(ELEMENTA,"50px");
-                        LEFT(ELEMENTA,"");
-                        OVERFLOWHIDDEN(ELEMENTA);
-                        OVERFLOWX(ELEMENTA);
-
-                        GETSAVEDINDEX("Products",(Datate)=>{
-
-                            CHECKER(Data.ID === Datate.ProductCatergory && Datate.Approved,()=>{
-
-                                INLINEVIEW(ELEMENTA,"150px","100%",TRANSPARENT,"2%",(ELEMENTA)=>{
-
-                                    FLEXSHRINK(ELEMENTA);
-
-                                    IMAGE(ELEMENTA,"","",Datate.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
-
-                                        COVEROBJECTFIT(ELEMENTSS);
-
-                                    });
-
-                                    HEADER(ELEMENTA,(ELES)=>{
-
-                                        NOBORDER(ELES);
-
-                                        RIGHTTEXTVIEW(ELES,Datate.ProductNumber,(ELEMENTSA)=>{
-
-                                            FONTSIZE(ELEMENTSA,"20px");
-
-                                            PADDING(ELEMENTSA,"2%");
-
-                                            BACKGROUND(ELEMENTSA,BLACK);
-
-                                            COLOR(ELEMENTSA,FORESTGREEN);
-
-                                        });
-
-                                    });
-
-                                    FOOTER(ELEMENTA,(ELES)=>{
-
-                                        BACKGROUND(ELES,BLACK);
-
-                                        LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
-
-                                            FONTSIZE(ELEMENTSA,"15px");
-
-                                        });
-                
-                                    });
-
-                                    CLICK(ELEMENTA,()=>{
-
-                                        JSONIFICATION (Datate,(Dares)=>{
-
-                                            DATASTORE("","Pages","HOMEPAGE");
-
-                                            DATASTORE("","Items",Dares);
-
-                                            ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
-
-                                        });
-
-                                    });
-
-                                });
-
+                DISPLAYHIDDEN(EKS);
+            
+                CHECKER(Data.Approved,()=>{
+                            
+                    DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS0)=>{
+            
+                        MARGIN(ELEMENTS0,"2%");
+            
+                        OVERFLOW(ELEMENTS0);
+            
+                        HEADER(ELEMENTS0,(ELES)=>{
+            
+                            LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
+            
                             });
-
+            
                         });
- 
-                    });
-   
+            
+                        INLINEVIEW(ELEMENTS0,"","auto",TRANSPARENT,"",(ELEMENTA)=>{
+            
+                            POSITIONABSOLUTE(ELEMENTA);
+                            BOTTOM(ELEMENTA,"");
+                            TOP(ELEMENTA,"50px");
+                            LEFT(ELEMENTA,"");
+                            OVERFLOWHIDDEN(ELEMENTA);
+                            OVERFLOWX(ELEMENTA);
+            
+                            GETSAVEDINDEX("Products",(Datate)=>{
+            
+                                CHECKER(Data.ID === Datate.ProductCatergory && Datate.Approved,()=>{
+            
+                                    INLINEVIEW(ELEMENTA,"150px","100%",TRANSPARENT,"2%",(ELEMENTA)=>{
+            
+                                        FLEXSHRINK(ELEMENTA);
+            
+                                        IMAGE(ELEMENTA,"","",Datate.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+            
+                                            COVEROBJECTFIT(ELEMENTSS);
+            
+                                        });
+            
+                                        HEADER(ELEMENTA,(ELES)=>{
+            
+                                            NOBORDER(ELES);
+            
+                                            RIGHTTEXTVIEW(ELES,Datate.ProductNumber,(ELEMENTSA)=>{
+            
+                                                FONTSIZE(ELEMENTSA,"20px");
+            
+                                                PADDING(ELEMENTSA,"2%");
+            
+                                                BACKGROUND(ELEMENTSA,BLACK);
+            
+                                                COLOR(ELEMENTSA,FORESTGREEN);
+            
+                                            });
+            
+                                        });
+            
+                                        FOOTER(ELEMENTA,(ELES)=>{
+            
+                                            BACKGROUND(ELES,BLACK);
+            
+                                            LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
+            
+                                                FONTSIZE(ELEMENTSA,"15px");
+            
+                                            });
+                            
+                                        });
+            
+                                        CLICK(ELEMENTA,()=>{
+            
+                                            JSONIFICATION (Datate,(Dares)=>{
+            
+                                                DATASTORE("","Pages","HOMEPAGE");
+            
+                                                DATASTORE("","Items",Dares);
+            
+                                                ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
+            
+                                            });
+            
+                                        });
+            
+                                    });
+            
+                                });
+            
+                            });
+             
+                        });
+               
+                    });          
+                  
                 });
-      
+            
             });
 
         });
@@ -611,42 +617,48 @@ const CARTERGORYPAGE=()=>{
 
     },(ELEMENT)=>{
 
-        GETSAVEDINDEX("Catergory",(Data)=>{
+        LOADERVIEW(ELEMENT,(EKSL)=>{
 
-            CHECKER(Data.Approved,()=>{
+            GETSAVEDINDEX("Catergory",(Data)=>{
 
-                TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
-
-                    IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
-
-                        COVEROBJECTFIT(ELEMENTSS);
-
-                    });
-
-                    FOOTER(ELES,(ELES)=>{
-
-                        BACKGROUND(ELES,BLACK);
-
-                        LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
-
-                            FONTSIZE(ELEMENTSA,"15px");
-
+                DISPLAYHIDDEN(EKSL);
+    
+                CHECKER(Data.Approved,()=>{
+    
+                    TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+    
+                        IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+    
+                            COVEROBJECTFIT(ELEMENTSS);
+    
                         });
-                
+    
+                        FOOTER(ELES,(ELES)=>{
+    
+                            BACKGROUND(ELES,BLACK);
+    
+                            LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
+    
+                                FONTSIZE(ELEMENTSA,"15px");
+    
+                            });
+                    
+                        });
+    
+                        CLICK(ELES,()=>{
+    
+                            DATASTORE("","Sector",Data.ID);
+    
+                            DATASTORE("","SectorName",Data.ProductName);
+    
+                            ROUTE(" ",PRODUCTPAGE,"CARTERGORYPAGE");
+    
+                        });
+    
                     });
-
-                    CLICK(ELES,()=>{
-
-                        DATASTORE("","Sector",Data.ID);
-
-                        DATASTORE("","SectorName",Data.ProductName);
-
-                        ROUTE(" ",PRODUCTPAGE,"CARTERGORYPAGE");
-
-                    });
-
+    
                 });
-
+    
             });
 
         });

@@ -1,208 +1,257 @@
 const ERANDES=()=>{
 
-    ACCOUNTEMAILCHECKER("","Erandix Manager",ERANDIXMANAGERLINK,()=>{
+    ROUTE("",HOMEPAGE,"HOMEPAGE");
 
-        VIEWCONTROLLER();
+    DOWNLOADSAVEINDEX(QELDATABASELINK,"Catergory",(Data)=>{
 
-    });
+        DOWNLOADSAVEINDEX(QELDATABASELINK,"Products",(Data)=>{
 
-};
+        },()=>{
 
-const MOBILEVIEW=()=>{
-
-    HEADERVIEW(()=>{
+        });
 
     },()=>{
 
+        DOWNLOADSAVEINDEX(QELDATABASELINK,"Products",(Data)=>{
+
+        },()=>{
+
+            ROUTE("",HOMEPAGE,"HOMEPAGE");
+            
+        });
+
     });
 
 };
 
-const DESKTOPVIEW=()=>{
+const HOMEPAGE=()=>{
 
-    HEADERVIEW((ELEMENT)=>{
+    FOOTERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
+        LOADERVIEW(ELEMENT,(EKS)=>{
+            
+            GETSAVEDINDEX("Catergory",(Data)=>{
 
-        });
-
-        ROUNDINPUTVIEW(ELEMENT,"search","Find Your Project","ProjectName",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"30%");
-
-        });
-
-        ICONVIEW(ELEMENT,WHITEHOMEICON,(ELEMENTS)=>{
-
-            CLICK(ELEMENTS,()=>{
-
-                RELOAD();
-
-            });
-
-        });
-
-        ICONVIEW(ELEMENT,WHITEADDICON,(ELSIIS)=>{
-
-            CLICK(ELSIIS,()=>{
-
-                ROUTE(" ",DESKTOPNEWPROJECT,"DESKTOPVIEW");
-
-            });
-
-        });
-
-        ICONVIEW(ELEMENT,WHITEUSERICON,()=>{
-
-        });
-
-    },(ELEMENT)=>{
-
-        LEFTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"40%");
-
-            BREAK(ELEMENTS);
-
-            BUTTON(ELEMENTS,"All Projects",FORESTGREEN,"",(ELS)=>{
-
-                CLICK(ELS,()=>{
-
-                    DESKTOPVIEW();
-
-                });
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Deleted Project",FORESTGREEN,"",(ELS)=>{
-
-                CLICK(ELS,()=>{
-
-                    ROUTE(" ",DESKTOPDELETEDPROJECTS,"DESKTOPVIEW");
-
-                });
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BUTTON(ELEMENTS,"All DataBases",FORESTGREEN,"",()=>{
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Create DataBase",FORESTGREEN,"",()=>{
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Policies",FORESTGREEN,"",()=>{
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Log Out",BROWN,"",(ELEMENTSS)=>{
-
-                CLICK(ELEMENTSS,()=>{
-
-                    DELETEDATASTORE(" ","User");
-
-                    RELOAD();
-
-                });
-
-            });
-
-            BREAK(ELEMENTS);
-
-            BUTTON(ELEMENTS,"Deleted My Account",RED,"",()=>{
-
-            });
-
-        });
-
-        RIGHTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"60%");
-
-            LOADERVIEW(ELEMENTS,(ELSZSA)=>{
-
-                TOP(ELSZSA,"30%");
-
-                REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
-
-                    DISPLAYHIDDEN(ELSZSA);
-
-                    CHECKER(Data.Approved,()=>{
-
-                        INLINEVIEW(ELEMENTS,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
-
-                            IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
-        
+                DISPLAYHIDDEN(EKS);
+            
+                CHECKER(Data.Approved,()=>{
+                            
+                    DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS0)=>{
+            
+                        MARGIN(ELEMENTS0,"2%");
+            
+                        OVERFLOW(ELEMENTS0);
+            
+                        HEADER(ELEMENTS0,(ELES)=>{
+            
+                            LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
+            
                             });
-
-                            HEADER(ELEMENTSS,(ELSS)=>{
-
-                                BACKGROUND(ELSS,BLACK);
-
-                                TEXTVIEW(ELSS,Data.Name,(ELS)=>{
-
-                                });
-
-                            });
-        
-                            FOOTER(ELEMENTSS,(ELES)=>{
-
-                                BACKGROUND(ELES,BLACK);
-        
-                                ICONVIEW(ELES,WHITEADDICON,(ELES)=>{
-    
-                                    CLICK(ELES,()=>{
-
-                                        DESKTOPPRODUCTUPDATE(ELEMENTS,Data);
-
-                                    });
-        
-                                });
-        
-                                ICONVIEW(ELES,WHITEINFOICON,(ELEMENTSI)=>{
-
-                                    CLICK(ELEMENTSI,()=>{
-
-                                        DESKTOPPRODUCTINFO(ELEMENTS,Data);
-
-                                    });
-        
-                                });
-        
-                                ICONVIEW(ELES,WHITEDELETEICON,(ELEMENTSI)=>{
-        
-                                    CLICK(ELEMENTSI,()=>{
-        
-                                        const INFO=[Data.Name,Data.Android,Data.Desktop,Data.Web,Data.Date,Data.AdminEmail,"",Data.ProjectImage,Data.ProjectExpiry,Data.Domain];
-        
-                                        ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,()=>{
-        
-                                            DESKTOPVIEW();
-        
+            
+                        });
+            
+                        INLINEVIEW(ELEMENTS0,"","auto",TRANSPARENT,"",(ELEMENTA)=>{
+            
+                            POSITIONABSOLUTE(ELEMENTA);
+                            BOTTOM(ELEMENTA,"");
+                            TOP(ELEMENTA,"50px");
+                            LEFT(ELEMENTA,"");
+                            OVERFLOWHIDDEN(ELEMENTA);
+                            OVERFLOWX(ELEMENTA);
+            
+                            GETSAVEDINDEX("Products",(Datate)=>{
+            
+                                CHECKER(Data.ID === Datate.ProductCatergory && Datate.Approved,()=>{
+            
+                                    INLINEVIEW(ELEMENTA,"150px","100%",TRANSPARENT,"2%",(ELEMENTA)=>{
+            
+                                        FLEXSHRINK(ELEMENTA);
+            
+                                        IMAGE(ELEMENTA,"","",Datate.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+            
+                                            COVEROBJECTFIT(ELEMENTSS);
+            
                                         });
-        
+            
+                                        HEADER(ELEMENTA,(ELES)=>{
+            
+                                            NOBORDER(ELES);
+            
+                                            RIGHTTEXTVIEW(ELES,Datate.ProductNumber,(ELEMENTSA)=>{
+            
+                                                FONTSIZE(ELEMENTSA,"20px");
+            
+                                                PADDING(ELEMENTSA,"2%");
+            
+                                                BACKGROUND(ELEMENTSA,BLACK);
+            
+                                                COLOR(ELEMENTSA,FORESTGREEN);
+            
+                                            });
+            
+                                        });
+            
+                                        FOOTER(ELEMENTA,(ELES)=>{
+            
+                                            BACKGROUND(ELES,BLACK);
+            
+                                            LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
+            
+                                                FONTSIZE(ELEMENTSA,"15px");
+            
+                                            });
+                            
+                                        });
+            
+                                        CLICK(ELEMENTA,()=>{
+            
+                                            JSONIFICATION (Datate,(Dares)=>{
+            
+                                                DATASTORE("","Pages","HOMEPAGE");
+            
+                                                DATASTORE("","Items",Dares);
+            
+                                                ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
+            
+                                            });
+            
+                                        });
+            
                                     });
-        
+            
                                 });
-        
+            
                             });
-        
+             
                         });
+               
+                    });          
+                  
+                });
+            
+            });
 
-                    });
+        });
+
+    },(ELEMENT)=>{
+
+        ICONVIEW(ELEMENT,WHITEGRIDICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE(" ",CARTERGORYPAGE,"HOMEPAGE");
+
+            }); 
+
+        });
+
+        ICONVIEW(ELEMENT,WHITESHOPPINGCART,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                LOGINCHECKER(()=>{
+
+                    ROUTE(" ",SHOPPINGACCOUNTPAGE,"HOMEPAGE");
 
                 });
+
+            });
+
+        });
+
+        ICONVIEW(ELEMENT,WHITEUSERPROFILEICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                CONDITION(localStorage.getItem("User"),()=>{
+
+                    ROUTE(" ",USERACCOUNTPAGE,"HOMEPAGE");
+
+                },()=>{
+
+                    ROUTE(" ",LOGINPAGE,"HOMEPAGE");
+
+                });
+
+            });
+
+        });
+
+    });
+
+};
+
+const LOGINPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Activation",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"Log In",(ELEMENTS)=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",(ELSES)=>{
+
+            INPUTTED(ELSES,(DataUsre)=>{
+
+                DATASTORE("","UserEmail",DataUsre);
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"password","Enter Your Password",(ELSES)=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Sign In",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+            WIDTH(ELEMENTSS,"90%");
+            HEIGHT(ELEMENTSS,"40px");
+            RADIUS(ELEMENTSS,"10px");
+
+            CLICK(ELEMENTSS,()=>{
+
+                LOGINSERVER(QELDATABASELINK,"Users",(User)=>{
+
+                    console.log(User);
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        TEXT(ELEMENT,"p","New To App,Create One?",ORANGE,(ELIS)=>{
+
+            CLICK(ELIS,()=>{
+
+                CREATEACCOUNTPAGE(ELEMENT);
                 
             });
 
@@ -212,65 +261,162 @@ const DESKTOPVIEW=()=>{
 
 };
 
-const DESKTOPPRODUCTINFO=(ELEMENT,Data)=>{
+const CREATEACCOUNTPAGE=(ELEMENT)=>{
 
     CLEAR(ELEMENT);
 
     BREAK(ELEMENT);
 
-    DIVVIEW(ELEMENT,"45%","300px",TRANSPARENT,(ELEMENTSS)=>{
+    TEXTVIEW(ELEMENT,"Create Account",(ELEMENTS)=>{
 
-        OVERFLOWHIDDEN(ELEMENTSS);
+    });
 
-        IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
-    
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Name",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"password","Create Your Password",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"tel","Enter Your Phone Number",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    ROUNDINPUTVIEW(ELEMENT,"","Enter Your Location",()=>{
+
+    });
+
+    BREAK(ELEMENT);
+
+    BUTTON(ELEMENT,"Sign Up",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+        WIDTH(ELEMENTSS,"90%");
+        HEIGHT(ELEMENTSS,"40px");
+        RADIUS(ELEMENTSS,"10px");
+
+        CLICK(ELEMENTSS,()=>{
+
+            const HEADERS=[];
+
+            const DATA=[];
+
+            CREATEACCOUNTSERVER(QELDATABASELINK,"Users",HEADERS,DATA,(UserData)=>{
+
+                console.log(UserData);
+
+            });
+
         });
 
     });
 
     BREAK(ELEMENT);
 
-    INLINEVIEW(ELEMENT,"95%","100px",TRANSPARENT,"1%",(ELEMENTSS)=>{
+    TEXT(ELEMENT,"p","One Of Us,Log In?",ORANGE,(ELIS)=>{
 
-        BUTTON(ELEMENTSS,"Performance",FORESTGREEN,"",(ELES)=>{
+        CLICK(ELIS,()=>{
 
-            WIDTH(ELES,"30%");
-
-            CLICK(ELES,()=>{
-
-                DESKTOPSITEPERFORMANCE(ELEMENT,Data);
-
-            });
+            LOGINPAGE();
 
         });
 
-        BUTTON(ELEMENTSS,"Site",ORANGE,"",(ELES)=>{
+    });
 
-            WIDTH(ELES,"30%");
+};
 
-            CLICK(ELES,()=>{
+const DETAILSPAGE=()=>{
 
-                TOASTCONDITION(Data.Domain,"No Site Link Added",()=>{
+    DEJSONDATA("","Items",(Data)=>{
 
-                    HEADERVIEWER(ELEMENT,(ELSSS)=>{
+        HEADERVIEW((ELEMENT)=>{
 
-                        LEFTTEXTVIEW(ELSSS,"Back",(EKS)=>{
+            LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
 
-                            CLICK(EKS,()=>{
+                CLICK(ELEMENTS,()=>{
 
-                                DESKTOPPRODUCTINFO(ELEMENT,Data);
+                    CONDITION(sessionStorage.getItem("Pages") === "HOMEPAGE",()=>{
 
-                            });
+                        ROUTE("",HOMEPAGE,"HOMEPAGE");
 
-                        });
+                    },()=>{
 
-                        RIGHTTEXTVIEW(ELSSS,Data.Name,()=>{
+                        ROUTE("",PRODUCTPAGE,"PRODUCTPAGE");
 
-                        });
+                    });
 
-                    },(ELSSS)=>{
+                });
 
-                        IFRAME(ELSSS,Data.Domain,(ELSI)=>{
+            });
+
+            RIGHTTEXTVIEW(ELEMENT,Data.ProductName,(ELEMENTS)=>{
+
+            });
+
+        },(ELEMENT)=>{
+
+            DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+
+                BREAK(ELEMENTS0);
+                OVERFLOWHIDDEN(ELEMENTS0);
+
+                IMAGE(ELEMENTS0,"","",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                    COVEROBJECTFIT(ELEMENTSS);
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENT,"90%","50px",TRANSPARENT,"",(ELEMENTA)=>{
+
+                LEFTTEXTVIEW(ELEMENTA,"Price",()=>{
+
+                });
+
+                RIGHTTEXTVIEW(ELEMENTA,"UGX:"+Data.ProductPrice,()=>{
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENT,"90%","50px",TRANSPARENT,"",(ELEMENTS)=>{
+
+                BUTTON(ELEMENTS,"Cart",TEAL,WHITE,(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"40%");
+                    HEIGHT(ELEMENTSS,"40px");
+
+                });
+
+                BUTTON(ELEMENTS,"Buy",FORESTGREEN,WHITE,(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"40%");
+                    HEIGHT(ELEMENTSS,"40px");
+
+                    CLICK(ELEMENTSS,()=>{
+
+                        LOGINCHECKER(()=>{
+
+                            QELPAY(Data.ProductPrice,Data.ProductName,"");
 
                         });
 
@@ -280,400 +426,239 @@ const DESKTOPPRODUCTINFO=(ELEMENT,Data)=>{
 
             });
 
-        });
+            BREAK(ELEMENT);BREAK(ELEMENT);
 
-        BUTTON(ELEMENTSS,"Back",TEAL,"",(ELES)=>{
-
-            WIDTH(ELES,"30%");
-
-            CLICK(ELES,()=>{
-
-                DESKTOPVIEW();
+            LEFTTEXTVIEW(ELEMENT,"Product Details",()=>{
 
             });
 
-        });
+            BREAK(ELEMENT);
 
-    });
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
-
-        LEFTTEXTVIEW(ELEMENTSS,"Project Name :",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENTSS,Data.Name,()=>{
-
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
-
-        LEFTTEXTVIEW(ELEMENTSS,"Android:",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENTSS,Data.Android||"No Data Added",()=>{
-
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
-
-        LEFTTEXTVIEW(ELEMENTSS,"Desktop:",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENTSS,Data.Desktop||"No Data Added",()=>{
-
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
-
-        LEFTTEXTVIEW(ELEMENTSS,"Web:",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENTSS,Data.Web||"No Data Added",()=>{
-
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
-
-        LEFTTEXTVIEW(ELEMENTSS,"AdminEmail:",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENTSS,Data.AdminEmail||"No Admin Mail Added",()=>{
-
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
-
-        LEFTTEXTVIEW(ELEMENTSS,"ProjectExpiry:",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENTSS,Data.ProjectExpiry||"No Expiry Date Added",()=>{
-
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
-
-        LEFTTEXTVIEW(ELEMENTSS,"Domain:",()=>{
-
-        });
-
-        RIGHTTEXTVIEW(ELEMENTSS,Data.Domain||"No Domain Link Added",()=>{
-
-        });
-
-    });
-
-};
-
-const DESKTOPSITEPERFORMANCE=(ELEMENT,Data)=>{
-
-    CLEAR(ELEMENT);
-
-    BREAK(ELEMENT);
-
-    INLINEVIEW(ELEMENT,"95%","100px",TRANSPARENT,"1%",(ELEMENTSS)=>{
-
-        BUTTON(ELEMENTSS,"Get Number",FORESTGREEN,"",(ELES)=>{
-
-            WIDTH(ELES,"30%");
-
-            CLICK(ELES,()=>{
-
-                DISPLAY(ELES,"Visitors:"+sessionStorage.getItem("DataFetched"));
+            TEXTVIEW(ELEMENT,Data.ProductDetails,()=>{
 
             });
 
-        });
+            BREAK(ELEMENT);
 
-        BUTTON(ELEMENTSS,"Email Developer",TEAL,"",(ELES)=>{
+            CHECKER(Data.ProductImage,()=>{
 
-            WIDTH(ELES,"30%");
-
-        });
-
-        BUTTON(ELEMENTSS,"Back",GREEN,"",(ELES)=>{
-
-            WIDTH(ELES,"30%");
-
-            CLICK(ELES,()=>{
-
-                DESKTOPPRODUCTINFO(ELEMENT,Data)
-
-            });
-
-        });
-
-    });
-
-    LOADERVIEW(ELEMENT,(ELSAM)=>{
-
-        REDUXEDDATA(ERANDIXSITEMANAGERLINK,Data.ID,(Datata)=>{
-
-            DISPLAYHIDDEN(ELSAM);
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
     
-            INLINEVIEW(ELEMENT,"95%","50px",FORESTGREEN,"1%",(ELEMENTSS)=>{
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
     
-                LEFTTEXTVIEW(ELEMENTSS,Datata.ID,()=>{
+                    IMAGE(ELEMENTS0,"","",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
     
                 });
+
+            });
+
+            CHECKER(Data.ProductImageOne,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
     
-                RIGHTTEXTVIEW(ELEMENTSS,Datata.VisitedTimes,()=>{
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageOne,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
     
                 });
-    
+                
             });
+            
+            CHECKER(Data.ProductImageTwo,()=>{
+
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
     
-        });
-
-    });
-
-};
-
-const DESKTOPPRODUCTUPDATE=(ELEMENT,Data)=>{
-
-    CLEAR(ELEMENT);
-
-    DELETEDATASTORE("","ProjectImage");
-    DELETEDATASTORE("","ProjectName");
-    DELETEDATASTORE("","ProjectAndroid");
-    DELETEDATASTORE("","ProjectDesktop");
-    DELETEDATASTORE("","ProjectWeb");
-    DELETEDATASTORE("","ProjectDomain");
-    DELETEDATASTORE("","ProjectEmail");
-
-    BREAK(ELEMENT);
-
-    DIVVIEW(ELEMENT,"45%","300px",BLACK,(ELEMENTSS)=>{
-
-        OVERFLOWHIDDEN(ELEMENTSS);
-
-        TEXTVIEW(ELEMENTSS,"Click Image to Add Project Logo",()=>{
-
-        });
-
-        IMAGE(ELEMENTSS,"","250px",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,(ELS)=>{
-
-            FILEPICKED(ELS,"ProjectImage");
-        
-        });
-
-    });
-
-    BREAK(ELEMENT);
-
-    TEXTVIEW(ELEMENT,"Update Project Name",()=>{
-
-    });
-
-    ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Name","ProjectName",(ELEMENTS)=>{
-
-        WIDTH(ELEMENTS,"95%");
-
-    });
-
-    BREAK(ELEMENT);
-
-    TEXTVIEW(ELEMENT,"Update Project Android Path ",()=>{
-
-    });
-
-    ROUNDINPUTVIEW(ELEMENT,"text","Enter Android Path","ProjectAndroid",(ELEMENTS)=>{
-
-        WIDTH(ELEMENTS,"95%");
-
-    });
-
-    BREAK(ELEMENT);
-
-    TEXTVIEW(ELEMENT,"Update Project Desktop Path ",()=>{
-
-    });
-
-    ROUNDINPUTVIEW(ELEMENT,"text","Enter Desktop Path","ProjectDesktop",(ELEMENTS)=>{
-
-        WIDTH(ELEMENTS,"95%");
-
-    });
-
-    BREAK(ELEMENT);
-
-    TEXTVIEW(ELEMENT,"Update Project Web Path ",()=>{
-
-    });
-
-    ROUNDINPUTVIEW(ELEMENT,"text","Enter Web Path","ProjectWeb",(ELEMENTS)=>{
-
-        WIDTH(ELEMENTS,"95%");
-
-    });
-
-    BREAK(ELEMENT);
-
-    TEXTVIEW(ELEMENT,"Update Project Domain Link ",()=>{
-
-    });
-
-    ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Domain Link","ProjectDomain",(ELEMENTS)=>{
-
-        WIDTH(ELEMENTS,"95%");
-
-    });
-
-    BREAK(ELEMENT);
-
-    TEXTVIEW(ELEMENT,"Update Project Admin Email ",()=>{
-
-    });
-
-    ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Admin Email","ProjectEmail",(ELEMENTS)=>{
-
-        WIDTH(ELEMENTS,"95%");
-
-    });
-
-    BREAK(ELEMENT);
-
-    BUTTON(ELEMENT,"Update Project",FORESTGREEN,"",(ELES)=>{
-
-        CLICK(ELES,()=>{
-
-            TOASTCONDITION(sessionStorage.getItem("ProjectName")||sessionStorage.getItem("ProjectAndroid")||sessionStorage.getItem("ProjectDesktop")||sessionStorage.getItem("ProjectWeb")||sessionStorage.getItem("ProjectEmail")||sessionStorage.getItem("ProjectImage")||sessionStorage.getItem("ProjectDomain"),"Nothing To Update",()=>{
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
     
-                ERANDIXUPDATEPROJECT(Data,Data.ID);
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageTwo,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
                 
             });
 
-        });
+            CHECKER(Data.ProductImageThree,()=>{
 
-        WIDTH(ELES,"50%");
+                DIVVIEW(ELEMENT,"300px","300px",TRANSPARENT,(ELEMENTS0)=>{
+    
+                    BREAK(ELEMENTS0);
+                    OVERFLOWHIDDEN(ELEMENTS0);
+    
+                    IMAGE(ELEMENTS0,"","",Data.ProductImageThree,TRANSPARENT,(ELEMENTSS)=>{
+    
+                        COVEROBJECTFIT(ELEMENTSS);
+    
+                    });
+    
+                });
+                
+            });
+
+            BREAK(ELEMENT);BREAK(ELEMENT);
+
+        });
 
     });
 
 };
 
-const DESKTOPDELETEDPROJECTS=()=>{
+const USERACCOUNTPAGE=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
-
-        });
-
-        ROUNDINPUTVIEW(ELEMENT,"search","Find Your Project","ProjectName",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"30%");
-
-        });
-
-        TEXTVIEW(ELEMENT,"Back",(ELEMENTS)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
 
             CLICK(ELEMENTS,()=>{
 
-                DESKTOPVIEW();
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
 
             });
 
         });
 
-        ICONVIEW(ELEMENT,WHITEHOMEICON,(ELEMENTS)=>{
+        TEXTVIEW(ELEMENT,"Kampala",(ELEMENTS)=>{
 
-            CLICK(ELEMENTS,()=>{
+        });
 
-                RELOAD();
-
-            });
+        RIGHTTEXTVIEW(ELEMENT,"Profile",(ELEMENTS)=>{
 
         });
 
     },(ELEMENT)=>{
 
-        REDUXEDDATA(ERANDIXMANAGERLINK,"Production",(Data)=>{
+        DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS)=>{
 
-            CONDITION(!Data.Approved,()=>{
+            MARGIN(ELEMENTS,"2%");
+            RADIUS(ELEMENTS,"10px");
+            OVERFLOW(ELEMENTS);
 
-                INLINEVIEW(ELEMENT,"45%","300px",TRANSPARENT,"1%",(ELEMENTSS)=>{
+        });
 
-                    IMAGE(ELEMENTSS,"","",Data.ProjectImage||ERANDIXLOGO,TRANSPARENT,()=>{
+        BUTTON(ELEMENT,"Settings",FORESTGREEN,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+            MARGIN(ELEMENTS,"2%");
+
+        });
+
+        BUTTON(ELEMENT,"Policies",FORESTGREEN,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+            MARGIN(ELEMENTS,"2%");
+
+        });
+
+        BUTTON(ELEMENT,"Updates",FORESTGREEN,"",(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"95%");
+            MARGIN(ELEMENTS,"2%");
+
+        });
+
+    });
+
+};
+
+const SHOPPINGACCOUNTPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"My Cart",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+    });
+
+};
+
+const CARTERGORYPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
+
+            CLICK(ELEMENTS,()=>{
+
+                ROUTE("",HOMEPAGE,"HOMEPAGE");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Catergroy",(ELEMENTS)=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        LOADERVIEW(ELEMENT,(EKSL)=>{
+
+            GETSAVEDINDEX("Catergory",(Data)=>{
+
+                DISPLAYHIDDEN(EKSL);
     
-                    });
-
-                    HEADER(ELEMENTSS,(ELSS)=>{
-
-                        BACKGROUND(ELSS,BLACK);
-
-                        TEXTVIEW(ELSS,Data.Name,(ELS)=>{
-
+                CHECKER(Data.Approved,()=>{
+    
+                    TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
+    
+                        IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+    
+                            COVEROBJECTFIT(ELEMENTSS);
+    
                         });
-
-                    });
     
-                    FOOTER(ELEMENTSS,(ELES)=>{
-
-                        BACKGROUND(ELES,BLACK);
+                        FOOTER(ELES,(ELES)=>{
     
-                        ICONVIEW(ELES,WHITECHECKICON,(ELEMENTSI)=>{
+                            BACKGROUND(ELES,BLACK);
     
-                            CLICK(ELEMENTSI,()=>{
+                            LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
     
-                                const INFO=[Data.Name,Data.Android,Data.Desktop,Data.Web,Data.Date,Data.AdminEmail,"Approved",Data.ProjectImage,Data.ProjectExpiry,Data.Domain];
-    
-                                ERANDIXUPDATEPROJECT(ERANDIXMANAGERLINK,"Production",Data.ID,INFO,()=>{
-    
-                                    DESKTOPVIEW();
-    
-                                });
+                                FONTSIZE(ELEMENTSA,"15px");
     
                             });
+                    
+                        });
+    
+                        CLICK(ELES,()=>{
+    
+                            DATASTORE("","Sector",Data.ID);
+    
+                            DATASTORE("","SectorName",Data.ProductName);
+    
+                            ROUTE(" ",PRODUCTPAGE,"CARTERGORYPAGE");
     
                         });
     
                     });
     
                 });
-
-            },()=>{
-
-                CLEAR(ELEMENT);
-
-                BREAK(ELEMENT);
-
-                BREAK(ELEMENT);
-
-                TEXTVIEW(ELEMENT,"No Deleted Projects",(ELEMENTS)=>{
-
-                });
-
+    
             });
 
         });
@@ -682,133 +667,68 @@ const DESKTOPDELETEDPROJECTS=()=>{
 
 };
 
-const DESKTOPNEWPROJECT=()=>{
-
-    DELETEDATASTORE("","ProjectImage");
-    DELETEDATASTORE("","ProjectName");
-    DELETEDATASTORE("","ProjectAndroid");
-    DELETEDATASTORE("","ProjectDesktop");
-    DELETEDATASTORE("","ProjectWeb");
-    DELETEDATASTORE("","ProjectDomain");
-    DELETEDATASTORE("","ProjectEmail");
+const PRODUCTPAGE=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Erandix Manager",()=>{
-
-        });
-
-        TEXTVIEW(ELEMENT,"Back",(ELEMENTS)=>{
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTS)=>{
 
             CLICK(ELEMENTS,()=>{
 
-                DESKTOPVIEW();
+                ROUTE("",CARTERGORYPAGE,"CARTERGORYPAGE");
 
             });
 
         });
 
-        ICONVIEW(ELEMENT,WHITEHOMEICON,(ELEMENTS)=>{
-
-            CLICK(ELEMENTS,()=>{
-
-                RELOAD();
-
-            });
+        RIGHTTEXTVIEW(ELEMENT,sessionStorage.getItem("SectorName"),(ELEMENTS)=>{
 
         });
 
     },(ELEMENT)=>{
 
-        BREAK(ELEMENT);
+        GETSAVEDINDEX("Products",(Data)=>{
 
-        DIVVIEW(ELEMENT,"45%","300px",TRANSPARENT,(ELEMENTSS)=>{
+            
+            CHECKER(Data.ProductCatergory === sessionStorage.getItem("Sector") && Data.Approved,()=>{
 
-            OVERFLOWHIDDEN(ELEMENTSS);
+                TABLEVIEW(ELEMENT,"45%","200px",TRANSPARENT,"2%",(ELES)=>{
 
-            TEXTVIEW(ELEMENTSS,"Click Image to Add Project Logo",()=>{
+                    IMAGE(ELES,"","200px",Data.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
 
-            });
+                        COVEROBJECTFIT(ELEMENTSS);
 
-            IMAGE(ELEMENTSS,"","250px",ERANDIXLOGO,TRANSPARENT,(ELS)=>{
-
-                FILEPICKED(ELS,"ProjectImage");
-        
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Name","ProjectName",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"text","Enter Android Path","ProjectAndroid",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"text","Enter Desktop Path","ProjectDesktop",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"text","Enter Web Path","ProjectWeb",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Domain Link","ProjectDomain",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-        });
-
-        BREAK(ELEMENT);
-
-        ROUNDINPUTVIEW(ELEMENT,"text","Enter Project Admin Email","ProjectEmail",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"95%");
-
-        });
-
-        BREAK(ELEMENT);
-
-        BUTTON(ELEMENT,"Create Project",FORESTGREEN,"",(ELES)=>{
-
-            CLICK(ELES,()=>{
-
-                TOASTCONDITION(sessionStorage.getItem("ProjectName"),"Enter Project Name",()=>{
-    
-                    TOASTCONDITION(sessionStorage.getItem("ProjectAndroid")||sessionStorage.getItem("ProjectDesktop")||sessionStorage.getItem("ProjectWeb"),"Enter Project Path For Any Platform",()=>{
-    
-                        TOASTCONDITION(sessionStorage.getItem("ProjectEmail"),"Enter Project Admin Email",()=>{
-
-                            ERANDIXNEWPROJECT();
-    
-                        });
-    
                     });
-    
+
+                    FOOTER(ELES,(ELESI)=>{
+
+                        BACKGROUND(ELESI,BLACK);
+
+                        LEFTTEXTVIEW(ELESI,Data.ProductName,(ELEMENTSA)=>{
+
+                            FONTSIZE(ELEMENTSA,"15px");
+
+                        });
+                
+                    });
+
+                    CLICK(ELES,()=>{
+
+                        JSONIFICATION (Data,(Dares)=>{
+
+                            DATASTORE("","Pages","PRODUCTPAGE");
+
+                            DATASTORE("","Items",Dares);
+
+                            ROUTE(" ",DETAILSPAGE,"HOMEPAGE");
+
+                        });
+
+                    });
+
                 });
 
             });
-
-            WIDTH(ELES,"50%");
 
         });
 
