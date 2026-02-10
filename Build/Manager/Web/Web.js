@@ -58,9 +58,7 @@ const DESKTOPVIEW=()=>{
 
     },(ELEMENT)=>{
 
-        LEFTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"40%");
+        LEFTDIVVIEW(ELEMENT,"40%",(ELEMENTS)=>{
 
             BREAK(ELEMENTS);
 
@@ -126,9 +124,7 @@ const DESKTOPVIEW=()=>{
 
         });
 
-        RIGHTDIVVIEW(ELEMENT,"",(ELEMENTS)=>{
-
-            WIDTH(ELEMENTS,"60%");
+        RIGHTDIVVIEW(ELEMENT,"60%",(ELEMENTS)=>{
 
             LOADERVIEW(ELEMENTS,(ELSZSA)=>{
 

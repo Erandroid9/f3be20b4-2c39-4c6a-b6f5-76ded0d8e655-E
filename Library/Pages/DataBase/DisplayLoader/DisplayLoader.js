@@ -7,7 +7,7 @@ export const DISPLAYLOADER=(AMOUNT)=>{
 
     style.textContent = `
 
-        div{
+        .div{
             position:fixed;
             overflow:hidden;
             display:block;
@@ -71,7 +71,7 @@ export const DISPLAYLOADER=(AMOUNT)=>{
 
             document.querySelector("body").innerHTML=`
 
-                <div>
+                <div class="div">
 
                     <img class="DisplayImage">
 
@@ -109,7 +109,7 @@ export const DISPLAYLOADER=(AMOUNT)=>{
 
             document.querySelector("body").innerHTML=`
 
-                <div>
+                <div class="div">
 
                     <img  class="DisplayImage">
 
