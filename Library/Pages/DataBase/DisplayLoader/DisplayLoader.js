@@ -16,6 +16,8 @@ export const DISPLAYLOADER=(AMOUNT)=>{
             color:white;
             text-align:center;
             font-size:20px;
+            background:transparent;
+            left:0;
         }
 
         .DataHolder{
