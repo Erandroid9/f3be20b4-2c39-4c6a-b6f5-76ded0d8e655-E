@@ -26,11 +26,11 @@ const ERANDES=()=>{
 
 const PAGESMANAGERS=()=>{
 
-    SWITCHER("800px",()=>{HOMEPAGE()},()=>{HOMEPAGE();})
+    VIEWCONTROLLER();
 
 };
 
-const HOMEPAGE=()=>{
+const MOBILEVIEW=()=>{
 
     HEADERFOOTERVIEW((ELEMENT)=>{
 
@@ -164,5 +164,9 @@ const HOMEPAGE=()=>{
         });
 
     });
+
+};
+
+const DESKTOPVIEW=()=>{
 
 };

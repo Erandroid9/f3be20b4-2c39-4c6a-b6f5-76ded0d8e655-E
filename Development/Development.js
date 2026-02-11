@@ -1,172 +1,163 @@
 const ERANDES=()=>{
 
+    PAGESMANAGERS();
+
+    DOWNLOADSAVEINDEX(QELDATABASELINK,"Catergory",(Data)=>{
+
+        DOWNLOADSAVEINDEX(QELDATABASELINK,"Products",(Data)=>{
+
+        },()=>{
+
+        });
+
+    },()=>{
+
+        DOWNLOADSAVEINDEX(QELDATABASELINK,"Products",(Data)=>{
+
+        },()=>{
+
+            PAGESMANAGERS();
+            
+        });
+
+    });
+
+};
+
+const PAGESMANAGERS=()=>{
+
     VIEWCONTROLLER();
 
 };
 
 const MOBILEVIEW=()=>{
 
-    HEADERVIEW((ELEMENT)=>{
+    HEADERFOOTERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Erandix",()=>{
+        LEFTTEXTVIEW(ELEMENT,"Qel Medistore",()=>{
 
         });
 
-        RIGHTICONVIEW(ELEMENT,WHITEMENUICON,()=>{
+        RIGHTICONVIEW(ELEMENT,WHITEUSERICON,()=>{
 
         });
 
     },(ELEMENT)=>{
 
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+        GETSAVEDINDEX("Catergory",(Data)=>{
 
-            TEXTVIEW(ELEMENTS,"Imagine",()=>{
+            CHECKER(Data.Approved,()=>{
+                
+                DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS0)=>{
 
-            });
+                    MARGIN(ELEMENTS0,"2%");
 
-            TEXTVIEW(ELEMENTS,"Build",()=>{
+                    OVERFLOW(ELEMENTS0);
 
-            });
+                    HEADER(ELEMENTS0,(ELES)=>{
 
-            TEXTVIEW(ELEMENTS,"inspire",()=>{
+                        LEFTTEXTVIEW(ELES,Data.ProductName,(ELEMENTSA)=>{
 
+                        });
+
+                    });
+
+                    INLINEVIEW(ELEMENTS0,"","auto",TRANSPARENT,"",(ELEMENTA)=>{
+
+                        POSITIONABSOLUTE(ELEMENTA);
+                        BOTTOM(ELEMENTA,"");
+                        TOP(ELEMENTA,"50px");
+                        LEFT(ELEMENTA,"");
+                        OVERFLOWHIDDEN(ELEMENTA);
+                        OVERFLOWX(ELEMENTA);
+
+                        GETSAVEDINDEX("Products",(Datate)=>{
+
+                            CHECKER(Data.ID === Datate.ProductCatergory && Datate.Approved,()=>{
+
+                                INLINEVIEW(ELEMENTA,"150px","100%",TRANSPARENT,"2%",(ELEMENTA)=>{
+
+                                    FLEXSHRINK(ELEMENTA);
+
+                                    IMAGE(ELEMENTA,"","",Datate.ProductImage,TRANSPARENT,(ELEMENTSS)=>{
+
+                                        COVEROBJECTFIT(ELEMENTSS);
+
+                                    });
+
+                                    HEADER(ELEMENTA,(ELES)=>{
+
+                                        RIGHTTEXTVIEW(ELES,Datate.ProductNumber,(ELEMENTSA)=>{
+
+                                            FONTSIZE(ELEMENTSA,"20px");
+
+                                            PADDING(ELEMENTSA,"2%");
+
+                                            BACKGROUND(ELEMENTSA,BLACK);
+
+                                            COLOR(ELEMENTSA,FORESTGREEN);
+
+                                        });
+
+                                    });
+
+                                    FOOTER(ELEMENTA,(ELES)=>{
+
+                                        BACKGROUND(ELES,BLACK);
+
+                                        LEFTTEXTVIEW(ELES,Datate.ProductName,(ELEMENTSA)=>{
+
+                                            FONTSIZE(ELEMENTSA,"15px");
+
+                                        });
+                
+                                    });
+
+                                    CLICK(ELEMENTA,()=>{
+
+                                        JSONIFICATION (Datate,(Dares)=>{
+
+                                            DATASTORE("","Items",Dares);
+
+                                        });
+
+                                    });
+
+                                });
+
+                            });
+
+                        });
+ 
+                    });
+   
+                });
+      
             });
 
         });
 
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+    },(ELEMENT)=>{
 
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            RADIUS(ELEMENTS,"0");
-
-            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELIS)=>{
-    
-                });
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                BACKGROUND(ELEMENTSI,BLACK);
-
-                LEFTTEXTVIEW(ELEMENTSI,"App Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
-
-                });
-
-            });
-
+        TEXTVIEW(ELEMENT,"Contact Us",()=>{
+            
         });
 
-        BREAK(ELEMENT);
+        TEXTVIEW(ELEMENT,"App",(ELEMENTS)=>{
 
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+            CLICK(ELEMENTS,()=>{
 
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            SERVERCOMPONENTS("Images/DesktopDevelopment.png",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
-    
-                });
+                WEBSITE("https://erandroid9.github.io/Eliton/Library/Assets/DataBase/Raw/Apps/Android/qel.apk");
 
             });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                BACKGROUND(ELEMENTSI,BLACK);
-
-                LEFTTEXTVIEW(ELEMENTSI,"Desktop Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
-
-                });
-
-            });
-
+            
         });
 
-        BREAK(ELEMENT);
+        TEXTVIEW(ELEMENT,"Policies",(ELEMENTS)=>{
 
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+            CLICK(ELEMENTS,()=>{
 
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            SERVERCOMPONENTS("Images/WebDevelopment.webp",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
-    
-                });
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                BACKGROUND(ELEMENTSI,BLACK);
-
-                LEFTTEXTVIEW(ELEMENTSI,"WebSite Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-
-            OVERFLOWHIDDEN(ELEMENTS);
-
-            SERVERCOMPONENTS("Images/SystemDevelopment.webp",(DATA)=>{
-
-                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
-    
-                });
-
-            });
-
-            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-
-                BACKGROUND(ELEMENTSI,BLACK);
-
-                LEFTTEXTVIEW(ELEMENTSI,"System Development",()=>{
-
-                });
-
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
-
-                });
-
-            });
-
-        });
-
-        BREAK(ELEMENT);
-
-        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
-
-            TEXTVIEW(ELEMENTS,"Policies",()=>{
-
-            });
-
-            TEXTVIEW(ELEMENTS,"App",()=>{
-
-            });
-
-            TEXTVIEW(ELEMENTS,"Contact Us",()=>{
+                WEBSITE("https://qelmedistore.site/PrivacyPolicy.html");
 
             });
 
