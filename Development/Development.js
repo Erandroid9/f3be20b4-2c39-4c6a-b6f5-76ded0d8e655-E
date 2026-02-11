@@ -34,6 +34,68 @@ const MOBILEVIEW=()=>{
 
         });
 
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            RADIUS(ELEMENTS,"0");
+
+            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELIS)=>{
+    
+                });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                BACKGROUND(ELEMENTSI,BLACK);
+
+                LEFTTEXTVIEW(ELEMENTSI,"App Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
+                });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                BACKGROUND(ELEMENTSI,BLACK);
+
+                LEFTTEXTVIEW(ELEMENTSI,"Desktop Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
     });
 
 };

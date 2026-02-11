@@ -9,6 +9,7 @@ export const IMAGE=(HOLDER,WIDE,TALL,SOURCE,APPEARANCE,callBack)=>{
         WIDTH(ELEMENT,WIDE||"");
         HEIGHT(ELEMENT,TALL||"");
         BACKGROUND(ELEMENT,APPEARANCE||TRANSPARENT);
+        RADIUS(ELEMENT,"0");
 
         callBack(ELEMENT);
 

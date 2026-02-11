@@ -61,6 +61,10 @@ export const DISPLAYLOADER=(AMOUNT)=>{
             object-fit:fill;
         }
 
+        img{
+            border-radius:0px;
+        }
+
     `;
 
     document.head.appendChild(style);

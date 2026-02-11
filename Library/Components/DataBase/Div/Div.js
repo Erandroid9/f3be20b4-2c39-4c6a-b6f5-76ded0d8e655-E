@@ -9,6 +9,7 @@ export const DIV=(HOLDER,WIDE,TALL,APPEARANCE,callBack)=>{
         DISPLAYBLOCK(ELEMENT);
         OVERFLOWY(ELEMENT);
         BACKGROUND(ELEMENT,APPEARANCE);
+        RADIUS(ELEMENT,"0");
 
         callBack(ELEMENT);
 
