@@ -96,6 +96,82 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
+                });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                BACKGROUND(ELEMENTSI,BLACK);
+
+                LEFTTEXTVIEW(ELEMENTSI,"WebSite Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
+                });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                BACKGROUND(ELEMENTSI,BLACK);
+
+                LEFTTEXTVIEW(ELEMENTSI,"System Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"Policies",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"App",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"Contact Us",()=>{
+
+            });
+
+        });
+
     });
 
 };
