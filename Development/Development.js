@@ -37,7 +37,7 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        TEXTVIEW(ELEMENT,"AshShakur Charity And Orphanage Aid",(ELEMENTS)=>{
+        TEXTVIEW(ELEMENT,"Ash Shakur Charity And Orphanage Aid",(ELEMENTS)=>{
 
             FONTSIZE(ELEMENTS,"16px");
             COLOR(ELEMENTS,GREEN);
