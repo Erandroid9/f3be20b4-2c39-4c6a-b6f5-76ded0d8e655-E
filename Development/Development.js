@@ -695,7 +695,7 @@ const MOBILEVIEW=()=>{
 
                     CLICK(ELEMENTS,()=>{
 
-                        WHATSAPP("+256789467876");
+                        WEBSITE("https://www.facebook.com/share/188Uyj5rGJ/");
 
                     });
 
@@ -709,7 +709,7 @@ const MOBILEVIEW=()=>{
 
                     CLICK(ELEMENTS,()=>{
 
-                        INSTGRAM("ash_shakur_charity_");
+                        INSTAGRAM("ash_shakur_charity_");
 
                     });
 

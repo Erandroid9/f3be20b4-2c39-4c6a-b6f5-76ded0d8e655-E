@@ -54,7 +54,6 @@ import { DOMAINNAMECHANGE } from "../DataBase/DomainChange/DomainChange.js";
 import { FACEBOOK } from "../DataBase/FaceBook/FaceBook.js";
 import { GROUP } from "../DataBase/Group/Group.js";
 import { HOVER } from "../DataBase/Hover/Hover.js";
-import { INSTAGRAM } from "../DataBase/Instagram/Instagram.js";
 import { JSONADDER } from "../DataBase/JsonAdder/JsonAdder.js";
 import { JSONIFICATION } from "../DataBase/Jsonification/Jsonification.js";
 import { JSONREMOVER } from "../DataBase/JsonRemover/JsonRemover.js";
@@ -74,6 +73,7 @@ import { SERVERASSETS } from "../DataBase/ServerAssets/ServerAssets.js";
 import { GETEMAILS } from "../DataBase/GetEmails/GetEmails.js";
 import { TIKTOK } from "../DataBase/Tiktok/Tiktok.js";
 import { X } from "../DataBase/X/X.js";
+import { INSTAGRAM } from "../DataBase/Instagram/Instagram.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
