@@ -179,19 +179,19 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"RAMADAN IFTAR",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
+                TEXTVIEW(ELEMENTIS,"RAMADAN IFTAR 2026/1447H",(ELEMENTSES)=>{
 
                     PADDING(ELEMENTSES,"5%");
 
-                    RADIUS(ELEMENTSES,"10px");
+                    HEIGHT(ELEMENTSES,"50px");
 
-                    HEIGHT(ELEMENTSES,"20px");
+                    COLOR(ELEMENTSES,BLACK);
 
-                    COLOR(ELEMENTSES,TEAL);
+                    BACKGROUND(ELEMENTSES,WHITE);
 
-                    BACKGROUND(ELEMENTSES,BLACK);
+                    POSITIONABSOLUTE(ELEMENTSES);
+
+                    TOP(ELEMENTSES,"0");
 
                 });
 
@@ -244,19 +244,19 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"RAMADAN FOOD PACK",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
+                TEXTVIEW(ELEMENTIS,"RAMADAN FOOD PACK 2026/1447H",(ELEMENTSES)=>{
 
                     PADDING(ELEMENTSES,"5%");
 
-                    RADIUS(ELEMENTSES,"10px");
+                    HEIGHT(ELEMENTSES,"50px");
 
-                    HEIGHT(ELEMENTSES,"20px");
+                    COLOR(ELEMENTSES,BLACK);
 
-                    COLOR(ELEMENTSES,TEAL);
+                    BACKGROUND(ELEMENTSES,WHITE);
 
-                    BACKGROUND(ELEMENTSES,BLACK);
+                    POSITIONABSOLUTE(ELEMENTSES);
+
+                    TOP(ELEMENTSES,"0");
 
                 });
 
@@ -293,7 +293,7 @@ const MOBILEVIEW=()=>{
 
                 OVERFLOWX(ELEMENTIS);
 
-                MARGIN(ELEMENTIS,"2%");
+                (ELEMENTIS,"2%");
 
                 FLEXSHRINK(ELEMENTIS);
 
@@ -309,19 +309,19 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"ZAKAT AL-FITIR",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
+                TEXTVIEW(ELEMENTIS,"ZAKAT AL-FITIR 2026/1447H",(ELEMENTSES)=>{
 
                     PADDING(ELEMENTSES,"5%");
 
-                    RADIUS(ELEMENTSES,"10px");
+                    HEIGHT(ELEMENTSES,"50px");
 
-                    HEIGHT(ELEMENTSES,"20px");
+                    COLOR(ELEMENTSES,BLACK);
 
-                    COLOR(ELEMENTSES,TEAL);
+                    BACKGROUND(ELEMENTSES,"#FFFFFF70");
 
-                    BACKGROUND(ELEMENTSES,BLACK);
+                    POSITIONABSOLUTE(ELEMENTSES);
+
+                    TOP(ELEMENTSES,"0");
 
                 });
 
@@ -374,19 +374,19 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"RAMADAN",(ELEMENTSES)=>{
-
-                    MARGINTOP(ELEMENTSES,"5%");
+                TEXTVIEW(ELEMENTIS,"SHARE HOPE 2026/1447H",(ELEMENTSES)=>{
 
                     PADDING(ELEMENTSES,"5%");
 
-                    RADIUS(ELEMENTSES,"10px");
+                    HEIGHT(ELEMENTSES,"50px");
 
-                    HEIGHT(ELEMENTSES,"20px");
+                    COLOR(ELEMENTSES,BLACK);
 
-                    COLOR(ELEMENTSES,TEAL);
+                    BACKGROUND(ELEMENTSES,WHITE);
 
-                    BACKGROUND(ELEMENTSES,BLACK);
+                    POSITIONABSOLUTE(ELEMENTSES);
+
+                    TOP(ELEMENTSES,"0");
 
                 });
 
