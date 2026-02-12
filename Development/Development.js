@@ -37,17 +37,17 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        TEXTVIEW(ELEMENT,"Ash Shakur Charity And Orphanage Aid",(ELEMENTS)=>{
+        TEXTVIEW(ELEMENT,"ASH SHAKUR CHARITY AND ORPHANAGE AID",(ELEMENTS)=>{
 
-            FONTSIZE(ELEMENTS,"16px");
+            FONTSIZE(ELEMENTS,"15px");
             COLOR(ELEMENTS,GREEN);
 
         });
 
-        TEXTVIEW(ELEMENT,"Helping The Needy Children",(ELEMENTS)=>{
+        TEXTVIEW(ELEMENT,'"Helping The Poor Orphans and  the Needy People"',(ELEMENTS)=>{
 
-            FONTSIZE(ELEMENTS,"15px");
-            COLOR(ELEMENTS,FORESTGREEN);
+            FONTSIZE(ELEMENTS,"13px");
+            COLOR(ELEMENTS,BLACK);
 
         });
 
@@ -279,15 +279,181 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","300px",ORANGE,(ELEMENTS)=>{
 
             RADIUS(ELEMENTS,"10px");
 
             BACKGROUND(ELEMENTS,BLACK);
 
-        });
+            TABLEVIEW(ELEMENTS,"30%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
-        BREAK(ELEMENT);
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Social Media",(ELEMENTSES)=>{
+
+                    MARGIN(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            INLINEVIEW(ELEMENTS,"95%","100px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+                OVERFLOWX(ELEMENTS);
+
+                ICONVIEW(ELEMENTS,WHITEFACEBOOKICON,(ELEMENTS)=>{
+
+                });
+
+                ICONVIEW(ELEMENTS,WHITEINSTAGRAMICON,(ELEMENTS)=>{
+
+                });
+
+                
+                ICONVIEW(ELEMENTS,WHITETIKTOKICON,(ELEMENTS)=>{
+
+                });
+
+                
+                ICONVIEW(ELEMENTS,WHITEXICON,(ELEMENTS)=>{
+
+                });
+
+            });
+
+            BREAK(ELEMENT);
+
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"2%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"2%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Policies",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"2%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"20%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"App",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+            TABLEVIEW(ELEMENTS,"30%","25px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+
+                RADIUS(ELEMENTIS,"5px");
+
+                TEXTVIEW(ELEMENTIS,"Contact Us",(ELEMENTSES)=>{
+
+                    MARGINTOP(ELEMENTSES,"5%");
+
+                    FONTSIZE(ELEMENTSES,"15px");
+
+                });
+
+            });
+
+        });
 
     });
  
