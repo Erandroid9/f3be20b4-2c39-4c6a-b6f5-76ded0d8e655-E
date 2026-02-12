@@ -513,6 +513,51 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
+
+                WIDTH(ELEMENTS,"150px");
+                HEIGHT(ELEMENTS,"40px");
+                RADIUS(ELEMENTS,"5px");
+
+            });       
+           
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/Asco/mosque.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTSES)=>{
+
+                    POSITIONABSOLUTE(ELEMENTSES);
+                    LEFT(ELEMENTSES,"");
+    
+                });
+
+            });
+
+            RADIUS(ELEMENTS,"10px");
+
+            FOOTER(ELEMENTS,(ELS)=>{
+
+                BACKGROUND(ELS,BLACK);
+
+                TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
         DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
 
             RADIUS(ELEMENTS,"10px");
