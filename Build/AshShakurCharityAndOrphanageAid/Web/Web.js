@@ -179,7 +179,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+                TEXTVIEW(ELEMENTIS,"RAMADAN IFTAR",(ELEMENTSES)=>{
 
                     MARGINTOP(ELEMENTSES,"5%");
 
@@ -244,7 +244,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+                TEXTVIEW(ELEMENTIS,"RAMADAN FOOD PACK",(ELEMENTSES)=>{
 
                     MARGINTOP(ELEMENTSES,"5%");
 
@@ -309,7 +309,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+                TEXTVIEW(ELEMENTIS,"ZAKAT AL-FITIR",(ELEMENTSES)=>{
 
                     MARGINTOP(ELEMENTSES,"5%");
 
@@ -374,7 +374,7 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                TEXTVIEW(ELEMENTIS,"RAMANDAN",(ELEMENTSES)=>{
+                TEXTVIEW(ELEMENTIS,"RAMADAN",(ELEMENTSES)=>{
 
                     MARGINTOP(ELEMENTSES,"5%");
 
