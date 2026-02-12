@@ -488,7 +488,7 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELS)=>{
 
-                BACKGROUND(ELS,BLACK);
+                BACKGROUND(ELS,GREEN);
 
                 TEXTVIEW(ELS,"Donate",(ELSSS)=>{
 
@@ -557,7 +557,7 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELS)=>{
 
-                BACKGROUND(ELS,BLACK);
+                BACKGROUND(ELS,GREEN);
 
                 TEXTVIEW(ELS,"Donate",(ELSSS)=>{
 
@@ -627,7 +627,7 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELS)=>{
 
-                BACKGROUND(ELS,BLACK);
+                BACKGROUND(ELS,GREEN);
 
                 TEXTVIEW(ELS,"Donate",(ELSSS)=>{
 
