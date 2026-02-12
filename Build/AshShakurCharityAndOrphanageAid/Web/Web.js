@@ -693,6 +693,12 @@ const MOBILEVIEW=()=>{
 
                     HEIGHT(ELEMENTS,"50px");
 
+                    CLICK(ELEMENTS,()=>{
+
+                        WHATSAPP("+256789467876");
+
+                    });
+
                 });
 
                 ICONVIEW(ELEMENTS,COLOREDINSTAGRAM,(ELEMENTS)=>{
@@ -700,6 +706,12 @@ const MOBILEVIEW=()=>{
                     WIDTH(ELEMENTS,"50px");
 
                     HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        INSTGRAM("ash_shakur_charity_");
+
+                    });
 
                 });
 
@@ -709,6 +721,12 @@ const MOBILEVIEW=()=>{
 
                     HEIGHT(ELEMENTS,"50px");
 
+                    CLICK(ELEMENTS,()=>{
+
+                        TIKTOK("ashshakurcharity1");
+
+                    });
+
                 });
 
                 ICONVIEW(ELEMENTS,BLACKXICON,(ELEMENTS)=>{
@@ -716,6 +734,12 @@ const MOBILEVIEW=()=>{
                     WIDTH(ELEMENTS,"50px");
 
                     HEIGHT(ELEMENTS,"50px");
+
+                    CLICK(ELEMENTS,()=>{
+
+                        X("AshShakur41402");
+
+                    });
 
                 });
 
@@ -892,6 +916,12 @@ const MOBILEVIEW=()=>{
             WIDTH(ELEMENTS,"30px");
 
             HEIGHT(ELEMENTS,"30px");
+
+        });
+
+        CLICK(ELEMENTS,()=>{
+
+            WHATSAPP("+256789467876");
 
         });
 

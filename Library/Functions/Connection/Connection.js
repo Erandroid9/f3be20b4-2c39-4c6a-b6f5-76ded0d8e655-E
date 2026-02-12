@@ -72,6 +72,7 @@ import { DELETEDATASTORE } from "../DataBase/DeleteDataStore/DeleteDataStore.js"
 import { RANDOMCODEGENERATOR } from "../DataBase/RandomCodeGenerator/RandomCodeGenerator.js";
 import { SERVERASSETS } from "../DataBase/ServerAssets/ServerAssets.js";
 import { GETEMAILS } from "../DataBase/GetEmails/GetEmails.js";
+import { TIKTOK } from "../DataBase/Tiktok/Tiktok.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -149,6 +150,8 @@ const DELETEDATASTORE=${DELETEDATASTORE};
 const RANDOMCODEGENERATOR=${RANDOMCODEGENERATOR};
 const SERVERASSETS=${SERVERASSETS};
 const GETEMAILS=${GETEMAILS};
+const TIKTOK=${TIKTOK};
+const X=${X};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -156,5 +159,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const GETEMAILS=${GETEMAILS};
+const X=${X};
 `
