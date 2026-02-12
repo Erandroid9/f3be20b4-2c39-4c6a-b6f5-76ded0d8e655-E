@@ -55,7 +55,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Child Fund",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Child Fund",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"100px");
                 HEIGHT(ELEMENTS,"40px");
@@ -67,7 +67,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Food Aid",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Food Aid",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
@@ -79,7 +79,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Ramadan",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Ramadan",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
@@ -91,7 +91,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
@@ -103,7 +103,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Qurban",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Qurban",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
@@ -115,7 +115,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Water Well",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Water Well",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"100px");
                 HEIGHT(ELEMENTS,"40px");
@@ -127,7 +127,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Aqeeqha",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Aqeeqha",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
@@ -139,7 +139,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Medical Support",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Medical Support",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"120px");
                 HEIGHT(ELEMENTS,"40px");
@@ -215,7 +215,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Child Fund",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Child Fund",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"100px");
                 HEIGHT(ELEMENTS,"40px");
@@ -249,7 +249,7 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
