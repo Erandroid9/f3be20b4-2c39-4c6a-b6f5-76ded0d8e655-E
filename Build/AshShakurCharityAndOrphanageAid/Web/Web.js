@@ -35,6 +35,22 @@ const MOBILEVIEW=()=>{
 
     },(ELEMENT)=>{
 
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"AshShakur Charity And Orphanage Aid",(ELEMENTS)=>{
+
+            FONTSIZE(ELEMENTS,"16px");
+            COLOR(ELEMENTS,GREEN);
+
+        });
+
+        TEXTVIEW(ELEMENT,"Helping The Needy Children",(ELEMENTS)=>{
+
+            FONTSIZE(ELEMENTS,"15px");
+            COLOR(ELEMENTS,FORESTGREEN);
+
+        });
+
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
             OVERFLOWX(ELEMENTS);
@@ -54,6 +70,18 @@ const MOBILEVIEW=()=>{
             BUTTON(ELEMENTS,"Food Aid",GREEN,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
+                HEIGHT(ELEMENTS,"40px");
+                RADIUS(ELEMENTS,"5px");
+
+                MARGINLEFT(ELEMENTS,"2%");
+
+                FLEXSHRINK(ELEMENTS);
+
+            });
+
+            BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
+
+                WIDTH(ELEMENTS,"200px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
@@ -102,18 +130,6 @@ const MOBILEVIEW=()=>{
             BUTTON(ELEMENTS,"Aqeeqha",GREEN,"",(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
-                HEIGHT(ELEMENTS,"40px");
-                RADIUS(ELEMENTS,"5px");
-
-                MARGINLEFT(ELEMENTS,"2%");
-
-                FLEXSHRINK(ELEMENTS);
-
-            });
-
-            BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
-
-                WIDTH(ELEMENTS,"200px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
