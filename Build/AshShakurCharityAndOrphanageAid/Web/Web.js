@@ -209,6 +209,56 @@ const MOBILEVIEW=()=>{
 
         });
 
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Child Fund",GREEN,"",(ELEMENTS)=>{
+
+                WIDTH(ELEMENTS,"100px");
+                HEIGHT(ELEMENTS,"40px");
+                RADIUS(ELEMENTS,"5px");
+
+            });       
+           
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",ORANGE,(ELEMENTS)=>{
+
+            RADIUS(ELEMENTS,"10px");
+
+        });
+
+        BREAK(ELEMENT);
+
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
+
+            OVERFLOWX(ELEMENTS);
+
+            BUTTON(ELEMENTS,"Mosque Construction",GREEN,"",(ELEMENTS)=>{
+
+                WIDTH(ELEMENTS,"150px");
+                HEIGHT(ELEMENTS,"40px");
+                RADIUS(ELEMENTS,"5px");
+
+            });       
+           
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","400px",ORANGE,(ELEMENTS)=>{
+
+            RADIUS(ELEMENTS,"10px");
+
+        });
+
+        BREAK(ELEMENT);
+
     });
  
 };
