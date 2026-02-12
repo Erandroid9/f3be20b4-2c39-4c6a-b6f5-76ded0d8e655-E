@@ -483,9 +483,35 @@ const MOBILEVIEW=()=>{
 
             });
 
+            BREAK(ELEMENTS);
+
+            BREAK(ELEMENTS);
+            
+            BREAK(ELEMENTS);
+
         });
 
     });
+
+    BUTTON(""," ",FORESTGREEN,"",(ELEMENTS)=>{
+
+        POSITIONFIXED(ELEMENTS);
+        RIGHT(ELEMENTS,"2%");
+        BOTTOM(ELEMENTS,"5px");
+        
+        WIDTH(ELEMENTS,"70px");
+        HEIGHT(ELEMENTS,"70px");
+        RADIUS(ELEMENTS,"100%");
+
+        ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,(ELEMENTS)=>{
+
+            WIDTH(ELEMENTS,"30px");
+
+            HEIGHT(ELEMENTS,"30px");
+
+        });
+
+    });   
  
 };
 
