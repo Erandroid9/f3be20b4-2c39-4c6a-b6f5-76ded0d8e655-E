@@ -203,9 +203,11 @@ const MOBILEVIEW=()=>{
 
                     POSITIONABSOLUTE(ELIS);
 
-                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+                    TEXTVIEW(ELIS,"This year, we will once again come together to share the blessings of Ramadan with millions of people in need who await it with hope.",(ELEMENTSES)=>{
 
                         MARGIN(ELEMENTSES,"5%");
+
+                        FONTSIZE(ELEMENTSES,"17px");
 
                     });
 
@@ -268,9 +270,11 @@ const MOBILEVIEW=()=>{
 
                     POSITIONABSOLUTE(ELIS);
 
-                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+                    TEXTVIEW(ELIS,"We are preparing food packages to turn into cheerful Ramadan tables for the families in need during Ramadan.",(ELEMENTSES)=>{
 
                         MARGIN(ELEMENTSES,"5%");
+
+                        FONTSIZE(ELEMENTSES,"17px");
 
                     });
 
@@ -333,9 +337,11 @@ const MOBILEVIEW=()=>{
 
                     POSITIONABSOLUTE(ELIS);
 
-                    TEXTVIEW(ELIS,"Randam A month to share and repent your wrong doings to Allah.",(ELEMENTSES)=>{
+                    TEXTVIEW(ELIS,"Zakat involves giving of 2.5% of our annual wealth to charity. It is one of the five pillars of Islam and compulsory for all eligible Muslims.",(ELEMENTSES)=>{
 
                         MARGIN(ELEMENTSES,"5%");
+
+                        FONTSIZE(ELEMENTSES,"17px");
 
                     });
 
@@ -402,6 +408,8 @@ const MOBILEVIEW=()=>{
 
                         MARGIN(ELEMENTSES,"5%");
 
+                        FONTSIZE(ELEMENTSES,"17px");
+
                     });
 
                 });
@@ -423,7 +431,25 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,BLACK);
+
+            });
 
         });
         
@@ -474,7 +500,25 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,BLACK);
+
+            });
 
         });
 
@@ -525,7 +569,26 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+                DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,BLACK);
+
+            });
 
         });
 
@@ -576,7 +639,25 @@ const MOBILEVIEW=()=>{
 
         BREAK(ELEMENT);
 
-        DIVVIEW(ELEMENT,"95%","200px",ORANGE,(ELEMENTS)=>{
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            TEXTVIEW(ELEMENTS,"FEED THE FASTING THIS RAMADAN",(ELEMENTSES)=>{
+
+                MARGIN(ELEMENTSES,"5%");
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,TEAL);
+
+            });
+
+            LEFTTEXTVIEW(ELEMENTS,"Whoever helps break the fast of a fasting person will have the same reward as the one [who fasted] without decreasing anything from the reward of the fasting person.",(ELEMENTSES)=>{
+
+                FONTSIZE(ELEMENTSES,"17px");
+
+                COLOR(ELEMENTSES,BLACK);
+
+            });
 
         });
 
