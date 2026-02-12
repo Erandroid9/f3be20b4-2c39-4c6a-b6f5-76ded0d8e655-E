@@ -283,7 +283,7 @@ const MOBILEVIEW=()=>{
 
             RADIUS(ELEMENTS,"10px");
 
-            TABLEVIEW(ELEMENTS,"30%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
+            TABLEVIEW(ELEMENTS,"50%","30px",TRANSPARENT,"2%",(ELEMENTIS)=>{
 
                 RADIUS(ELEMENTIS,"5px");
 
@@ -291,7 +291,7 @@ const MOBILEVIEW=()=>{
 
                     MARGIN(ELEMENTSES,"5%");
 
-                    FONTSIZE(ELEMENTSES,"15px");
+                    COLOR(ELEMENTSES,BLACK);
 
                 });
 
