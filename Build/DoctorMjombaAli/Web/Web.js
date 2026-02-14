@@ -1114,6 +1114,9 @@ const MOBILEVIEW=()=>{
 
 const CONTACTUSPAGE=()=>{
 
+    DELETEDATASTORE("","Message");
+    DELETEDATASTORE("","Number");
+
     HEADERVIEW((ELEMENT)=>{
 
         LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTSS)=>{
@@ -1134,34 +1137,91 @@ const CONTACTUSPAGE=()=>{
 
         OVERFLOWHIDDEN(ELEMENT);
 
-        BREAK(ELEMENT);
+        CONDITION(localStorage.getItem("ChatterId"),()=>{
 
-        DIVVIEW(ELEMENT,"100%","80%",TRANSPARENT,(ELEMENTIS)=>{
+            BREAK(ELEMENT);
 
-            DIVVIEW(ELEMENT,"100%","auto",TRANSPARENT,(ELEMENTS)=>{
+            DIVVIEW(ELEMENT,"100%","80%",TRANSPARENT,(ELEMENTIS)=>{
 
-                POSITIONABSOLUTE(ELEMENTS);
+                DIVVIEW(ELEMENT,"100%","auto",TRANSPARENT,(ELEMENTS)=>{
 
-                BOTTOM(ELEMENTS,"");
+                    POSITIONABSOLUTE(ELEMENTS);
 
-                LEFT(ELEMENTS,"");
-                
-                HEIGHT(ELEMENTS,"15%");
+                    BOTTOM(ELEMENTS,"");
 
-                DISPLAYFLEX(ELEMENTS);
+                    LEFT(ELEMENTS,"");
+                    
+                    HEIGHT(ELEMENTS,"15%");
 
-                ROUNDTEXTAREAVIEW(ELEMENTS,"Chat With Doctor","Message",(ELEMENTSS)=>{
+                    DISPLAYFLEX(ELEMENTS);
 
-                    WIDTH(ELEMENTSS,"80%");
+                    ROUNDTEXTAREAVIEW(ELEMENTS,"Chat With Doctor","Message",(ELEMENTSS)=>{
 
-                    HEIGHT(ELEMENTSS,"70px");
+                        WIDTH(ELEMENTSS,"80%");
+
+                        HEIGHT(ELEMENTSS,"70px");
+
+                    });
+                    
+                    LEFTICONVIEW(ELEMENTS,WHITESENDICON,(ELEMENTSS)=>{
+
+                        CLICK(ELEMENTSS,()=>{
+
+                            TOASTCONDITION(sessionStorage.getItem("Message"),"Please Type a Message",()=>{
+
+                                TOASTVIEW("Please Wait");
+
+                                MJOMBAALIDIRECTMESSAGE();
+
+                            });
+                            
+                        });
+
+                    });
 
                 });
-                
-                LEFTICONVIEW(ELEMENTS,WHITESENDICON,(ELEMENTSS)=>{
 
-                    CLICK(ELEMENTSS,()=>{
-                        
+            });
+
+        },()=>{
+
+            BREAK(ELEMENT);
+
+            TEXTVIEW(ELEMENT,"Doctor Mjomba Ali Live Chat",()=>{
+
+            });
+
+            BREAK(ELEMENT);
+
+            TEXTVIEW(ELEMENT,"Access Live Chat Number",(ELS)=>{
+
+                FONTSIZE(ELS,"16px");
+
+            });
+
+            BREAK(ELEMENT);
+
+            ROUNDINPUTVIEW(ELEMENT,"tel","Enter Your Phone With Country Code","Number",()=>{
+
+            });
+
+            BREAK(ELEMENT);
+
+            BUTTON(ELEMENT,"Chat",GREEN,WHITE,(ELEMENTS)=>{
+               
+                WIDTH(ELEMENTS,"100px");
+                BOTTOM(ELEMENTS,"10px");
+                RIGHT(ELEMENTS,"2%");
+                RADIUS(ELEMENTS,"10px");
+
+                CLICK(ELEMENTS,()=>{
+
+                    TOASTCONDITION(sessionStorage.getItem("Number"),"Enter Your Phone Number",()=>{
+
+                        DATASTORE(" ","ChatterId",sessionStorage.getItem("Number"));
+
+                        CONTACTUSPAGE();
+
                     });
 
                 });
