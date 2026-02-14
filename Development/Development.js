@@ -1,5 +1,7 @@
 const ERANDES=()=>{
 
+    BODYCOLOR(BLACK,WHITE);
+
     SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();});
 
 };
@@ -143,16 +145,6 @@ const DESKTOPVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
-
-                    });
-
-                });
-
                 ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
@@ -213,16 +205,6 @@ const DESKTOPVIEW=()=>{
                     CLICK(ELEMENTSS,()=>{
 
                         CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
 
                     });
 
@@ -293,16 +275,6 @@ const DESKTOPVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
-
-                    });
-
-                });
-
                 ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
@@ -363,16 +335,6 @@ const DESKTOPVIEW=()=>{
                     CLICK(ELEMENTSS,()=>{
 
                         CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
 
                     });
 
@@ -727,16 +689,6 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
-
-                    });
-
-                });
-
                 ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
@@ -797,16 +749,6 @@ const MOBILEVIEW=()=>{
                     CLICK(ELEMENTSS,()=>{
 
                         CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
 
                     });
 
@@ -877,16 +819,6 @@ const MOBILEVIEW=()=>{
 
                 });
 
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
-
-                    });
-
-                });
-
                 ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
 
                     CLICK(ELEMENTSS,()=>{
@@ -947,16 +879,6 @@ const MOBILEVIEW=()=>{
                     CLICK(ELEMENTSS,()=>{
 
                         CALL("+254794094414");
-
-                    });
-
-                });
-
-                ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                    CLICK(ELEMENTSS,()=>{
-
-                        SMS("+254794094414");
 
                     });
 
