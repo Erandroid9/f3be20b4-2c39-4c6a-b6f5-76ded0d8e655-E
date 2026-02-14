@@ -1123,7 +1123,7 @@ const CONTACTUSPAGE=()=>{
 
             CLICK(ELEMENTSS,()=>{
 
-                ROUTE(" ",VIDEOPAGES,MOBILEVIEW);
+                ROUTE(" ",MOBILEVIEW,MOBILEVIEW);
 
             });
 
