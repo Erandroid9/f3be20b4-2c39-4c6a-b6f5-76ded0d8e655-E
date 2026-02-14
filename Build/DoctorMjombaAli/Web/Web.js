@@ -580,6 +580,36 @@ const MOBILEVIEW=()=>{
 
     },(ELEMENT)=>{
 
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/First.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    LEFT(ELEMENTS);
+                    WIDTH(ELEMENTS,"50%");
+
+                });
+                
+            });
+
+            SERVERCOMPONENTS("Images/DoctorMjombaAli/Second.jpeg",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELEMENTS)=>{
+
+                    POSITIONABSOLUTE(ELEMENTS);
+                    RIGHT(ELEMENTS);
+                    WIDTH(ELEMENTS,"50%");
+
+                });
+                
+            });
+
+        });
+
         INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
             TEXTVIEW(ELEMENTS,"Family",(ELEMENTSS)=>{
