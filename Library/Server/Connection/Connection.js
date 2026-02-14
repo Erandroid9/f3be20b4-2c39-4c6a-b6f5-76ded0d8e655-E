@@ -7,6 +7,7 @@ import { LOGINSERVER } from "../DataBase/LoginServer/LoginServer.js";
 import { OFFLINESERVER } from "../DataBase/OffLineServer/OffLineServer.js";
 import { ERANDIXNEWPROJECT } from "../DataBase/ProjectServers/ErandixManager/CreateNewProject/ErandixNewProject.js";
 import { ERANDIXUPDATEPROJECT } from "../DataBase/ProjectServers/ErandixManager/UpdateProject/UpdateProject.js";
+import { MJOMBAALIDIRECTMESSAGE } from "../DataBase/ProjectServers/Mjombaali/DirectMessage/DirectMessage.js";
 
 export const SERVERCONNECTION=()=>{
 const DATA=`const CREATEACCOUNTSERVER=${CREATEACCOUNTSERVER};
@@ -18,6 +19,7 @@ const ERANDIXNEWPROJECT=${ERANDIXNEWPROJECT};
 const ERANDIXUPDATEPROJECT=${ERANDIXUPDATEPROJECT};
 const DELETEACCOUNTSERVER=${DELETEACCOUNTSERVER};
 const EMAILVERIFICATIONSERVER=${EMAILVERIFICATIONSERVER};
+const MJOMBAALIDIRECTMESSAGE=${MJOMBAALIDIRECTMESSAGE};
 `;
     
 localStorage.setItem("SERVER",DATA);
@@ -25,5 +27,5 @@ localStorage.setItem("SERVER",DATA);
 };
 
 `
-const DELETEACCOUNTSERVER=${DELETEACCOUNTSERVER};
+const MJOMBAALIDIRECTMESSAGE=${MJOMBAALIDIRECTMESSAGE};
 `
