@@ -645,6 +645,8 @@ const MOBILEVIEW=()=>{
 
                             DATASTORE("","Sector",Data.Name);
 
+                            DATASTORE("","Names",Data.Link);
+
                             ROUTE(" ",HEADERPAGES,"MOBILEVIEW");
 
                         });
@@ -1336,7 +1338,7 @@ const HEADERPAGES=()=>{
 
         LOADERVIEW(ELEMENT,(LOAD)=>{
 
-            GETDATA(DOCTORMJOMBAALICONNECTIONLINK,sessionStorage.getItem("SectorID"),(Data)=>{
+            GETDATA(DOCTORMJOMBAALICONNECTIONLINK,sessionStorage.getItem("Names"),(Data)=>{
 
                 DISPLAYHIDDEN(LOAD);
 
