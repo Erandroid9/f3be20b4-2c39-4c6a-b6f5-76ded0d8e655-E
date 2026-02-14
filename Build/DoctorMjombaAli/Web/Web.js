@@ -1331,16 +1331,6 @@ const HEADERPAGES=()=>{
 
                         });
 
-                        ICONVIEW(ELEMENTSS,WHITECHATICON,(ELEMENTSS)=>{
-
-                            CLICK(ELEMENTSS,()=>{
-
-                                SMS("+254794094414");
-
-                            });
-
-                        });
-
                         ICONVIEW(ELEMENTSS,WHITEWHATSAPPICON,(ELEMENTSS)=>{
 
                             CLICK(ELEMENTSS,()=>{
