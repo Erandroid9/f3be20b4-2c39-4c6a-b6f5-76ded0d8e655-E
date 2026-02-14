@@ -1,6 +1,20 @@
-export const TEXTAREA=(HOLDER,MESSAGE,callBack)=>{
+export const TEXTAREA=(HOLDER,MESSAGE,STORAGE,callBack)=>{
 
     ELEMENTED(HOLDER,"textarea",(ELEMENT)=>{
+
+        FUNCTIONED(ELEMENT,"input",()=>{
+
+            CONDITION(ELEMENT.value,()=>{
+
+                DATASTORE("",STORAGE,ELEMENT.value);
+
+            },()=>{
+
+                DELETEDATASTORE("",STORAGE,ELEMENT.value);
+
+            });
+
+        });
 
         PLACEHOLDER(ELEMENT,MESSAGE);
 

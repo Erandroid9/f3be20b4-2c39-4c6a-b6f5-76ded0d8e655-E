@@ -1089,6 +1089,86 @@ const MOBILEVIEW=()=>{
         });
 
         BREAK(ELEMENT);
+        BREAK(ELEMENT);
+        BREAK(ELEMENT);
+
+    });
+
+    BUTTON("","Chat",GREEN,WHITE,(ELEMENT)=>{
+
+        POSITIONABSOLUTE(ELEMENT);
+        WIDTH(ELEMENT,"100px");
+        BOTTOM(ELEMENT,"10px");
+        RIGHT(ELEMENT,"2%");
+        RADIUS(ELEMENT,"10px");
+
+        CLICK(ELEMENT,()=>{
+
+            ROUTE(" ",CONTACTUSPAGE,"MOBILEVIEW");
+
+        });
+
+    });
+
+};
+
+const CONTACTUSPAGE=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,(ELEMENTSS)=>{
+
+            CLICK(ELEMENTSS,()=>{
+
+                ROUTE(" ",VIDEOPAGES,MOBILEVIEW);
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Live Chat",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        OVERFLOWHIDDEN(ELEMENT);
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"100%","80%",TRANSPARENT,(ELEMENTIS)=>{
+
+            DIVVIEW(ELEMENT,"100%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+                POSITIONABSOLUTE(ELEMENTS);
+
+                BOTTOM(ELEMENTS,"");
+
+                LEFT(ELEMENTS,"");
+                
+                HEIGHT(ELEMENTS,"15%");
+
+                DISPLAYFLEX(ELEMENTS);
+
+                ROUNDTEXTAREAVIEW(ELEMENTS,"Chat With Doctor","Message",(ELEMENTSS)=>{
+
+                    WIDTH(ELEMENTSS,"80%");
+
+                    HEIGHT(ELEMENTSS,"70px");
+
+                });
+                
+                LEFTICONVIEW(ELEMENTS,WHITESENDICON,(ELEMENTSS)=>{
+
+                    CLICK(ELEMENTSS,()=>{
+                        
+                    });
+
+                });
+
+            });
+
+        });
 
     });
 

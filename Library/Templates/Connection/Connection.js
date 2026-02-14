@@ -14,6 +14,7 @@ import { RIGHTDIVVIEW } from "../DataBase/Components/RightDivView/RightDivView.j
 import { RIGHTICONVIEW } from "../DataBase/Components/RightIconView/RightIconView.js";
 import { RIGHTTEXTVIEW } from "../DataBase/Components/RightTextView/RighttextView.js";
 import { ROUNDINPUTVIEW } from "../DataBase/Components/RoundInputView/RoundInputView.js";
+import { ROUNDTEXTAREAVIEW } from "../DataBase/Components/RoundTextArea/RoundTextArea.js";
 import { TABLEVIEW } from "../DataBase/Components/TableView/TableView.js";
 import { TEXTVIEW } from "../DataBase/Components/TextView/TextView.js";
 import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
@@ -84,6 +85,7 @@ const showResult=${showResult};
 const readSms=${readSms};
 const LOADERVIEW=${LOADERVIEW};
 const BODYCOLOR=${BODYCOLOR};
+const ROUNDTEXTAREAVIEW=${ROUNDTEXTAREAVIEW};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -91,5 +93,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const BODYCOLOR=${BODYCOLOR};
+const ROUNDTEXTAREAVIEW=${ROUNDTEXTAREAVIEW};
 `
