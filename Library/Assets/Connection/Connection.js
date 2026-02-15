@@ -3,6 +3,7 @@ import { BLACKGRIDICON } from "../DataBase/BlackIcons/Grid/Grid.js";
 import { BLACKHAMBURGICON } from "../DataBase/BlackIcons/Hamberg/Hamberg.js";
 import { BLACKLOCATIONICON } from "../DataBase/BlackIcons/Location/Location.js";
 import { BLACKMENUICON } from "../DataBase/BlackIcons/MenuIcon/MenuIcon.js";
+import { BLACKRETRYICON } from "../DataBase/BlackIcons/RetryIcon/RetryIcon.js";
 import { BLACKSUNICON } from "../DataBase/BlackIcons/Sun/Sun.js";
 import { BLACKXICON } from "../DataBase/BlackIcons/XIcon/Xicon.js";
 import { COLOREDFACEBOOKICON } from "../DataBase/ColoredIcons/Facebook/Facebook.js";
@@ -248,10 +249,11 @@ const COLOREDFACEBOOKICON="${COLOREDFACEBOOKICON}";
 const COLOREDINSTAGRAM="${COLOREDINSTAGRAM}";
 const BLACKXICON="${BLACKXICON}";
 const COLOREDTIKTOKICON="${COLOREDTIKTOKICON}";
+const BLACKRETRYICON="${BLACKRETRYICON}";
 `; 
 localStorage.setItem('ASSETS',DATA);
 };
 
 `
-const COLOREDTIKTOKICON="${COLOREDTIKTOKICON}";
+const BLACKRETRYICON="${BLACKRETRYICON}";
 `

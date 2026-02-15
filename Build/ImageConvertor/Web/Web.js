@@ -1,10 +1,8 @@
 const ERANDES=()=>{
 
-    VIEWCONTROLLER();
-
     APPMODE();
-
-    SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();})
+    
+    VIEWCONTROLLER();
 
 };
 
@@ -16,6 +14,24 @@ const MOBILEVIEW=()=>{
 
         });
 
+        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+
+            RIGHTICONVIEW(ELEMENT,WHITERETRYICON,(ELEMENTS)=>{
+
+                CHANGEMODE(ELEMENTS);
+
+            });
+
+        },()=>{
+
+            RIGHTICONVIEW(ELEMENT,BLACKRETRYICON,(ELEMENTS)=>{
+
+                CHANGEMODE(ELEMENTS);
+                
+            });
+
+        });
+
     },(ELEMENT)=>{
 
         BREAK(ELEMENT);
@@ -24,11 +40,11 @@ const MOBILEVIEW=()=>{
 
             INLINEVIEW(ELEMENT,"95%","100px","","5% 0%",(ELEMENTS)=>{
 
-                TEXTAREA(ELEMENT,"",(ELEMS)=>{
+                TEXTAREA(ELEMENT,"Code Appears Here","Code",(ELEMS)=>{
 
-                    HEIGHT(ELEMS,"30%");
+                    BUTTON(ELEMENTS,"Change",GREEN,(ELEMSA)=>{
 
-                    BUTTON(ELEMENTS,"Change",TEAL,(ELEMSA)=>{
+                        COLOR(ELEMSA,WHITE);
 
                         WIDTH(ELEMSA,"20%");
 
@@ -38,7 +54,9 @@ const MOBILEVIEW=()=>{
 
                             BASE64CONVERTOR(Data.data, (Datata)=>{
 
-                                BUTTON(ELEMENTS,"Copy",ORANGE,"",(ELEMSA)=>{
+                                BUTTON(ELEMENTS,"Copy",ORANGE,(ELEMSA)=>{
+
+                                    COLOR(ELEMSA,WHITE);
 
                                     WIDTH(ELEMSA,"20%");
 
@@ -61,6 +79,8 @@ const MOBILEVIEW=()=>{
                     BUTTON(ELEMENTS,"Delete",RED,(ELEMSA)=>{
 
                         WIDTH(ELEMSA,"20%");
+
+                        COLOR(ELEMSA,WHITE);
 
                         CLICK(ELEMSA,()=>{
 
@@ -81,10 +101,28 @@ const MOBILEVIEW=()=>{
 };
 
 const DESKTOPVIEW=()=>{
-    
+
     HEADERVIEW((ELEMENT)=>{
 
         TEXT(ELEMENT,"h1","Image Convertor",()=>{
+
+        });
+
+        CONDITION(localStorage.getItem("BODYCOLOR") === "#000000",()=>{
+
+            RIGHTICONVIEW(ELEMENT,WHITERETRYICON,(ELEMENTS)=>{
+
+                CHANGEMODE(ELEMENTS);
+
+            });
+
+        },()=>{
+
+            RIGHTICONVIEW(ELEMENT,BLACKRETRYICON,(ELEMENTS)=>{
+
+                CHANGEMODE(ELEMENTS);
+                
+            });
 
         });
 
@@ -96,11 +134,11 @@ const DESKTOPVIEW=()=>{
 
             INLINEVIEW(ELEMENT,"95%","100px","","5% 0%",(ELEMENTS)=>{
 
-                TEXTAREA(ELEMENT,"",(ELEMS)=>{
+                TEXTAREA(ELEMENT,"Code Appears Here","Code",(ELEMS)=>{
 
-                    HEIGHT(ELEMS,"30%");
+                    BUTTON(ELEMENTS,"Change",GREEN,(ELEMSA)=>{
 
-                    BUTTON(ELEMENTS,"Change",TEAL,(ELEMSA)=>{
+                        COLOR(ELEMSA,WHITE);
 
                         WIDTH(ELEMSA,"20%");
 
@@ -110,7 +148,9 @@ const DESKTOPVIEW=()=>{
 
                             BASE64CONVERTOR(Data.data, (Datata)=>{
 
-                                BUTTON(ELEMENTS,"Copy",ORANGE,"",(ELEMSA)=>{
+                                BUTTON(ELEMENTS,"Copy",ORANGE,(ELEMSA)=>{
+
+                                    COLOR(ELEMSA,WHITE);
 
                                     WIDTH(ELEMSA,"20%");
 
@@ -133,6 +173,8 @@ const DESKTOPVIEW=()=>{
                     BUTTON(ELEMENTS,"Delete",RED,(ELEMSA)=>{
 
                         WIDTH(ELEMSA,"20%");
+
+                        COLOR(ELEMSA,WHITE);
 
                         CLICK(ELEMSA,()=>{
 

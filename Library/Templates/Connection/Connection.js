@@ -21,6 +21,7 @@ import { TOASTVIEW } from "../DataBase/Components/ToastView/ToastView.js";
 import { QELDATABASELINK } from "../DataBase/Constants/QelDataBaseLink/QelDataBaseLink.js";
 import { ACCOUNTEMAILCHECKER } from "../DataBase/Functions/AccountChecker/AccountChecker.js";
 import { BASE64CONVERTOR } from "../DataBase/Functions/Base64Convertor/Base64Convertor.js";
+import { CHANGEMODE } from "../DataBase/Functions/ChangeMode/ChangeMode.js";
 import { COMPONENTVALUE } from "../DataBase/Functions/Componentvalue/Componentvalue.js";
 import { DOWNLOADSAVEINDEX } from "../DataBase/Functions/DownloadSaveIndex/DownloadSaveIndex.js";
 import { FILEPICKED } from "../DataBase/Functions/FilePicked/FilePicked.js";
@@ -88,6 +89,7 @@ const LOADERVIEW=${LOADERVIEW};
 const BODYCOLOR=${BODYCOLOR};
 const ROUNDTEXTAREAVIEW=${ROUNDTEXTAREAVIEW};
 const APPMODE=${APPMODE};
+const CHANGEMODE=${CHANGEMODE};
 `;
     
 localStorage.setItem("TEMPLATES",DATA);
@@ -95,5 +97,5 @@ localStorage.setItem("TEMPLATES",DATA);
 };
 
 `
-const APPMODE=${APPMODE};
+const CHANGEMODE=${CHANGEMODE};
 `
