@@ -1,7 +1,5 @@
 const ERANDES=()=>{
 
-    BODYCOLOR(BLACK,WHITE);
-
     VIEWCONTROLLER();
 
 };
