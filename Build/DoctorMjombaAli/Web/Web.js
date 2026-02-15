@@ -1156,7 +1156,7 @@ const MOBILEVIEW=()=>{
 
     });
 
-    BUTTON("","Chat",GREEN,WHITE,(ELEMENT)=>{
+    BUTTON("","Chat",GREEN,(ELEMENT)=>{
 
         POSITIONABSOLUTE(ELEMENT);
         WIDTH(ELEMENT,"100px");
@@ -1289,7 +1289,7 @@ const CONTACTUSPAGE=()=>{
 
             BREAK(ELEMENT);
 
-            BUTTON(ELEMENT,"Chat",GREEN,WHITE,(ELEMENTS)=>{
+            BUTTON(ELEMENT,"Chat",GREEN,(ELEMENTS)=>{
                
                 WIDTH(ELEMENTS,"100px");
                 BOTTOM(ELEMENTS,"10px");
