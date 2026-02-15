@@ -1,6 +1,7 @@
 export const VIEWCONTROLLER=()=>{
 
-    SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();});
+    APPMODE();
 
+    SWITCHER("800px",()=>{DESKTOPVIEW()},()=>{MOBILEVIEW();});
 
 };
