@@ -1,3 +1,4 @@
+import { ASCODATABASELINK } from "../DataBase/AscoDataBaseLink/AscoDataBaseLink.js";
 import { BODY } from "../DataBase/Body/Body.js";
 import { COMPANYLINK } from "../DataBase/CompanyLink/CompanyLink.js";
 import { COMPANYNAME } from "../DataBase/CompanyName/CompanyName.js";
@@ -45,6 +46,7 @@ const GETEMAILLINK="${GETEMAILLINK}";
 const ERANDIXSERVERLINK="${ERANDIXSERVERLINK}";
 const MJOMBAALIEMAILLINK="${MJOMBAALIEMAILLINK}";
 const MJOMBAALIDATABASELINK="${MJOMBAALIDATABASELINK}";
+const ASCODATABASELINK="${ASCODATABASELINK}"
 `;
 
 localStorage.setItem("CONSTANTS",DATA);
@@ -52,5 +54,5 @@ localStorage.setItem("CONSTANTS",DATA);
 };
 
 `
-const MJOMBAALIDATABASELINK="${MJOMBAALIDATABASELINK}";
+const ASCODATABASELINK="${ASCODATABASELINK}";
 `

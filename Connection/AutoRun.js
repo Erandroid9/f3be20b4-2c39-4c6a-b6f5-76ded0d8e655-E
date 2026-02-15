@@ -5,6 +5,7 @@ BODIED();
 WEBKIT();
 ZOOM();
 VISITORS();
+APPMODE();
 `;
     
 localStorage.setItem("RUN",DATA);

@@ -1,8 +1,6 @@
 const ERANDES=()=>{
 
-    APPMODE();
-
-    VIEWCONTROLLER();
+  VIEWCONTROLLER();  
 
 };
 
@@ -82,6 +80,8 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTS,()=>{
 
+                    DATASTORE("","BaseName","OrphanSupport");
+
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
                 });
@@ -101,6 +101,8 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTS);
 
                 CLICK(ELEMENTS,()=>{
+
+                    DATASTORE("","BaseName","HotMeal");
 
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
@@ -122,6 +124,8 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTS,()=>{
 
+                    DATASTORE("","BaseName","Ramadaniftar");
+
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
                 });
@@ -141,6 +145,8 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTS);
 
                 CLICK(ELEMENTS,()=>{
+
+                    DATASTORE("","BaseName","MasjidConstruction");
 
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
@@ -162,6 +168,8 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTS,()=>{
 
+                    DATASTORE("","BaseName","Qurban");
+
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
                 });
@@ -181,6 +189,8 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTS);
 
                 CLICK(ELEMENTS,()=>{
+
+                    DATASTORE("","BaseName","WaterWellConstruction");
 
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
@@ -202,6 +212,8 @@ const MOBILEVIEW=()=>{
 
                 CLICK(ELEMENTS,()=>{
 
+                    DATASTORE("","BaseName","Aqeeqah");
+
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
                 });
@@ -221,6 +233,8 @@ const MOBILEVIEW=()=>{
                 FLEXSHRINK(ELEMENTS);
 
                 CLICK(ELEMENTS,()=>{
+
+                    DATASTORE("","BaseName","Needs");
 
                     ROUTE(" ",SUBJECTSECTION,"MOBILEVIEW");
 
@@ -1102,7 +1116,105 @@ const SUBJECTSECTION=()=>{
 
         BREAK(ELEMENT);
 
-        LOADERVIEW(ELEMENT,(LOAD)=>{
+        DIVVIEW(ELEMENT,"95%","auto",TRANSPARENT,(ELEMENTS)=>{
+
+            LOADERVIEW(ELEMENTS,(LOAD)=>{
+
+                REDUXEDDATA(ASCODATABASELINK,"Catergory",(Data)=>{
+
+                    DISPLAYHIDDEN(LOAD);
+
+                    CHECKER(Data.DataBaseName === sessionStorage.getItem("BaseName"),()=>{
+
+                        TEXTVIEW(ELEMENTS,Data.Name,(ELEMENTSI)=>{
+
+                            COLOR(ELEMENTSI,GREEN);
+
+                            FONTSIZE(ELEMENTSI,"23px");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.Image,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        TEXTVIEW(ELEMENTS,Data.SubTitle,(ELEMENTS)=>{
+
+                            COLOR(ELEMENTS,GREEN);
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        LEFTTEXTVIEW(ELEMENTS,Data.Story,(ELEMENTSS)=>{
+
+                            TYPE(ELEMENTSS,"p");
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageOne,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageTwo,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageThree,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                        BREAK(ELEMENTS);
+
+                        DIVVIEW(ELEMENTS,"95%","300px",TRANSPARENT,(ELIS)=>{
+
+                            OVERFLOWHIDDEN(ELIS);
+
+                            IMAGE(ELIS,"","",Data.ImageFour,TRANSPARENT,()=>{
+
+                            });
+
+                        });
+
+                    });
+
+                });
+
+            });
 
         });
 
@@ -1205,14 +1317,6 @@ const SUBJECTSECTION=()=>{
                 });
 
             });
-
-            BREAK(ELEMENT);
-
-            BREAK(ELEMENTS);
-
-            BREAK(ELEMENTS);
-            
-            BREAK(ELEMENTS);
 
         });
 
