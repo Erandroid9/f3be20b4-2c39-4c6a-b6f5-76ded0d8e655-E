@@ -1,5 +1,7 @@
 const ERANDES=()=>{
 
+    BODYCOLOR(WHITE,BLACK);
+
     VIEWCONTROLLER();
 
 };
@@ -21,11 +23,13 @@ const MOBILEVIEW=()=>{
 
         });
 
-        BUTTON(ELEMENT,"Donate",GREEN,"",(ELEMENTS)=>{
+        BUTTON(ELEMENT,"Donate",GREEN,(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"70px");
             HEIGHT(ELEMENTS,"40px");
             RADIUS(ELEMENTS,"5px");
+
+            COLOR(ELEMENTS,WHITE);
 
         });
 
@@ -55,12 +59,14 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Child Fund",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Child Fund",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"100px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
+                COLOR(ELEMENTS,WHITE);
+
                 MARGINLEFT(ELEMENTS,"2%");
 
                 FLEXSHRINK(ELEMENTS);
@@ -73,12 +79,14 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Food Aid",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Food Aid",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
+                COLOR(ELEMENTS,WHITE);
+
                 MARGINLEFT(ELEMENTS,"2%");
 
                 FLEXSHRINK(ELEMENTS);
@@ -91,12 +99,14 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Ramadan",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Ramadan",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
+                COLOR(ELEMENTS,WHITE);
+
                 MARGINLEFT(ELEMENTS,"2%");
 
                 FLEXSHRINK(ELEMENTS);
@@ -109,12 +119,14 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Mosque Construction",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
+                COLOR(ELEMENTS,WHITE);
+
                 MARGINLEFT(ELEMENTS,"2%");
 
                 FLEXSHRINK(ELEMENTS);
@@ -127,7 +139,7 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Qurban",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Qurban",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
@@ -135,6 +147,8 @@ const MOBILEVIEW=()=>{
 
                 MARGINLEFT(ELEMENTS,"2%");
 
+                COLOR(ELEMENTS,WHITE);
+
                 FLEXSHRINK(ELEMENTS);
 
                 CLICK(ELEMENTS,()=>{
@@ -145,12 +159,14 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Water Well",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Water Well",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"100px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
+                COLOR(ELEMENTS,WHITE);
+
                 MARGINLEFT(ELEMENTS,"2%");
 
                 FLEXSHRINK(ELEMENTS);
@@ -163,12 +179,14 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Aqeeqah",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Aqeeqah",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"70px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
 
+                COLOR(ELEMENTS,WHITE);
+
                 MARGINLEFT(ELEMENTS,"2%");
 
                 FLEXSHRINK(ELEMENTS);
@@ -181,11 +199,13 @@ const MOBILEVIEW=()=>{
 
             });
 
-            BUTTON(ELEMENTS,"Medical Support",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Medical Support",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"120px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
+
+                COLOR(ELEMENTS,WHITE);
 
                 MARGINLEFT(ELEMENTS,"2%");
 
@@ -257,11 +277,13 @@ const MOBILEVIEW=()=>{
 
                         FONTSIZE(ELEMENTSES,"17px");
 
+                        COLOR(ELEMENTSES,WHITE);
+
                     });
 
                 });
 
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
 
                     POSITIONABSOLUTE(ELEMENTS);
                     WIDTH(ELEMENTS,"30%");
@@ -269,6 +291,8 @@ const MOBILEVIEW=()=>{
                     HEIGHT(ELEMENTS,"40px");
                     RADIUS(ELEMENTS,"5px");
                     BOTTOM(ELEMENTS,"50px");
+
+                    COLOR(ELEMENTS,WHITE);
 
                 });
 
@@ -322,13 +346,15 @@ const MOBILEVIEW=()=>{
 
                         MARGIN(ELEMENTSES,"5%");
 
+                        COLOR(ELEMENTSES,WHITE);
+
                         FONTSIZE(ELEMENTSES,"17px");
 
                     });
 
                 });
 
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
 
                     POSITIONABSOLUTE(ELEMENTS);
                     WIDTH(ELEMENTS,"30%");
@@ -336,6 +362,8 @@ const MOBILEVIEW=()=>{
                     HEIGHT(ELEMENTS,"40px");
                     RADIUS(ELEMENTS,"5px");
                     BOTTOM(ELEMENTS,"50px");
+
+                    COLOR(ELEMENTS,WHITE);
 
                 });
 
@@ -391,11 +419,13 @@ const MOBILEVIEW=()=>{
 
                         FONTSIZE(ELEMENTSES,"17px");
 
+                        COLOR(ELEMENTSES,WHITE);
+
                     });
 
                 });
 
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
 
                     POSITIONABSOLUTE(ELEMENTS);
                     WIDTH(ELEMENTS,"30%");
@@ -403,6 +433,8 @@ const MOBILEVIEW=()=>{
                     HEIGHT(ELEMENTS,"40px");
                     RADIUS(ELEMENTS,"5px");
                     BOTTOM(ELEMENTS,"50px");
+
+                    COLOR(ELEMENTS,WHITE);
 
                 });
 
@@ -458,11 +490,13 @@ const MOBILEVIEW=()=>{
 
                         FONTSIZE(ELEMENTSES,"17px");
 
+                        COLOR(ELEMENTSES,WHITE);
+
                     });
 
                 });
 
-                BUTTON(ELEMENTIS,"Donate",GREEN,"",(ELEMENTS)=>{
+                BUTTON(ELEMENTIS,"Donate",GREEN,(ELEMENTS)=>{
 
                     POSITIONABSOLUTE(ELEMENTS);
                     WIDTH(ELEMENTS,"30%");
@@ -470,6 +504,8 @@ const MOBILEVIEW=()=>{
                     HEIGHT(ELEMENTS,"40px");
                     RADIUS(ELEMENTS,"5px");
                     BOTTOM(ELEMENTS,"50px");
+
+                    COLOR(ELEMENTS,WHITE);
 
                 });
 
@@ -507,11 +543,13 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Water Well Construction",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Water Well Construction",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"200px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
+
+                COLOR(ELEMENTS,WHITE);
 
             });       
            
@@ -539,6 +577,8 @@ const MOBILEVIEW=()=>{
                 BACKGROUND(ELS,GREEN);
 
                 TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                    COLOR(ELSSS,WHITE);
 
                 });
 
@@ -576,11 +616,13 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Qurban",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Qurban",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
+
+                COLOR(ELEMENTS,WHITE);
 
             });       
            
@@ -608,6 +650,8 @@ const MOBILEVIEW=()=>{
                 BACKGROUND(ELS,GREEN);
 
                 TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                    COLOR(ELSSS,WHITE);
 
                 });
 
@@ -646,11 +690,13 @@ const MOBILEVIEW=()=>{
 
             OVERFLOWX(ELEMENTS);
 
-            BUTTON(ELEMENTS,"Mosque Construction",TEAL,"",(ELEMENTS)=>{
+            BUTTON(ELEMENTS,"Mosque Construction",TEAL,(ELEMENTS)=>{
 
                 WIDTH(ELEMENTS,"150px");
                 HEIGHT(ELEMENTS,"40px");
                 RADIUS(ELEMENTS,"5px");
+
+                COLOR(ELEMENTS,WHITE);
 
             });       
            
@@ -678,6 +724,8 @@ const MOBILEVIEW=()=>{
                 BACKGROUND(ELS,GREEN);
 
                 TEXTVIEW(ELS,"Donate",(ELSSS)=>{
+
+                    COLOR(ELSSS,WHITE);
 
                 });
 
@@ -949,7 +997,7 @@ const MOBILEVIEW=()=>{
 
     });
 
-    BUTTON(""," ",FORESTGREEN,"",(ELEMENTS)=>{
+    BUTTON(""," ",FORESTGREEN,(ELEMENTS)=>{
 
         POSITIONFIXED(ELEMENTS);
         RIGHT(ELEMENTS,"2%");
@@ -958,6 +1006,8 @@ const MOBILEVIEW=()=>{
         WIDTH(ELEMENTS,"70px");
         HEIGHT(ELEMENTS,"70px");
         RADIUS(ELEMENTS,"100%");
+
+        COLOR(ELEMENTS,WHITE);
 
         ICONVIEW(ELEMENTS,WHITEWHATSAPPICON,(ELEMENTS)=>{
 
@@ -1004,11 +1054,13 @@ const SUBJECTSECTION=()=>{
 
         });
 
-        BUTTON(ELEMENT,"Donate",GREEN,"",(ELEMENTS)=>{
+        BUTTON(ELEMENT,"Donate",GREEN,(ELEMENTS)=>{
 
             WIDTH(ELEMENTS,"70px");
             HEIGHT(ELEMENTS,"40px");
             RADIUS(ELEMENTS,"5px");
+
+            COLOR(ELEMENTS,WHITE);
 
         });
 
@@ -1254,7 +1306,7 @@ const SUBJECTSECTION=()=>{
 
     });
 
-    BUTTON(""," ",FORESTGREEN,"",(ELEMENTS)=>{
+    BUTTON(""," ",FORESTGREEN,(ELEMENTS)=>{
 
         POSITIONFIXED(ELEMENTS);
         RIGHT(ELEMENTS,"2%");
