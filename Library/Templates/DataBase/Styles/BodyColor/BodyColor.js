@@ -4,5 +4,4 @@ export const BODYCOLOR=(BGCOLOR,TEXTCOLOR)=>{
 
     COLOR(BODY,TEXTCOLOR);
     
-
-}
+};
