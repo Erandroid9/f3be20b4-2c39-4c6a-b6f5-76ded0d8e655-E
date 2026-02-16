@@ -12,7 +12,7 @@ const MOBILEVIEW=()=>{
 
         });
 
-        RIGHTICONVIEW(ELEMENT,WHITEMENUICON,()=>{
+        RIGHTICONVIEW(ELEMENT,WHITEMENUICON,BLACKMENUICON,()=>{
 
         });
 
@@ -50,13 +50,13 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSI)=>{
 
-                BACKGROUND(ELEMENTSI,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSI);
 
                 LEFTTEXTVIEW(ELEMENTSI,"App Development",()=>{
 
                 });
 
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
 
                 });
 
@@ -80,13 +80,13 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSI)=>{
 
-                BACKGROUND(ELEMENTSI,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSI);
 
                 LEFTTEXTVIEW(ELEMENTSI,"Desktop Development",()=>{
 
                 });
 
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
 
                 });
 
@@ -110,13 +110,13 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSI)=>{
 
-                BACKGROUND(ELEMENTSI,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSI);
 
                 LEFTTEXTVIEW(ELEMENTSI,"WebSite Development",()=>{
 
                 });
 
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
 
                 });
 
@@ -140,13 +140,13 @@ const MOBILEVIEW=()=>{
 
             FOOTER(ELEMENTS,(ELEMENTSI)=>{
 
-                BACKGROUND(ELEMENTSI,BLACK);
+                ELEMENTEDBACKGROUND(ELEMENTSI);
 
                 LEFTTEXTVIEW(ELEMENTSI,"System Development",()=>{
 
                 });
 
-                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,()=>{
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
 
                 });
 

@@ -4,6 +4,7 @@ import { BLACKHAMBURGICON } from "../DataBase/BlackIcons/Hamberg/Hamberg.js";
 import { BLACKLOCATIONICON } from "../DataBase/BlackIcons/Location/Location.js";
 import { BLACKMENUICON } from "../DataBase/BlackIcons/MenuIcon/MenuIcon.js";
 import { BLACKMOONICON } from "../DataBase/BlackIcons/Moon/Moon.js";
+import { BLACKNEXTICON } from "../DataBase/BlackIcons/Next/Next.js";
 import { BLACKPHONEICON } from "../DataBase/BlackIcons/Phone/Phone.js";
 import { BLACKRETRYICON } from "../DataBase/BlackIcons/RetryIcon/RetryIcon.js";
 import { BLACKSENDICON } from "../DataBase/BlackIcons/Send/Send.js";
@@ -260,10 +261,11 @@ const BLACKWHATSAPPICON="${BLACKWHATSAPPICON}";
 const BLACKPHONEICON="${BLACKPHONEICON}";
 const BLACKMOONICON="${BLACKMOONICON}";
 const BLACKSENDICON="${BLACKSENDICON}";
+const BLACKNEXTICON="${BLACKNEXTICON}";
 `; 
 localStorage.setItem('ASSETS',DATA);
 };
 
 `
-const BLACKSENDICON="${BLACKSENDICON}";
+const BLACKNEXTICON="${BLACKNEXTICON}";
 `
