@@ -10,7 +10,7 @@ export const DOMAINNAMECHANGE=()=>{
         
     } else if (storedUrl !== currentUrl) {
 
-        localStorage.removeItem("Updates");
+        localStorage.removeItem("Packaged");
 
         RELOAD();
 
