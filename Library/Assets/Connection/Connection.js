@@ -9,6 +9,7 @@ import { BLACKPHONEICON } from "../DataBase/BlackIcons/Phone/Phone.js";
 import { BLACKRETRYICON } from "../DataBase/BlackIcons/RetryIcon/RetryIcon.js";
 import { BLACKSENDICON } from "../DataBase/BlackIcons/Send/Send.js";
 import { BLACKSUNICON } from "../DataBase/BlackIcons/Sun/Sun.js";
+import { BLACKUSERICON } from "../DataBase/BlackIcons/User/User.js";
 import { BLACKWHATSAPPICON } from "../DataBase/BlackIcons/WhatsApp/WhatsApp.js";
 import { BLACKXICON } from "../DataBase/BlackIcons/XIcon/Xicon.js";
 import { BLACKYOUTUBEICON } from "../DataBase/BlackIcons/YouTubeIcon/YouTubeIcon.js";
@@ -262,10 +263,11 @@ const BLACKPHONEICON="${BLACKPHONEICON}";
 const BLACKMOONICON="${BLACKMOONICON}";
 const BLACKSENDICON="${BLACKSENDICON}";
 const BLACKNEXTICON="${BLACKNEXTICON}";
+const BLACKUSERICON="${BLACKUSERICON}";
 `; 
 localStorage.setItem('ASSETS',DATA);
 };
 
 `
-const BLACKNEXTICON="${BLACKNEXTICON}";
+const BLACKUSERICON="${BLACKUSERICON}";
 `
