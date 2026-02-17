@@ -6,6 +6,7 @@ WEBKIT();
 ZOOM();
 VISITORS();
 APPMODE();
+TIMEZONE();
 `;
     
 localStorage.setItem("RUN",DATA);

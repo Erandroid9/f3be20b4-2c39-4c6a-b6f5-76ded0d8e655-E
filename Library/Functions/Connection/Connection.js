@@ -75,6 +75,7 @@ import { TIKTOK } from "../DataBase/Tiktok/Tiktok.js";
 import { X } from "../DataBase/X/X.js";
 import { INSTAGRAM } from "../DataBase/Instagram/Instagram.js";
 import { ARRAYJSONCONVERTOR } from "../DataBase/ArrayJsonConvertor/ArrayJsonConvertor.js";
+import { TIMEZONE } from "../DataBase/TimeZone/TimeZone.js";
 
 export const FUNCTIONSCONNECTION=()=>{
 
@@ -155,6 +156,7 @@ const GETEMAILS=${GETEMAILS};
 const TIKTOK=${TIKTOK};
 const X=${X};
 const ARRAYJSONCONVERTOR=${ARRAYJSONCONVERTOR};
+const TIMEZONE=${TIMEZONE};
 `;
 
 localStorage.setItem("FUNCTIONS",DATA);
@@ -162,5 +164,5 @@ localStorage.setItem("FUNCTIONS",DATA);
 };
 
 `
-const ARRAYJSONCONVERTOR=${ARRAYJSONCONVERTOR};
+const TIMEZONE=${TIMEZONE};
 `

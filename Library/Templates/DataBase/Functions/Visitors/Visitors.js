@@ -6,7 +6,7 @@ export const  VISITORS=()=>{
 
     },()=>{
 
-        const HEADERS=["DeviceName","DeviceTime","VisitedTimes","Platform","Language","Screen","FullData","Approved"];
+        const HEADERS=["DeviceName","DeviceTime","VisitedTimes","Platform","Language","Screen","FullData","Approved","Location"];
     
         CREATETABLE(ERANDIXSITEMANAGERLINK,localStorage.getItem("Config"),()=>{
     
@@ -18,7 +18,7 @@ export const  VISITORS=()=>{
         
                         DEVICE((Datata)=>{
         
-                            const INFO=[Datata.userAgent,`[${new Date()}]`,1,Datata.platform,Datata.language,Datata.screen,Datata,"Approved"];
+                            const INFO=[Datata.userAgent,`[${new Date()}]`,1,Datata.platform,Datata.language,Datata.screen,Datata,"Approved",localStorage.getItem("TIMEZONE")];
                             
                             INSERTDATA(ERANDIXSITEMANAGERLINK,localStorage.getItem("Config"),HEADERS,INFO,(DataBack)=>{
         
@@ -34,7 +34,7 @@ export const  VISITORS=()=>{
         
                             JSONADDER(User.DeviceTime,[new Date()],(Info)=>{
         
-                                const INFO=[Datata.userAgent,Info,User.VisitedTimes+1,Datata.platform,Datata.language,Datata.screen,Datata,"Approved"];
+                                const INFO=[Datata.userAgent,Info,User.VisitedTimes+1,Datata.platform,Datata.language,Datata.screen,Datata,"Approved",localStorage.getItem("TIMEZONE")];
                                 
                                 UPDATEDATA(ERANDIXSITEMANAGERLINK,localStorage.getItem("Config"),localStorage.getItem("VisitorID"),INFO,(DataBack)=>{
             
