@@ -12,7 +12,7 @@ export const TOASTVIEW=(MESSAGE)=>{
 
             TEXT(ELEMENT,"",MESSAGE,(ELEMENTS)=>{
 
-                COLOR(ELEMENTS,WHITE);
+                COLOR(ELEMENTS,BLACK);
 
             });
 
