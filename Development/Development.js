@@ -2,29 +2,13 @@ const ERANDES=()=>{
 
     VIEWCONTROLLER();
 
-    DOWNLOADSAVEINDEX(QELDATABASELINK,"Catergory",()=>{
-
-        DOWNLOADSAVEINDEX(QELDATABASELINK,"Products",()=>{
-
-        },()=>{
-
-            VIEWCONTROLLER();  
-
-        });
-
-    },()=>{
-
-        VIEWCONTROLLER();  
-
-    });
-
 };
 
 const MOBILEVIEW=()=>{
 
     HEADERVIEW((ELEMENT)=>{
 
-        LEFTTEXTVIEW(ELEMENT,"Qel",()=>{
+        LEFTTEXTVIEW(ELEMENT,"Erandix",()=>{
 
         });
 
@@ -34,56 +18,144 @@ const MOBILEVIEW=()=>{
 
         });
 
-        RIGHTICONVIEW(ELEMENT,WHITEUSERPROFILEICON,BLACKUSERICON,()=>{
+        RIGHTICONVIEW(ELEMENT,WHITEMENUICON,BLACKMENUICON,()=>{
 
         });
 
     },(ELEMENT)=>{
 
-        BREAK(ELEMENT);
+        INLINEVIEW(ELEMENT,"95%","50px",TRANSPARENT,"2%",(ELEMENTS)=>{
 
-        DIVVIEW(ELEMENT,"100%","auto",TRANSPARENT,(ELEMENTSA)=>{
+            TEXTVIEW(ELEMENTS,"Imagine",()=>{
 
-            LOADERVIEW(ELEMENTSA,(LOAD)=>{
-    
-                GETSAVEDINDEX("Products",(Data)=>{
-    
-                    DISPLAYHIDDEN(LOAD);
-    
-                    CHECKER(Data.Approved,()=>{
-    
-                        DIVVIEW(ELEMENTSA,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
-    
-                            OVERFLOWHIDDEN(ELEMENTS);
-    
-                            RADIUS(ELEMENTS,"0");
-    
-                            IMAGE(ELEMENTS,"","",Data.ProductImage,TRANSPARENT,(ELIS)=>{
-                    
-                            });
-    
-                            FOOTER(ELEMENTS,(ELEMENTSI)=>{
-    
-                                ELEMENTEDBACKGROUND(ELEMENTSI);
-    
-                                LEFTTEXTVIEW(ELEMENTSI,Data.ProductName,()=>{
-    
-                                });
-    
-                                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
-    
-                                });
-    
-                            });
-    
-                        });
+            });
 
-                        BREAK(ELEMENTSA);
-    
-                    });
+            TEXTVIEW(ELEMENTS,"Build",()=>{
+
+            });
+
+            TEXTVIEW(ELEMENTS,"inspire",()=>{
+
+            });
+
+        });
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            RADIUS(ELEMENTS,"0");
+
+            SERVERCOMPONENTS("Images/AppDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,(ELIS)=>{
     
                 });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                ELEMENTEDBACKGROUND(ELEMENTSI);
+
+                LEFTTEXTVIEW(ELEMENTSI,"App Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            SERVERCOMPONENTS("Images/DesktopDevelopment.png",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
     
+                });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                ELEMENTEDBACKGROUND(ELEMENTSI);
+
+                LEFTTEXTVIEW(ELEMENTSI,"Desktop Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            SERVERCOMPONENTS("Images/WebDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
+                });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                ELEMENTEDBACKGROUND(ELEMENTSI);
+
+                LEFTTEXTVIEW(ELEMENTSI,"WebSite Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
+
+                });
+
+            });
+
+        });
+
+        BREAK(ELEMENT);
+
+        DIVVIEW(ELEMENT,"95%","300px",TRANSPARENT,(ELEMENTS)=>{
+
+            OVERFLOWHIDDEN(ELEMENTS);
+
+            SERVERCOMPONENTS("Images/SystemDevelopment.webp",(DATA)=>{
+
+                IMAGE(ELEMENTS,"","",DATA,TRANSPARENT,()=>{
+    
+                });
+
+            });
+
+            FOOTER(ELEMENTS,(ELEMENTSI)=>{
+
+                ELEMENTEDBACKGROUND(ELEMENTSI);
+
+                LEFTTEXTVIEW(ELEMENTSI,"System Development",()=>{
+
+                });
+
+                RIGHTICONVIEW(ELEMENTSI,WHITENEXTICON,BLACKNEXTICON,()=>{
+
+                });
+
             });
 
         });
@@ -100,9 +172,75 @@ const MOBILEVIEW=()=>{
 
             });
 
-            TEXTVIEW(ELEMENTS,"Contact Us",()=>{
+            TEXTVIEW(ELEMENTS,"Contact Us",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",MOBILECONTACTUS,"MOBILEVIEW");
+
+                });
 
             });
+
+        });
+
+    });
+
+};
+
+const MOBILECONTACTUS=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTSS)=>{
+
+            CLICK(ELEMENTSS,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Contact Us",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"Fill The Form Below",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Your Name","Name",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email","Name",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"","Subject Of Message","Name",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDTEXTAREAVIEW(ELEMENT,"Enter Your Message","Message",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Submit",FORESTGREEN,()=>{
 
         });
 

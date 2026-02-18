@@ -172,9 +172,75 @@ const MOBILEVIEW=()=>{
 
             });
 
-            TEXTVIEW(ELEMENTS,"Contact Us",()=>{
+            TEXTVIEW(ELEMENTS,"Contact Us",(ELEMENTSS)=>{
+
+                CLICK(ELEMENTSS,()=>{
+
+                    ROUTE(" ",MOBILECONTACTUS,"MOBILEVIEW");
+
+                });
 
             });
+
+        });
+
+    });
+
+};
+
+const MOBILECONTACTUS=()=>{
+
+    HEADERVIEW((ELEMENT)=>{
+
+        LEFTICONVIEW(ELEMENT,WHITEBACKICON,BLACKBACKICON,(ELEMENTSS)=>{
+
+            CLICK(ELEMENTSS,()=>{
+
+                ROUTE("",MOBILEVIEW,"MOBILEVIEW");
+
+            });
+
+        });
+
+        RIGHTTEXTVIEW(ELEMENT,"Contact Us",()=>{
+
+        });
+
+    },(ELEMENT)=>{
+
+        BREAK(ELEMENT);
+
+        TEXTVIEW(ELEMENT,"Fill The Form Below",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"text","Enter Your Name","Name",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"email","Enter Your Email","Name",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDINPUTVIEW(ELEMENT,"","Subject Of Message","Name",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        ROUNDTEXTAREAVIEW(ELEMENT,"Enter Your Message","Message",()=>{
+
+        });
+
+        BREAK(ELEMENT);
+
+        BUTTON(ELEMENT,"Submit",FORESTGREEN,()=>{
 
         });
 
